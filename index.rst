@@ -2,12 +2,17 @@
 Python Data Analysis Library
 ****************************
 
-*pandas* is an open source, BSD-licensed `Python <http://www.python.org/>`_ package providing fast, flexible, and expressive data structures designed to make working with “relational” or “labeled” data both easy and intuitive.
+*pandas* is an open source, BSD-licensed `Python <http://www.python.org/>`_
+package providing fast, flexible, and expressive data structures designed to
+make working with “relational” or “labeled” data both easy and intuitive.
 
 What problem does *pandas* solve?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The *pandas* library brings the capabilities found in common statistical programming languages to Python, and then some. With the addition of *pandas* and `other important data libraries <http://pandas.sourceforge.net/install.html#dependencies>`_, Python has become the best way to do powerful, real-world, in-memory data analysis.
+The *pandas* library brings the capabilities found in common statistical
+programming languages to Python, and then some. With the addition of *pandas*
+and other important data libraries, Python has become the best way to do
+powerful, real-world, in-memory data analysis.
 
 Why Python + *pandas*?
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -25,7 +30,10 @@ Why Python + *pandas*?
 Why not R (or one of its commercial alternative)?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Users will be pleased to find many of the best concepts from R readily available in *pandas*, such as the foundational DataFrame. However, *pandas* improves on R and commercial alternatives in several significant ways. With other tools, you still run into problems with:
+Users will be pleased to find many of the best concepts from R readily
+available in *pandas*, such as the foundational DataFrame. However, *pandas*
+improves on R and commercial alternatives in several significant ways. With
+other tools, you still run into problems with:
 
 	* Spending too much effort manipulating data to clean up or align your data sets;
 	* Stretching idiosyncratic statistical programming languages to implement non-computational logic best done in a general purpose language;
@@ -34,14 +42,26 @@ Users will be pleased to find many of the best concepts from R readily available
 	* Maintaining expensive legacy systems instead of continuing to innovate;
 	* In some cases with the commercial alternatives, you'll even be missing the basic features of a modern programming language, like abstraction and namespaces, that allow you to build libraries over time and work within a team!
 
-Most of us need to implement non-computational business logic alongside our data analysis while collaborating in a team environment.  Python + *pandas* is the best way to get the expressiveness and ease-of-use necessary for data analysis with the performance and general purpose functionality demanded in the real world.
+Most of us need to implement non-computational business logic alongside our
+data analysis while collaborating in a team environment. Python + *pandas* is
+the best way to get the expressiveness and ease-of-use necessary for data
+analysis with the performance and general purpose functionality demanded in
+the real world.
 
 Why not build my production system in Java or C++?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the real world, you need to deploy systems quickly and have the agility to respond to changes. Tools like Java and the variations of C may satisfy your need for performance, but they don't let you build, change, and maintain systems as effectively or efficiently as Python, particularly if you work on a team where multiple languages are used for different purposes. 
+In the real world, you need to deploy systems quickly and have the agility to
+respond to changes. Tools like Java and the variations of C may satisfy your
+need for performance, but they don't let you build, change, and maintain
+systems as effectively or efficiently as Python, particularly if you work on a
+team where multiple languages are used for different purposes.
 
-Since high-performance Python + *pandas* is fast enough for production while still providing the agility and maintainability real systems require, it can be the foundation for every part of your tool chain. Some of our users have found themselves able to replace Java systems with 20% as much Python code (or less)!
+Since high-performance Python + *pandas* is fast enough for production while
+still providing the agility and maintainability real systems require, it can
+be the foundation for every part of your tool chain. Some of our users have
+found themselves able to replace Java systems with 20% as much Python code (or
+less)!
 
 Who do our users have to say?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
