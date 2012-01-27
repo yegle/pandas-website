@@ -27,7 +27,7 @@ Why Python + *pandas*?
 	* Python with *pandas* is used in a wide variety of academic and commercial domains, including Finance, Neuroscience, Economics, Statistics, Advertising, Web Analytics, and more.
 	* Python and *pandas* are both open source, making them freely usable, modifiable, and distributable, even for commercial use.
 
-Why not R (or one of its commercial alternative)?
+Why not R (or one of its commercial alternatives)?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Users will be pleased to find many of the best concepts from R readily
