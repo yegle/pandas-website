@@ -12,7 +12,7 @@ the `commercial support <commercialsupport.html>`_ page for full details.
 There is also a community of like-minded individuals around the world who
 contribute their valuable time and energy to help make open source *pandas*
 possible. Thank you to `all of our contributors
-<https://github.com/wesm/pandas/contributors>`_.
+<https://github.com/pydata/pandas/contributors>`_.
 
 Join the Community!
 ~~~~~~~~~~~~~~~~~~~
@@ -21,10 +21,10 @@ Please direct user and developer questions to the `mailing list
 <http://groups.google.com/group/pystatsmodels>`_.
 
 If you encounter any bugs, please report them using the `Issue Tracker
-<https://github.com/wesm/pandas/issues?labels=Bug&sort=created&direction=desc&state=open&page=1>`_.
+<https://github.com/pydata/pandas/issues?labels=Bug&sort=created&direction=desc&state=open&page=1>`__.
 If you're a developer, feel free to look at the open issues and contribute
 some code. And everyone should feel free to help improve the `documentation
-<http://pandas.sourceforge.net/>`_.
+<http://pandas.sourceforge.net/>`__.
 
 Tutorials and Talks
 ~~~~~~~~~~~~~~~~~~~
