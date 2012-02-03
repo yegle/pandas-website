@@ -17,4 +17,4 @@ You can find all of the official source and binaries hosted at the `PyPI project
 
 Development is source controlled using git. Here's a handy guide to `getting started <http://help.github.com/set-up-git-redirect>`_.
 
-	* https://github.com/wesm/pandas
+	* https://github.com/pydata/pandas
