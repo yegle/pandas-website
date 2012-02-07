@@ -156,4 +156,6 @@ Who do our users have to say?
 	
 	getpandas
 	community
+	developers
+	talks
 	commercialsupport
