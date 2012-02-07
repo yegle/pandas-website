@@ -7,7 +7,7 @@ Please direct user and developer questions to the `mailing list
 Tracker
 <https://github.com/pydata/pandas/issues?labels=Bug&sort=created&direction=desc&state=open&page=1>`__.
 
-To learn more about how to contribute to the ongoing development of *pandas*, please check out our :doc:`developer page </developers>`.
+To learn more about how to contribute to the ongoing development of *pandas*, please check out our `developer page <developers.html>`__.
 
 History of Development
 ~~~~~~~~~~~~~~~~~~~~~~

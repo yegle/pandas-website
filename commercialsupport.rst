@@ -5,7 +5,7 @@ Commercial Support
 
 
 To make commercial support inquiries, email support@lambdafoundry.com. See the
-:ref:'community' page for community support.
+`community <community.html>`__ page for community support.
 
 About Lambda Foundry
 ~~~~~~~~~~~~~~~~~~~~
