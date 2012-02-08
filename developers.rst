@@ -279,11 +279,11 @@ Once your feature branch is accepted into upstream, you'll probably want to get 
 
 Then you can just do::
 
-    git -d shiny-new-feature
+    git branch -d shiny-new-feature
 
 Make sure you use a lower-case -d, or else git won't warn you if your feature
 branch has not actually been merged.
 
 The branch will still exist on Github, so to delete it there do ::
 
-    git push origin :shiny-new-feature branch
+    git push origin --delete shiny-new-feature
