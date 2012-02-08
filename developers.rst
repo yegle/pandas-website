@@ -6,7 +6,41 @@ So you want to contribute to *pandas* by offering a patch? Excellent! This is th
 place on the `mailing list
 <http://groups.google.com/group/pystatsmodels>`__.
 
-Step-by-Step Overview
+Contributing to the documentation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you're not the developer type, contributing to the documentation is still
+of huge value. You don't even have to be an expert on
+*pandas* to do so! Something as simple as rewriting small passages for clarity
+as you reference the docs is a simple but effective way to contribute. The
+next person to read that passage will be in your debt!
+
+Actually, there are sections of the docs that are worse off by being written
+by experts. If something in the docs doesn't make sense to you, updating the
+relevant section after you figure it out is a simple way to ensure it will
+help the next person.
+
+Once you follow the below steps to set up your environment, you can navigate
+to your local pandas/docs directory and run ::
+
+	sphinx-build source build/html
+
+It will take awhile to build the first time, but subsequent builds only
+process the portions you've changed. Then just open your build in the browser
+with ::
+
+	open pandas/docs/build/html/index.html
+	
+And you'll have the satisfaction of seeing your new and improved
+documentation!
+
+The documentation is written in reStructuredText, which is almost like writing
+in plain English, and built using `Sphinx <http://sphinx.pocoo.org/>`__. The
+Sphinx Documentation has an excellent `introduction to reST
+<http://sphinx.pocoo.org/rest.html>`__. Review the Sphinx docs to perform more
+complex changes to the documentation as well.
+
+Step-by-step overview
 ~~~~~~~~~~~~~~~~~~~~~
 
 #. Read carefully through the below guidelines on working with *pandas* code.
