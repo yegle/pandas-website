@@ -9,10 +9,10 @@ easy-to-use data structures and data analysis tools for the `Python
 What problem does *pandas* solve?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Python has long been a great for data munging and preparation, but it was less
-well-suited to data analysis and modeling. *pandas* helps fill this gap,
-enabling you to carry out your entire data analysis workflow in Python without
-having to switch to a more domain specific language like R.
+Python has long been great for data munging and preparation, but less so for
+data analysis and modeling. *pandas* helps fill this gap, enabling you to
+carry out your entire data analysis workflow in Python without having to
+switch to a more domain specific language like R.
 
 Combined with the excellent `IPython <http://ipython.org/>`__ toolkit and
 other libraries, the environment for doing data analysis in Python excels in
@@ -107,8 +107,8 @@ Who do our users have to say?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 	"*pandas* allows us to focus more on research and less on programming. We
-	have found pandas easy to learn, easy to use, and easy to maintain. The
-	bottom line is that it has increased our productivity."
+	have found *pandas* easy to learn, easy to use, and easy to maintain. 
+	The bottom line is that it has increased our productivity."
 
 	.. image:: /_static/aqr_capital_management_logo.png
 		:alt: AQR Capital Management Logo

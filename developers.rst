@@ -138,8 +138,7 @@ If you've created a new file, it is not being tracked by git. Add it by typing :
 Doing 'git status' again should give something like ::
 
     # On branch shiny-new-feature
-	# Changes not staged for commit:
-	# ...
+	#
     #       modified:   /relative/path/to/file-you-added.py
     #
 
