@@ -116,13 +116,26 @@ Who do our users have to say?
 
 | **Roni Israelov, PhD**
 | Portfolio Manager
-| `AQR Capital Management <http://www.aqr.com/>`_
+| `AQR Capital Management <http://www.aqr.com/>`__
+
+	"*pandas* is the perfect tool for bridging the gap between rapid
+	iterations of ad-hoc analysis and production quality code. If you 
+	want one tool to be used across a multi-disciplined organization of
+	engineers, mathematicians and analysts, look no further."
+
+	.. image:: /_static/appnexus_logo.png
+		:alt: AppNexus Logo
+		:align: right
+
+| **David Himrod**
+| Director of Optimization and Analytics
+| `AppNexus <http://www.appnexus.com/>`__
 
 .. toctree::
 	:hidden:
 
 	getpandas
 	community
-	developers
 	talks
 	commercialsupport
+	developers
