@@ -270,11 +270,11 @@ the expected correct result:
 Performance performance with vbench
 -----------------------------------
 
-We created the `vbench library <https://github.com/pydata/vbench>`__ library to
-enable easily monitoring the performance of critical pandas operations. These
-benchmarks are all found in the ``pandas/vb_suite`` directory. Interested users
-should simply look at the code there for the latest vbench API as ``vbench`` is
-still somewhat experimental and subject to change.
+We created the `vbench library <https://github.com/wesm/vbench>`__ library
+to enable easily monitoring the performance of critical pandas operations.
+These benchmarks are all found in the ``pandas/vb_suite`` directory.
+Interested users should simply look at the code there for the latest vbench
+API as ``vbench`` is still somewhat experimental and subject to change.
 
 Contributing your changes to pandas
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
