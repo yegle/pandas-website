@@ -9,7 +9,7 @@ easy-to-use data structures and data analysis tools for the `Python
 What are some of the main features of *pandas*?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Here are just a few of the things that *pandas* does well:
+Here are a few of the things that *pandas* does well:
 
 * Intelligent **data alignment**: automatic label-based alignment in
   computations, and easily manipulate messy data into an orderly form
@@ -30,7 +30,7 @@ Here are just a few of the things that *pandas* does well:
 * Flexible **reshaping** and pivoting of data sets
 
 * **Hierarchical labeling** of axes: stack and unstack, possible to use
-    multiple labels per tick
+  multiple labels per tick
 
 * Tools for reading and writing data to many different formats: CSV and text
   files, Microsoft Excel, databases, and the fast HDF5 format
@@ -65,11 +65,11 @@ that goal.
 Why not R?
 ~~~~~~~~~~
 
-First of all, we love open source R! It set a new bar for powerful data
-analysis, and provided some inspiration for *pandas* features. R users will be
-pleased to find this library adopts some of the best concepts of R, like the
-foundational DataFrame. But *pandas* also seeks to solve some frustrations
-common to R users.
+First of all, we love open source R! It is the most widely-used open source
+environment for statistical modeling and graphics, and provided some
+inspiration for *pandas* features. R users will be pleased to find this library
+adopts some of the best concepts of R, like the foundational DataFrame. But
+*pandas* also seeks to solve some frustrations common to R users.
 
 * R's data alignment and indexing functionality are very barebones, leaving
   much work to the user. *pandas* makes working with messy, irregularly indexed
@@ -83,9 +83,13 @@ common to R users.
 * R's "copy-left" GPL license prevents its use in most commercial software
   development, compared with Python and pandas's permissive BSD license.
 
-* Building a hybrid system with R connected to a low-productivity systems
-  language like C++ or Java can cripple the agility and maintainability of your
-  systems.
+* Hybrid systems R connected to a low-productivity systems language like C++ or
+  Java suffer from significantly reduced agility and maintainability. And you
+  are still stuck developing the system components in a low-productivity
+  language.
+
+Some users familiar with R have affectively described pandas as like "R
+``data.frame`` on steroids".
 
 .. And what about commercial alternatives? Many of them lack many of the basic
 .. features of a modern open source programming language! In some cases, these
