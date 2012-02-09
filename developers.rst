@@ -21,24 +21,30 @@ relevant section after you figure it out is a simple way to ensure it will
 help the next person.
 
 Once you follow the below steps to set up your environment, you can navigate
-to your local pandas/docs directory and run ::
+to your local pandas/docs directory and run
 
-	sphinx-build source build/html
+::
 
-It will take awhile to build the first time, but subsequent builds only
-process the portions you've changed. Then just open your build in the browser
-with ::
+     python make.py html
 
-	open pandas/docs/build/html/index.html
+It will take awhile to build the first time, but subsequent builds only process
+the portions you've changed. Then just open the following file in a web
+browser:
 
-And you'll have the satisfaction of seeing your new and improved
-documentation!
+::
+
+    pandas/docs/build/html/index.html
+
+And you'll have the satisfaction of seeing your new and improved documentation!
 
 The documentation is written in reStructuredText, which is almost like writing
 in plain English, and built using `Sphinx <http://sphinx.pocoo.org/>`__. The
 Sphinx Documentation has an excellent `introduction to reST
 <http://sphinx.pocoo.org/rest.html>`__. Review the Sphinx docs to perform more
 complex changes to the documentation as well.
+
+Another way to help is to **review docstrings**. These can be edited directly
+in the codebase to make the functionality easier to understand.
 
 Step-by-step overview
 ~~~~~~~~~~~~~~~~~~~~~
@@ -55,25 +61,43 @@ Step-by-step overview
 Roadmap to 1.0
 ~~~~~~~~~~~~~~
 
-TODO - include the major list of things people need to work on.
+* ``numpy.datetime64`` integration, ``scikits.timeseries`` codebase
+  integration. Substantially improved time series functionality.
+* Improved PyTables (HDF5) integration
+* Tools for working with data sets that do not fit into memory
+* Improved SQL / relational database tools
+* Better statistical graphics using matplotlib
+* `Integration with D3.js <https://github.com/mikedewar/D3py>`__
+* ``NDFrame`` data structure for arbitrarily high-dimensional labeled data
+* Extend GroupBy functionality to regular ndarrays, record arrays
+* Better support for NumPy dtype hierarchy without sacrificing usability
+* Add a Factor data type (in R parlance)
+* Better support for integer ``NA`` values
+* Better memory usage and performance when reading very large CSV files
 
 Code design and organization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Development Mission
--------------------
-
-TODO - Clean API, etc.
-
 File Hierarchy
 --------------
 
-TODO - Details of files included in the package.
+* ``pandas/core``: Primary data structures (Series, DataFrame, ...) and related
+  tools and algorithms
+* ``pandas/src``: Cython and C code for implementing fundamental algorithms
+* ``pandas/io``: Input/output tools (flat files, Excel, HDF5, SQL, ...)
+* ``pandas/tools``: Auxiliary data algorithms: merge and join routines,
+  concatenation, pivot tables, and more.
+* ``pandas/sparse``: Sparse versions of Series, DataFrame, Panel
+* ``pandas/stats``: Linear and panel regression, moving window regression. Will
+  likely move to ``statsmodels`` deventually
+* ``pandas/util``: Utilities, development, and testing tools
+* ``pandas/rpy``: RPy2 interface for connecting to R
 
 Conventions
 -----------
 
-TODO - Any conventions to observe
+* `PEP8 <http://www.python.org/dev/peps/pep-0008/>`__
+
 
 Working with the code
 ~~~~~~~~~~~~~~~~~~~~~
@@ -138,13 +162,13 @@ If you've created a new file, it is not being tracked by git. Add it by typing :
 Doing 'git status' again should give something like ::
 
     # On branch shiny-new-feature
-	#
+    #
     #       modified:   /relative/path/to/file-you-added.py
     #
 
 Finally, commit your changes to your local repository with an explanatory message, such as ::
 
-	git commit -m "Optimized such-and-such function"
+    git commit -m "Optimized such-and-such function"
 
 Your changes are now committed in your local repository.
 
@@ -183,45 +207,74 @@ We're serious about `Test Driven Development (TDD)
 <http://en.wikipedia.org/wiki/Test-driven_development>`__. Any code you
 contribute must have adequate test coverage to be considered.
 
-Introduction to nose
---------------------
-
 Like many packages, *pandas* uses the `Nose testing system
 <http://somethingaboutorange.com/mrl/projects/nose/>`__ and the convenient
 extensions in `numpy.testing
 <http://docs.scipy.org/doc/numpy/reference/routines.testing.html>`__.
 
-TODO - flesh this out
-
 Running the test suite
 ----------------------
 
-Running the test suite after you've written robust tests will help you locate
-bugs. Output looks vaguely like this ::
+The best way to develop *pandas* is to bulid the C extensions in-place by
+running:
 
-    $ nosetests pandas
-	.........S......................S.....SSSSSSSSSSSSSSSSSSSSSSSS.......
-	.....................................................................
-	.....................................................................
-	..............EE.....................................................
-	............................F........................................
+::
 
-	FAILED (SKIP=31, errors=3, failures=2)
+    python setup.py build_ext --inplace
+
+The tests can then be run directly inside your git clone (without having to
+install pandas) by typing:
+
+::
+
+    nosetests pandas
+
+Another very common option is to do a ``develop`` install of pandas:
+
+::
+
+    python setup.py develop
+
+This makes a symbolic link that tells the Python interpreter to import pandas
+from your development directory. Thus, you can always be using the development
+version on your system without being inside the clone directory.
 
 How to write a test
 -------------------
 
-TODO - write this
+The ``pandas.util.testing`` module has many special ``assert`` functions that
+make it easier to make statements about whether Series or DataFrame objects are
+equivalent. The easiest way to verify that your code is correct is to
+explicitly construct the result you expect, then compare the actual result to
+the expected correct result:
 
-Test results
-------------
+::
 
-TODO - write this
+    def test_pivot(self):
+        data = {
+            'index' : ['A', 'B', 'C', 'C', 'B', 'A'],
+            'columns' : ['One', 'One', 'One', 'Two', 'Two', 'Two'],
+            'values' : [1., 2., 3., 3., 2., 1.]
+        }
 
-Testing performance with vbench
--------------------------------
+        frame = DataFrame(data)
+        pivoted = frame.pivot(index='index', columns='columns', values='values')
 
-TODO - talk about doing vbench performance testing
+        expected = DataFrame({
+            'One' : {'A' : 1., 'B' : 2., 'C' : 3.},
+            'Two' : {'A' : 1., 'B' : 2., 'C' : 3.}
+        })
+
+        assert_frame_equal(pivoted, expected)
+
+Performance performance with vbench
+-----------------------------------
+
+We created the `vbench library <https://github.com/wesm/vbench>`__ library to
+enable easily monitoring the performance of critical pandas operations. These
+benchmarks are all found in the ``pandas/vb_suite`` directory. Interested users
+should simply look at the code there for the latest vbench API as ``vbench`` is
+still somewhat experimental and subject to change.
 
 Contributing your changes to pandas
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
