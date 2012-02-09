@@ -113,6 +113,7 @@ Who do our users have to say?
 	.. image:: /_static/aqr_capital_management_logo.png
 		:alt: AQR Capital Management Logo
 		:align: right
+		:target: http://www.aqr.com/
 
 | **Roni Israelov, PhD**
 | Portfolio Manager
@@ -126,6 +127,7 @@ Who do our users have to say?
 	.. image:: /_static/appnexus_logo.png
 		:alt: AppNexus Logo
 		:align: right
+		:target: http://www.appnexus.com/
 
 | **David Himrod**
 | Director of Optimization and Analytics
