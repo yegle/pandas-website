@@ -106,10 +106,6 @@ providing all the advantages of an agile research environment.
 Who do our users have to say?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-	"*pandas* allows us to focus more on research and less on programming. We
-	have found *pandas* easy to learn, easy to use, and easy to maintain. 
-	The bottom line is that it has increased our productivity."
-
 	.. image:: /_static/aqr_capital_management_logo.png
 		:alt: AQR Capital Management Logo
 		:align: right
@@ -119,10 +115,9 @@ Who do our users have to say?
 | Portfolio Manager
 | `AQR Capital Management <http://www.aqr.com/>`__
 
-	"*pandas* is the perfect tool for bridging the gap between rapid
-	iterations of ad-hoc analysis and production quality code. If you 
-	want one tool to be used across a multi-disciplined organization of
-	engineers, mathematicians and analysts, look no further."
+	"*pandas* allows us to focus more on research and less on programming. We
+	have found *pandas* easy to learn, easy to use, and easy to maintain. 
+	The bottom line is that it has increased our productivity."
 
 	.. image:: /_static/appnexus_logo.png
 		:alt: AppNexus Logo
@@ -130,8 +125,27 @@ Who do our users have to say?
 		:target: http://www.appnexus.com/
 
 | **David Himrod**
-| Director of Optimization and Analytics
+| Director of Optimization & Analytics
 | `AppNexus <http://www.appnexus.com/>`__
+
+	"*pandas* is the perfect tool for bridging the gap between rapid
+	iterations of ad-hoc analysis and production quality code. If you 
+	want one tool to be used across a multi-disciplined organization of
+	engineers, mathematicians and analysts, look no further."
+
+	.. image:: /_static/datadog_logo.png
+		:alt: Datadog Logo
+		:align: right
+		:target: http://www.datadoghq.com/
+
+| **Olivier Pomel**
+| CEO
+| `Datadog <http://www.datadoghq.com/>`__
+	
+	"We use *pandas* to process time series data on our production servers.
+	The simplicity and elegance of its API, and its high level
+	of performance for high-volume datasets, made it a perfect choice for
+	us."
 
 .. toctree::
 	:hidden:
