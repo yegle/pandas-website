@@ -245,11 +245,9 @@ patch, you may need to rebase.
 
 A rebase replays commits from one branch on top of another branch to preserve
 a linear history. Remember, your commits may have been tested against an
-older version of master. If you rebase, you may introduce bugs.
+older version of master. If you rebase, you may introduce bugs. But if you don't rebase, the two patches may conflict with each other!
 
-Always make a new branch before doing rebase.
-
-TODO - fill this out with more instructions and warnings.
+Always make a new branch before doing rebase. Make sure you `thoroughly understand rebasing <http://help.github.com/rebase/>`__ lest you invoke the wrath of the git gods.
 
 Finally, make the pull request
 ------------------------------
