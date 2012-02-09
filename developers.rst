@@ -89,7 +89,7 @@ File Hierarchy
   concatenation, pivot tables, and more.
 * ``pandas/sparse``: Sparse versions of Series, DataFrame, Panel
 * ``pandas/stats``: Linear and panel regression, moving window regression. Will
-  likely move to ``statsmodels`` deventually
+  likely move to ``statsmodels`` eventually
 * ``pandas/util``: Utilities, development, and testing tools
 * ``pandas/rpy``: RPy2 interface for connecting to R
 
@@ -270,7 +270,7 @@ the expected correct result:
 Performance performance with vbench
 -----------------------------------
 
-We created the `vbench library <https://github.com/wesm/vbench>`__ library to
+We created the `vbench library <https://github.com/pydata/vbench>`__ library to
 enable easily monitoring the performance of critical pandas operations. These
 benchmarks are all found in the ``pandas/vb_suite`` directory. Interested users
 should simply look at the code there for the latest vbench API as ``vbench`` is
