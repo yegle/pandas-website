@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# 
+#
 # pandas project documentation build configuration file, created by
 # sphinx-quickstart on Thu Jan 19 21:36:04 2012.
 #
@@ -25,12 +25,14 @@ needs_sphinx = '1.0'
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.intersphinx', 'sphinxcontrib.cheeseshop', 'sphinxcontrib.googleanalytics']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.intersphinx',
+              'sphinxcontrib.cheeseshop',
+              'sphinxcontrib.googleanalytics']
 
 # settings for sphinxcontrib.googleanalytics
 # googleanalytics_enabled = False
 googleanalytics_id = 'UA-27880019-2'
-	
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 

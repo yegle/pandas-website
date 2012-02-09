@@ -30,7 +30,7 @@ process the portions you've changed. Then just open your build in the browser
 with ::
 
 	open pandas/docs/build/html/index.html
-	
+
 And you'll have the satisfaction of seeing your new and improved
 documentation!
 
@@ -88,9 +88,9 @@ version control to allow many people to work together on the project.
 
 Some great resources for learning git:
 
- * the `Github help pages <http://help.github.com/>`__. 
+ * the `Github help pages <http://help.github.com/>`__.
  * the `NumPy's documentation <http://docs.scipy.org/doc/numpy/dev/index.html>`__.
- * Matthew Brett's `Pydagogue <http://matthew-brett.github.com/pydagogue/>`__. 
+ * Matthew Brett's `Pydagogue <http://matthew-brett.github.com/pydagogue/>`__.
 
 Getting Started with Git
 ------------------------
@@ -109,7 +109,7 @@ want to clone your fork to your machine: ::
     git remote add upstream git://github.com/pydata/pandas.git
 
 This creates the directory `pandas-yourname` and connects your repository to
-the upstream (main project) pandas repository. 
+the upstream (main project) pandas repository.
 
 Creating a Branch
 -----------------
@@ -210,7 +210,7 @@ bugs. Output looks vaguely like this ::
 	FAILED (SKIP=31, errors=3, failures=2)
 
 How to write a test
-------------------- 
+-------------------
 
 TODO - write this
 
@@ -228,7 +228,7 @@ Contributing your changes to pandas
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 First, double check your code
-----------------------
+-----------------------------
 
 When you're ready to ask for a code review, you will file a pull request. Before you do, again make sure you've followed all the guidelines outlined in this document. You should also double check your branch changes against the branch it was based off of:
 
@@ -271,7 +271,7 @@ updated.
 Optional: delete your merged branch
 -----------------------------------
 
-Once your feature branch is accepted into upstream, you'll probably want to get rid of the branch. First, merge upstream master into your branch so git knows it is safe to delete your branch :: 
+Once your feature branch is accepted into upstream, you'll probably want to get rid of the branch. First, merge upstream master into your branch so git knows it is safe to delete your branch ::
 
     git fetch upstream
     git checkout master
