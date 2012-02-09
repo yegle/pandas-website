@@ -2,7 +2,7 @@
 Python Data Analysis Library
 ****************************
 
-*pandas* is an open source, BSD-licensed library providing powerful,
+*pandas* is an open source, BSD-licensed library providing high-performance,
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
@@ -27,9 +27,10 @@ Here are just a few of the things that *pandas* does well:
 
 * High performance **merging and joining** data sets;
 
-* Flexible **reshaping** and pivoting of data sets: no more munging column names!;
+* Flexible **reshaping** and pivoting of data sets
 
-* **Hierarchical labeling** of axes: stack and unstack, possible to use multiple labels per tick;
+* **Hierarchical labeling** of axes: stack and unstack, possible to use
+    multiple labels per tick
 
 * Tools for reading and writing data to many different formats: CSV and text
   files, Microsoft Excel, databases, and the fast HDF5 format
@@ -54,8 +55,8 @@ performance, productivity, and the ability to collaborate.
 *pandas* does not implement significant statistical modeling outside of linear
 and panel regression; for this, look to the `statsmodels project
 <http://statsmodels.sf.net>`__. More work is still needed to make Python a
-first class statistical modeling environment, but we are well on our way in
-that direction.
+first class statistical modeling environment, but we are well on our way toward
+that goal.
 
 .. *pandas* is a part of the `PyData project <http://www.github.com/pydata>`__,
 .. an attempt to synthesize the best ideas from open source into one killer data
@@ -70,11 +71,10 @@ pleased to find this library adopts some of the best concepts of R, like the
 foundational DataFrame. But *pandas* also seeks to solve some frustrations
 common to R users.
 
-* R's data alignment and indexing functionality is not very well-developed,
-  leaving much work to the user. *pandas* makes it very easy to work with
-  irregularly indexed data, for example time series data. *pandas* also
-  provides rich tools like hierarchical indexing which are not to be found in
-  R.
+* R's data alignment and indexing functionality are very barebones, leaving
+  much work to the user. *pandas* makes working with messy, irregularly indexed
+  data, such as time series data, easy and intuitive. *pandas* also provides
+  rich tools like hierarchical indexing which are not to be found in R.
 
 * R is not well-suited for general purpose programming and system
   development. *pandas* enables you to do robust, large-scale data processing
@@ -141,12 +141,12 @@ Why add *pandas*?
 * Python and *pandas* are both open source, making them freely usable,
   modifiable, and distributable, even for commercial use.
 
-What about Java or C++?
-~~~~~~~~~~~~~~~~~~~~~~~
+What about Java, C++, and C#?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-While systems languages satisfy your need for performance, low-productivity
-and low-maintainability are deal-breakers for a research environment. Some of
-our users have found themselves able to replace Java systems with 20% as much
+While systems languages satisfy your need for performance, low-productivity and
+low-maintainability are deal-breakers for a research environment. Some of our
+users have found themselves able to replace Java systems with 20% as much
 Python code!
 
 Python + *pandas* is fast enough for most production use cases while still
@@ -155,7 +155,9 @@ providing all the advantages of an agile research environment.
 Who do our users have to say?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-	"*pandas* allows us to focus more on research and less on programming. We have found pandas easy to learn, easy to use, and easy to maintain. The bottom line is that it has increased our productivity."
+	"*pandas* allows us to focus more on research and less on programming. We
+	have found pandas easy to learn, easy to use, and easy to maintain. The
+	bottom line is that it has increased our productivity."
 
 	.. image:: /_static/aqr_capital_management_logo.png
 		:alt: AQR Capital Management Logo
