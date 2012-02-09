@@ -96,7 +96,14 @@ File Hierarchy
 Conventions
 -----------
 
-* `PEP8 <http://www.python.org/dev/peps/pep-0008/>`__
+* `PEP8 <http://www.python.org/dev/peps/pep-0008/>`__. We recommend using the
+  `flake8 <http://pypi.python.org/pypi/flake8>`__ tool for checking the style
+  of your code.
+
+.. note::
+
+   Note that pandas is not 100% PEP8 compliant but we're working on it. If you
+   could help us toward this goal, it would be very helpful.
 
 
 Working with the code
