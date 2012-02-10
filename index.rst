@@ -48,8 +48,8 @@ Library Highlights
 
 * High performance **merging and joining** of data sets;
 
-* **Hierarchical labeling** of axes allowing stack and unstack. Even use
-  multiple labels per tick;
+* **Hierarchical axis indexing** provides an intuitive way of working with
+  high-dimensional data in a lower-dimensional data structure;
 
 * **Time series**-functionality: date range generation and frequency
   conversion, moving window statistics, moving window linear regressions, date
@@ -116,7 +116,7 @@ Who do our users have to say?
 | `AQR Capital Management <http://www.aqr.com/>`__
 
 	"*pandas* allows us to focus more on research and less on programming. We
-	have found *pandas* easy to learn, easy to use, and easy to maintain. 
+	have found *pandas* easy to learn, easy to use, and easy to maintain.
 	The bottom line is that it has increased our productivity."
 
 	.. image:: /_static/appnexus_logo.png
@@ -129,7 +129,7 @@ Who do our users have to say?
 | `AppNexus <http://www.appnexus.com/>`__
 
 	"*pandas* is the perfect tool for bridging the gap between rapid
-	iterations of ad-hoc analysis and production quality code. If you 
+	iterations of ad-hoc analysis and production quality code. If you
 	want one tool to be used across a multi-disciplined organization of
 	engineers, mathematicians and analysts, look no further."
 
@@ -141,7 +141,7 @@ Who do our users have to say?
 | **Olivier Pomel**
 | CEO
 | `Datadog <http://www.datadoghq.com/>`__
-	
+
 	"We use *pandas* to process time series data on our production servers.
 	The simplicity and elegance of its API, and its high level
 	of performance for high-volume datasets, made it a perfect choice for
