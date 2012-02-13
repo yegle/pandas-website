@@ -103,8 +103,8 @@ Python code!
 Python + *pandas* is fast enough for most production use cases while still
 providing all the advantages of an agile research environment.
 
-Who do our users have to say?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+What do our users have to say?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 	.. image:: /_static/aqr_capital_management_logo.png
 		:alt: AQR Capital Management Logo
