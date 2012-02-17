@@ -27,6 +27,9 @@ toward that goal.
 Library Highlights
 ~~~~~~~~~~~~~~~~~~
 
+* A fast and efficient **DataFrame** object for data manipulation with
+  integrated indexing
+
 * Tools for **reading and writing data** between in-memory data structures and
   different formats: CSV and text files, Microsoft Excel, SQL databases, and
   the fast HDF5 format;
