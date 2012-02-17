@@ -88,9 +88,9 @@ users:
   maintainability, and you're still stuck developing the system components in
   a low-productivity language;
 
-* R's "copy-left" GPL license prevents use in most commercial software
-  development. Python and *pandas* use a permissive BSD license allowing use
-  in commercial software.
+* The "copyleft" GPL license of R can create concerns for commercial software
+  vendors who want to distribute R with their software under another license.
+  Python and *pandas* use the more permissive BSD license.
 
 What about Java, C++, and C#?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
