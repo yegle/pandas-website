@@ -28,7 +28,7 @@ Library Highlights
 ~~~~~~~~~~~~~~~~~~
 
 * A fast and efficient **DataFrame** object for data manipulation with
-  integrated indexing
+  integrated indexing;
 
 * Tools for **reading and writing data** between in-memory data structures and
   different formats: CSV and text files, Microsoft Excel, SQL databases, and
@@ -93,7 +93,7 @@ users:
 
 * The "copyleft" GPL license of R can create concerns for commercial software
   vendors who want to distribute R with their software under another license.
-  Python and *pandas* use the more permissive BSD license.
+  Python and *pandas* use more permissive licenses.
 
 What about Java, C++, and C#?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
