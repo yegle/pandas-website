@@ -2,12 +2,20 @@
 The *pandas* community
 **********************
 
-Please direct user and developer questions to the `mailing list
-<http://groups.google.com/group/pystatsmodels>`_. If you encounter any bugs, please report them using the `Issue
-Tracker
-<https://github.com/pydata/pandas/issues?labels=Bug&sort=created&direction=desc&state=open&page=1>`__.
+Have a question about *pandas*? Your first stop should be `Stack Overflow
+<http://stackoverflow.com/questions/ask>`__. Search for an existing answer to
+your question, or post a new one (and make sure you include the "*pandas*"
+tag).
 
-To learn more about how to contribute to the ongoing development of *pandas*, please check out our `developer page <developers.html>`__.
+Next, you should visit the `issue tracker
+<https://github.com/pydata/pandas/issues>`__, where all bugs and enhancements
+are logged and discussed. Search for relevant existing issues to comment on,
+or submit your own.
+
+To learn more about how to contribute to the ongoing development of *pandas*,
+please check out our `developer page <developers.html>`_. For deeper
+development discussions related to the direction of the project, you can join
+the developer `mailing list <http://groups.google.com/group/pystatsmodels>`__.
 
 History of Development
 ~~~~~~~~~~~~~~~~~~~~~~
