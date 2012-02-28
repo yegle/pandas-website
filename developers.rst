@@ -2,9 +2,11 @@
 Developers
 **********
 
-So you want to contribute to *pandas* by offering a patch? Excellent! This is the page you need to read. Our development conversations take
-place on the `mailing list
-<http://groups.google.com/group/pystatsmodels>`__.
+So you want to contribute to *pandas* by offering a patch? Excellent! This is
+the page you need to read. After you read the below guidelines, the first
+place to contribute issues & ideas to *pandas* is the `Github Issue Tracker
+<https://github.com/pydata/pandas/issues>`__. Some longer discussions occur on
+the `developer mailing list <http://groups.google.com/group/pystatsmodels>`__.
 
 Contributing to the documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
