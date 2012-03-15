@@ -2,9 +2,11 @@
 Google Summer of Code 2012
 **************************
 
-The `Google Summer of Code <http://www.google-melange.com/gsoc/homepage/google/gsoc2012>`__ is a program that offers students stipends to write code for open source projects. Below are some suggested projects for students interested in contributing to the *pandas* project for the summer of 2012. Students are also encouraged to propose their own projects of interest!
+The `Google Summer of Code <http://www.google-melange.com/gsoc/homepage/google/gsoc2012>`__ is a program that offers students stipends to write code for open source projects.
 
-These projects will enable students to hone their abilities in Python, Cython, and C, while becoming familiar with an essential tool for Data Science used in multiple industries.
+Below are some suggested projects for students interested in contributing to the *pandas* project for the summer of 2012. Students are also encouraged to propose their own projects of interest! To get involved, students should review the `developer page <developers.html>`_ and email the `developer mailing list <http://groups.google.com/group/pystatsmodels>`__ to contact a mentor.
+
+These projects will enable students to hone their abilities in Python, Cython, and C, while becoming familiar with an essential tool for Data Science used in multiple industries. 
 
 Thanks to Arc Riley and the `Python Software Foundation <http://www.python.org/psf/>`__ for coordinating this effort.
 
