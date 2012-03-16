@@ -15,9 +15,7 @@ About Lambda Foundry
 	:scale: 65%
 	:target: http://www.lambdafoundry.com
 
-Co-founded in 2012 by Wes McKinney, the primary author of *pandas*, Lambda
-Foundry is an NYC-based software company supporting *pandas*'s ongoing
-development. Lambda Foundry offers commercial support, training, and
-consulting. They also develop domain-specific software for quantitative
-finance. `See their website <http://www.lambdafoundry.com>`_ for more
-information.
+Founded by the main authors of *pandas*, `Lambda Foundry
+<http://www.lambdafoundry.com>`__ supports the ongoing development of *pandas*
+while offering commercial support, training, and consulting. They also develop
+domain-specific software for quantitative finance.
