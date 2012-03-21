@@ -6,7 +6,8 @@ So you want to contribute to *pandas* by offering a patch? Excellent! This is
 the page you need to read. After you read the below guidelines, the first
 place to contribute issues & ideas to *pandas* is the `Github Issue Tracker
 <https://github.com/pydata/pandas/issues>`__. Some longer discussions occur on
-the `developer mailing list <http://groups.google.com/group/pystatsmodels>`__.
+the #pydata channel on irc.freenode.net and on the `developer mailing list
+<http://groups.google.com/group/pydata>`__.
 
 Contributing to the documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

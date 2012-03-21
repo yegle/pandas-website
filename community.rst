@@ -5,7 +5,8 @@ The *pandas* community
 Have a question about *pandas*? Your first stop should be `Stack Overflow
 <http://stackoverflow.com/questions/ask>`__. Search for an existing answer to
 your question, or post a new one (and make sure you include the "*pandas*"
-tag).
+tag). You can also chat with other users on the #pydata channel on
+irc.freenode.net.
 
 Next, you should visit the `issue tracker
 <https://github.com/pydata/pandas/issues>`__, where all bugs and enhancements
@@ -15,7 +16,7 @@ or submit your own.
 To learn more about how to contribute to the ongoing development of *pandas*,
 please check out our `developer page <developers.html>`_. For deeper
 development discussions related to the direction of the project, you can join
-the developer `mailing list <http://groups.google.com/group/pystatsmodels>`__.
+the developer `mailing list <http://groups.google.com/group/pydata>`__.
 
 History of Development
 ~~~~~~~~~~~~~~~~~~~~~~
