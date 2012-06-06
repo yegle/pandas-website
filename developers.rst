@@ -25,8 +25,9 @@ by experts. If something in the docs doesn't make sense to you, updating the
 relevant section after you figure it out is a simple way to ensure it will
 help the next person.
 
-Once you follow the below steps to set up your environment, you can navigate
-to your local pandas/docs directory and run
+Once you have followed the steps below to download the source code from github
+and set up your environment, make sure you have built the C extensions in place,
+then navigate to your local pandas/docs directory and run
 
 ::
 
