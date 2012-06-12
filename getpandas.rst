@@ -7,7 +7,7 @@ Please refer to the documentation for `dependencies
 <pandas-docs/stable/install.html>`_
 
 0.8.0b2 (June 12, 2012)
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
 * `pandas-0.8.0b2.tar.gz <http://pandas.pydata.org/pandas-build/pandas-0.8.0b2.tar.gz>`__
 * `pandas-0.8.0b2.win-amd64-py2.6.exe <http://pandas.pydata.org/pandas-build/pandas-0.8.0b2.win-amd64-py2.6.exe>`__
