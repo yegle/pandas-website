@@ -6,8 +6,8 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.8.0b2 Released (June 11, 2012)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0.8.0b2 Released (June 12, 2012)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The second beta for pandas version 0.8.0 has now been released. You can
 download it by clicking on `get pandas <getpandas.html>`_. We are very
 excited about version 0.8 as it represents a big leap in timeseries data
@@ -19,9 +19,9 @@ please refer to the development
 
 Along with the new beta release, we are also posting hourly stable builds of
 the pandas windows binaries
-`here <http://pandas.pydata.org/pandas-build/dev/>`_. You can also go there by
-clicking on `get pandas <getpandas.html#development-version>`_ and going to the
-"Development Version" section.
+`here <http://pandas.pydata.org/pandas-build/dev/>`_. You can download them via
+the `Development Version <getpandas.html#development-version>`_ section of the
+"get pandas" page.
 
 What problem does *pandas* solve?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
