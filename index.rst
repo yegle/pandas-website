@@ -6,22 +6,24 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.8.0b2 Released (June 12, 2012)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The second beta for pandas version 0.8.0 has now been released. You can
-download it by clicking on `get pandas <getpandas.html>`_. We are very
-excited about version 0.8 as it represents a big leap in timeseries data
-analysis in pandas. We encourage you to explore the rich set of new
-functionality and submit comments, suggestions, and bug reports to our
-`github <https://github.com/pydata/pandas>`_ repository. For documentation,
-please refer to the development
-`docs <http://pandas.pydata.org/pandas-docs/dev/>`_.
+0.8.0 Released (June 29, 2012)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Along with the new beta release, we are also posting hourly stable builds of
-the pandas windows binaries
-`here <http://pandas.pydata.org/pandas-build/dev/>`_. You can download them via
-the `Development Version <getpandas.html#development-version>`_ section of the
-"get pandas" page.
+pandas version 0.8.0 final has now been released. You can download it by
+clicking on `get pandas <getpandas.html>`_. We are very excited about version
+0.8 as it represents a big leap in timeseries data analysis in pandas. We
+encourage you to explore the rich set of new functionality and submit comments,
+suggestions, and bug reports to our `github <https://github.com/pydata/pandas>`_ repository. For documentation, please
+refer to the `stable docs <http://pandas.pydata.org/pandas-docs/stable/>`_.
+
+For what's new, see the `what's new page
+<http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_.
+
+Along with the new release, we are also posting stable daily development builds
+of the pandas windows binaries `here
+<http://pandas.pydata.org/pandas-build/dev/>`_. You can download them via the
+`Development Version <getpandas.html#development-version>`_ section of the "get
+pandas" page.
 
 What problem does *pandas* solve?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
