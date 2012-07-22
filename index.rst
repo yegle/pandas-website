@@ -6,24 +6,26 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.8.0 Released (June 29, 2012)
+0.8.1 Released (July 22, 2012)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-pandas version 0.8.0 final has now been released. You can download it by
-clicking on `get pandas <getpandas.html>`_. We are very excited about version
-0.8 as it represents a big leap in timeseries data analysis in pandas. We
-encourage you to explore the rich set of new functionality and submit comments,
-suggestions, and bug reports to our `github <https://github.com/pydata/pandas>`_ repository. For documentation, please
+pandas version 0.8.1 final has now been released. You can download it by
+clicking on `get pandas <getpandas.html>`_. It is primarily a bug-fix release
+from 0.8.0, but includes several new features and performance
+enhancements. Version 0.8.0 represented a big leap in time series data analysis
+in pandas. We encourage you to explore the rich set of new functionality and
+submit comments, suggestions, and bug reports to our `github
+<https://github.com/pydata/pandas>`_ repository. For documentation, please
 refer to the `stable docs <http://pandas.pydata.org/pandas-docs/stable/>`_.
 
 For what's new, see the `what's new page
 <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_.
 
-Along with the new release, we are also posting stable daily development builds
-of the pandas windows binaries `here
-<http://pandas.pydata.org/pandas-build/dev/>`_. You can download them via the
-`Development Version <getpandas.html#development-version>`_ section of the "get
-pandas" page.
+.. Along with the new release, we are also posting stable daily development builds
+.. of the pandas windows binaries `here
+.. <http://pandas.pydata.org/pandas-build/dev/>`_. You can download them via the
+.. `Development Version <getpandas.html#development-version>`_ section of the "get
+.. pandas" page.
 
 What problem does *pandas* solve?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
