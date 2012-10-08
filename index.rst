@@ -6,17 +6,19 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.8.1 Released (July 22, 2012)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0.9.0 Released (October 7, 2012)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-pandas version 0.8.1 final has now been released. You can download it by
-clicking on `get pandas <getpandas.html>`_. It is primarily a bug-fix release
-from 0.8.0, but includes several new features and performance
-enhancements. Version 0.8.0 represented a big leap in time series data analysis
-in pandas. We encourage you to explore the rich set of new functionality and
-submit comments, suggestions, and bug reports to our `github
-<https://github.com/pydata/pandas>`_ repository. For documentation, please
-refer to the `stable docs <http://pandas.pydata.org/pandas-docs/stable/>`_.
+pandas version 0.9.0 has now been released. You can download it by clicking on
+`get pandas <getpandas.html>`_. It is a major release with several new features
+and performance enhancements, though the primary focus of development has been
+on bug fixes, testing, and stability from the 0.8.x series. There are a few
+small, but necessary API changes that will be important for heavy users to take
+note of (see the What's New page). For documentation, please refer to the
+`stable docs <http://pandas.pydata.org/pandas-docs/stable/>`_.
+
+Version 0.10 will follow within a month or so with a `new file parser engine
+<http://wesmckinney.com/blog/?p=543>`_ and a number of other enhancements.
 
 For what's new, see the `what's new page
 <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_.

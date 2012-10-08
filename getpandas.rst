@@ -25,4 +25,3 @@ the latest builds `here <http://pandas.pydata.org/pandas-build/dev/>`_.
 Development is source controlled using git. Here's a handy guide to `getting started <http://help.github.com/set-up-git-redirect>`__. If you're interested in contributing to development, please visit our `developer page <developers.html>`__.
 
 	* https://github.com/pydata/pandas
-sc
