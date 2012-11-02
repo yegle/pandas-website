@@ -64,10 +64,10 @@ Step-by-step overview
 #. Make sure your patch includes test coverage and performance benchmarks!
 #. Commit your changes and submit a pull request (`Instructions <http://help.github.com/send-pull-requests/>`__).
 
-Roadmap to 1.0
-~~~~~~~~~~~~~~
+Development Roadmap
+~~~~~~~~~~~~~~~~~~~
 
-* ``numpy.datetime64`` integration, ``scikits.timeseries`` codebase
+* DONE ``numpy.datetime64`` integration, ``scikits.timeseries`` codebase
   integration. Substantially improved time series functionality.
 * Improved PyTables (HDF5) integration
 * Tools for working with data sets that do not fit into memory
@@ -77,9 +77,9 @@ Roadmap to 1.0
 * ``NDFrame`` data structure for arbitrarily high-dimensional labeled data
 * Extend GroupBy functionality to regular ndarrays, record arrays
 * Better support for NumPy dtype hierarchy without sacrificing usability
-* Add a Factor data type (in R parlance)
+* DONE Add a Factor data type (in R parlance)
 * Better support for integer ``NA`` values
-* Better memory usage and performance when reading very large CSV files
+* (0.10) Better memory usage and performance when reading very large CSV files
 
 Code design and organization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
