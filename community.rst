@@ -3,7 +3,7 @@ The *pandas* community
 **********************
 
 Have a question about *pandas*? Your first stop should be `Stack Overflow
-<http://stackoverflow.com/questions/ask>`__. Search for an existing answer to
+<http://stackoverflow.com/questions/tagged/pandas>`__. Search for an existing answer to
 your question, or post a new one (and make sure you include the "*pandas*"
 tag). You can also chat with other users on the #pydata channel on
 irc.freenode.net.
