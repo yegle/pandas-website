@@ -6,28 +6,26 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.9.0 Released (October 7, 2012)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0.9.1 Released (November 14, 2012)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-pandas version 0.9.0 has now been released. You can download it by clicking on
-`get pandas <getpandas.html>`_. It is a major release with several new features
-and performance enhancements, though the primary focus of development has been
-on bug fixes, testing, and stability from the 0.8.x series. There are a few
-small, but necessary API changes that will be important for heavy users to take
-note of (see the What's New page). For documentation, please refer to the
-`stable docs <http://pandas.pydata.org/pandas-docs/stable/>`_.
-
-Version 0.10 will follow within a month or so with a `new file parser engine
-<http://wesmckinney.com/blog/?p=543>`_ and a number of other enhancements.
+pandas version 0.9.1 has now been released. You can download it by clicking on
+`get pandas <getpandas.html>`_. This includes many bug fixes from 0.9.0 and a
+handful of new features. There are a few minor, but necessary API changes
+related to Period data types for time series; please see the documentation.
 
 For what's new, see the `what's new page
 <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_.
 
-.. Along with the new release, we are also posting stable daily development builds
-.. of the pandas windows binaries `here
-.. <http://pandas.pydata.org/pandas-build/dev/>`_. You can download them via the
-.. `Development Version <getpandas.html#development-version>`_ section of the "get
-.. pandas" page.
+Version 0.9.2 will follow within the next month with a `new file parser engine
+<http://wesmckinney.com/blog/?p=543>`_ plus bug fixes. Work on 0.10 with
+improved unicode support. dtype handling, and other infrastructural
+improvements will proceed from there.
+
+Note we are posting stable daily development builds of the pandas windows
+binaries `here <http://pandas.pydata.org/pandas-build/dev/>`_. You can download
+them via the `Development Version <getpandas.html#development-version>`_
+section of the "get pandas" page.
 
 What problem does *pandas* solve?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
