@@ -6,21 +6,18 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.9.1 Released (November 14, 2012)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0.10.0 beta 1 (December 11, 2012)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-pandas version 0.9.1 has now been released. You can download it by clicking on
-`get pandas <getpandas.html>`_. This includes many bug fixes from 0.9.0 and a
-handful of new features. There are a few minor, but necessary API changes
-related to Period data types for time series; please see the documentation.
+The first beta of pandas version 0.10.0 has now been released. This major
+release includes the new high performance file parser engine, lots of new
+features, performance improvements, and bug fixes. There are also a number of
+necessary API changes; if you're a heavy pandas user, definitely look carefully
+at the `What's New page
+<http://pandas.pydata.org/pandas-docs/dev/whatsnew.html>`_.
 
-For what's new, see the `what's new page
-<http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_.
-
-Version 0.9.2 will follow within the next month with a `new file parser engine
-<http://wesmckinney.com/blog/?p=543>`_ plus bug fixes. Work on 0.10 with
-improved unicode support. dtype handling, and other infrastructural
-improvements will proceed from there.
+Find binaries and source archives for v0.10.0b1 `here
+<http://pandas.pydata.org/pandas-build/dev/>`_
 
 Note we are posting stable daily development builds of the pandas windows
 binaries `here <http://pandas.pydata.org/pandas-build/dev/>`_. You can download
