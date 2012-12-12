@@ -10,10 +10,10 @@ easy-to-use data structures and data analysis tools for the `Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The first beta of pandas version 0.10.0 has now been released. This major
-release includes the new high performance file parser engine, lots of new
-features, performance improvements, and bug fixes. There are also a number of
-necessary API changes; if you're a heavy pandas user, definitely look carefully
-at the `What's New page
+release includes the new high performance file parser engine, much expanded
+HDF5 support, lots of new features, performance improvements, and bug
+fixes. There are also a number of necessary API changes; if you're a heavy
+pandas user, definitely look carefully at the `What's New page
 <http://pandas.pydata.org/pandas-docs/dev/whatsnew.html>`_.
 
 Find binaries and source archives for v0.10.0b1 `here
