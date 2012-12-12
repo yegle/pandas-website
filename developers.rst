@@ -280,11 +280,11 @@ the expected correct result:
 
         assert_frame_equal(pivoted, expected)
 
-Performance performance with vbench
+Performance testing with vbench
 -----------------------------------
 
 We created the `vbench library <https://github.com/pydata/vbench>`__ library
-to enable easily monitoring the performance of critical pandas operations.
+to enable easy monitoring of the performance of critical pandas operations.
 These benchmarks are all found in the ``pandas/vb_suite`` directory.
 Interested users should simply look at the code there for the latest vbench
 API as ``vbench`` is still somewhat experimental and subject to change.
@@ -298,7 +298,7 @@ First, double check your code
 When you're ready to ask for a code review, you will file a pull request. Before you do, again make sure you've followed all the guidelines outlined in this document. You should also double check your branch changes against the branch it was based off of:
 
 #. Navigate to your repository on Github.
-#. Click on `Branch List`.
+#. Click on `Branches`.
 #. Click on the `Compare` button for your feature branch.
 #. Select the `base` and `compare` branches, if necessary. This will be `master` and `shiny-new-feature`, respectively.
 
