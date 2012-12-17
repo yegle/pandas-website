@@ -16,7 +16,7 @@ also a number of necessary API changes; if you're a heavy pandas user,
 definitely look carefully at the `What's New page
 <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_.
 
-Find binaries and source archives for v0.10.0 are `available now <getpandas>`_
+Find binaries and source archives for v0.10.0 are `available now <getpandas.html>`_
 
 Note we are posting stable daily development builds of the pandas windows
 binaries `here <http://pandas.pydata.org/pandas-build/dev/>`_. You can download
