@@ -6,17 +6,19 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.10.0 released (December 17, 2012)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0.10.1 released (January 22, 2013)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A new major release of pandas is out. It includes the new high performance file
-parser engine, much expanded HDF5 support, Google Analytics integration and
-many other new features, performance improvements, and bug fixes. There are
-also a number of necessary API changes; if you're a heavy pandas user,
-definitely look carefully at the `What's New page
+The first minor release in the 0.10.x series is out, including numerous bug
+fixes (e.g. some regressions introduced in 0.10.0), improvements to
+HDF5/PyTables integration, and various performance enhancements. Recall that
+Version 0.10.0 brought the new high performance file parser engine, and users
+who work with large text files should prioritize upgrading. There are also a
+number of necessary API changes; if you're a long-time pandas user, definitely
+look carefully at the `What's New page
 <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_.
 
-Find binaries and source archives for v0.10.0 are `available now <getpandas.html>`_
+Find binaries and source archives for v0.10.1 are `available now <getpandas.html>`_
 
 Note we are posting stable daily development builds of the pandas windows
 binaries `here <http://pandas.pydata.org/pandas-build/dev/>`_. You can download
