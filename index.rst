@@ -25,6 +25,17 @@ binaries `here <http://pandas.pydata.org/pandas-build/dev/>`_. You can download
 them via the `Development Version <getpandas.html#development-version>`_
 section of the "get pandas" page.
 
+Quick vignette
+~~~~~~~~~~~~~~
+
+.. raw:: html
+
+    <iframe src="http://player.vimeo.com/video/59324550" width="500"
+    height="309" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+    allowFullScreen></iframe> <p><a href="http://vimeo.com/59324550">10-minute
+    tour of pandas</a> from <a href="http://vimeo.com/user10077863">Wes
+    McKinney</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
 What problem does *pandas* solve?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
