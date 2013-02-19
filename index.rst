@@ -54,6 +54,59 @@ and panel regression; for this, look to the `statsmodels project
 first class statistical modeling environment, but we are well on our way
 toward that goal.
 
+What do our users have to say?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	.. image:: /_static/aqr_capital_management_logo.png
+		:alt: AQR Capital Management Logo
+		:align: right
+		:target: http://www.aqr.com/
+
+| **Roni Israelov, PhD**
+| Portfolio Manager
+| `AQR Capital Management <http://www.aqr.com/>`__
+
+	"*pandas* allows us to focus more on research and less on programming. We
+	have found *pandas* easy to learn, easy to use, and easy to maintain.
+	The bottom line is that it has increased our productivity."
+
+	.. image:: /_static/appnexus_logo.png
+		:alt: AppNexus Logo
+		:align: right
+		:target: http://www.appnexus.com/
+
+| **David Himrod**
+| Director of Optimization & Analytics
+| `AppNexus <http://www.appnexus.com/>`__
+
+	"*pandas* is the perfect tool for bridging the gap between rapid
+	iterations of ad-hoc analysis and production quality code. If you
+	want one tool to be used across a multi-disciplined organization of
+	engineers, mathematicians and analysts, look no further."
+
+	.. image:: /_static/datadog_logo.png
+		:alt: Datadog Logo
+		:align: right
+		:target: http://www.datadoghq.com/
+
+| **Olivier Pomel**
+| CEO
+| `Datadog <http://www.datadoghq.com/>`__
+
+	"We use *pandas* to process time series data on our production servers.
+	The simplicity and elegance of its API, and its high level
+	of performance for high-volume datasets, made it a perfect choice for
+	us."
+
+.. toctree::
+	:hidden:
+
+	getpandas
+	community
+	talks
+	commercialsupport
+	developers
+
 Library Highlights
 ~~~~~~~~~~~~~~~~~~
 
@@ -125,66 +178,13 @@ users:
   vendors who want to distribute R with their software under another license.
   Python and *pandas* use more permissive licenses.
 
-What about Java, C++, and C#?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. What about Java, C++, and C#?
+.. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-While systems languages satisfy your need for performance, low-productivity
-and low-maintainability are deal-breakers for a research environment. Some of
-our users have found themselves able to replace Java systems with 20% as much
-Python code!
+.. While systems languages satisfy your need for performance, low-productivity
+.. and low-maintainability are deal-breakers for a research environment. Some of
+.. our users have found themselves able to replace Java systems with 20% as much
+.. Python code!
 
-Python + *pandas* is fast enough for most production use cases while still
-providing all the advantages of an agile research environment.
-
-What do our users have to say?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-	.. image:: /_static/aqr_capital_management_logo.png
-		:alt: AQR Capital Management Logo
-		:align: right
-		:target: http://www.aqr.com/
-
-| **Roni Israelov, PhD**
-| Portfolio Manager
-| `AQR Capital Management <http://www.aqr.com/>`__
-
-	"*pandas* allows us to focus more on research and less on programming. We
-	have found *pandas* easy to learn, easy to use, and easy to maintain.
-	The bottom line is that it has increased our productivity."
-
-	.. image:: /_static/appnexus_logo.png
-		:alt: AppNexus Logo
-		:align: right
-		:target: http://www.appnexus.com/
-
-| **David Himrod**
-| Director of Optimization & Analytics
-| `AppNexus <http://www.appnexus.com/>`__
-
-	"*pandas* is the perfect tool for bridging the gap between rapid
-	iterations of ad-hoc analysis and production quality code. If you
-	want one tool to be used across a multi-disciplined organization of
-	engineers, mathematicians and analysts, look no further."
-
-	.. image:: /_static/datadog_logo.png
-		:alt: Datadog Logo
-		:align: right
-		:target: http://www.datadoghq.com/
-
-| **Olivier Pomel**
-| CEO
-| `Datadog <http://www.datadoghq.com/>`__
-
-	"We use *pandas* to process time series data on our production servers.
-	The simplicity and elegance of its API, and its high level
-	of performance for high-volume datasets, made it a perfect choice for
-	us."
-
-.. toctree::
-	:hidden:
-
-	getpandas
-	community
-	talks
-	commercialsupport
-	developers
+.. Python + *pandas* is fast enough for most production use cases while still
+.. providing all the advantages of an agile research environment.
