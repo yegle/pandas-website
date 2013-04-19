@@ -8,8 +8,9 @@ place to contribute issues & ideas to *pandas* is the `Github Issue Tracker
 <https://github.com/pydata/pandas/issues>`__. You can filter using the
 `"Community" <https://github.com/pydata/pandas/issues?labels=Community&state=open>`__ label to see issues we believe are easy entry points for community
 contribution. Some longer discussions occur on the #pydata channel on
-irc.freenode.net and on the `developer mailing list
-<http://groups.google.com/group/pydata>`__.
+irc.freenode.net, on the `user <http://groups.google.com/group/pydata>`__ or
+`developer <http://mail.python.org/mailman/listinfo/pandas-dev>`__ 
+mailing list.
 
 Contributing to the documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
