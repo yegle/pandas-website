@@ -7,7 +7,7 @@
  * :copyright: Copyright 2007-2010 by the Sphinx team, see AUTHORS.
  * :copyright: Some modifications copyright 2012 by the IPython team.
  * :copyright: Some modifications copyright 2012 by Lambda Foundry, Inc.
- * 
+ *
  * :license: BSD, see LICENSE for details.
  *
  */
@@ -262,7 +262,7 @@ div.document ol {
 /* Sidebar */
 
 div.sphinxsidebar {
-  width: 14em;
+  width: 15em;
   padding: 0 1em;
   float: right;
   font-size: .93em;
