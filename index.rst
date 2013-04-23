@@ -6,19 +6,28 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.10.1 released (January 22, 2013)
+0.11.0 released (April 22, 2013)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The first minor release in the 0.10.x series is out, including numerous bug
-fixes (e.g. some regressions introduced in 0.10.0), improvements to
-HDF5/PyTables integration, and various performance enhancements. Recall that
-Version 0.10.0 brought the new high performance file parser engine, and users
-who work with large text files should prioritize upgrading. There are also a
-number of necessary API changes; if you're a long-time pandas user, definitely
-look carefully at the `What's New page
-<http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_.
+The new major 0.11 release is out. This includes the usual slate of bug fixes,
+and many new important features. Some highlights among new features include:
 
-Find binaries and source archives for v0.10.1 are `available now <getpandas.html>`_
+  - New precision indexing fields `loc`, `iloc`, `at`, and `iat`, to reduce
+    occasional ambiguity in the catch-all hitherto `ix` method.
+  - Expanded support for NumPy data types in DataFrame
+  - `NumExpr <https://code.google.com/p/numexpr/>`__ integration to accelerate
+    various operator evaluation
+  - New `Cookbook
+    <http://pandas.pydata.org/pandas-docs/stable/cookbook.html>`__ and `10
+    minutes to pandas
+    <http://pandas.pydata.org/pandas-docs/stable/10min.html>`_ pages in
+    the documentation by Jeff Reback
+  - Improved DataFrame to CSV exporting performance
+
+Please check out the `What's New page
+<http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_ for much more detail.
+
+Find binaries and source archives for v0.11.0 are `available now <getpandas.html>`_
 
 Note we are posting stable daily development builds of the pandas windows
 binaries `here <http://pandas.pydata.org/pandas-build/dev/>`_. You can download
