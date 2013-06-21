@@ -229,7 +229,7 @@ extensions in `numpy.testing
 Running the test suite
 ----------------------
 
-The best way to develop *pandas* is to bulid the C extensions in-place by
+The best way to develop *pandas* is to build the C extensions in-place by
 running:
 
 ::
