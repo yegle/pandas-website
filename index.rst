@@ -6,28 +6,23 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.11.0 released (April 22, 2013)
+0.12.0 released (July 24, 2013)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The new major 0.11 release is out. This includes the usual slate of bug fixes,
-and many new important features. Some highlights among new features include:
+The new major 0.12 release is out. This includes the usual large slate of bug
+fixes and performance improvements, and many new important features. Some
+highlights among new features include:
 
-  - New precision indexing fields `loc`, `iloc`, `at`, and `iat`, to reduce
-    occasional ambiguity in the catch-all hitherto `ix` method.
-  - Expanded support for NumPy data types in DataFrame
-  - `NumExpr <https://code.google.com/p/numexpr/>`__ integration to accelerate
-    various operator evaluation
-  - New `Cookbook
-    <http://pandas.pydata.org/pandas-docs/stable/cookbook.html>`__ and `10
-    minutes to pandas
-    <http://pandas.pydata.org/pandas-docs/stable/10min.html>`_ pages in
-    the documentation by Jeff Reback
-  - Improved DataFrame to CSV exporting performance
+  - Integrated JSON reading and writing with the `read_json` functions and
+    methods like `DataFrame.to_json`.
+  - New HTML table reading function `read_html` which will use either lxml or
+    BeautifulSoup under the hood.
+  - Support for reading and writing STATA format files.
 
 Please check out the `What's New page
 <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_ for much more detail.
 
-Find binaries and source archives for v0.11.0 are `available now <getpandas.html>`_
+Find binaries and source archives for v0.12.0 are `available now <getpandas.html>`_
 
 Note we are posting stable daily development builds of the pandas windows
 binaries `here <http://pandas.pydata.org/pandas-build/dev/>`_. You can download
@@ -57,11 +52,12 @@ Combined with the excellent `IPython <http://ipython.org/>`__ toolkit and
 other libraries, the environment for doing data analysis in Python excels in
 performance, productivity, and the ability to collaborate.
 
-*pandas* does not implement significant statistical modeling outside of linear
-and panel regression; for this, look to the `statsmodels project
-<http://statsmodels.sf.net>`__. More work is still needed to make Python a
-first class statistical modeling environment, but we are well on our way
-toward that goal.
+*pandas* does not implement significant modeling functionality outside of
+linear and panel regression; for this, look to `statsmodels
+<http://statsmodels.sf.net>`__ and `scikit-learn
+<http://scikit-learn.org>`__. More work is still needed to make Python a first
+class statistical modeling environment, but we are well on our way toward that
+goal.
 
 What do our users have to say?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -151,49 +147,9 @@ Library Highlights
   shifting and lagging. Even create domain-specific time offsets and join time
   series without losing data;
 
-* The library has been ruthlessly **optimized for performance**, with critical
-  code paths compiled to C;
+* Highly **optimized for performance**, with critical code paths written in
+  `Cython <http://www.cython.org/>`__ or C.
 
 * Python with *pandas* is in use in a wide variety of **academic and
   commercial** domains, including Finance, Neuroscience, Economics,
   Statistics, Advertising, Web Analytics, and more.
-
-Why not R?
-~~~~~~~~~~
-
-First of all, we love open source R! It is the most widely-used open source
-environment for statistical modeling and graphics, and it provided some early
-inspiration for *pandas* features. R users will be pleased to find this
-library adopts some of the best concepts of R, like the foundational
-DataFrame (one user familiar with R has described *pandas* as "R data.frame on
-steroids"). But *pandas* also seeks to solve some frustrations common to R
-users:
-
-* R has barebones data alignment and indexing functionality, leaving much work
-  to the user. *pandas* makes it easy and intuitive to work with messy,
-  irregularly indexed data, like time series data. *pandas* also provides rich
-  tools, like hierarchical indexing, not found in R;
-
-* R is not well-suited to general purpose programming and system
-  development. *pandas* enables you to do large-scale data processing
-  seamlessly when developing your production applications;
-
-* Hybrid systems connecting R to a low-productivity systems language like
-  Java, C++, or C# suffer from significantly reduced agility and
-  maintainability, and you're still stuck developing the system components in
-  a low-productivity language;
-
-* The "copyleft" GPL license of R can create concerns for commercial software
-  vendors who want to distribute R with their software under another license.
-  Python and *pandas* use more permissive licenses.
-
-.. What about Java, C++, and C#?
-.. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. While systems languages satisfy your need for performance, low-productivity
-.. and low-maintainability are deal-breakers for a research environment. Some of
-.. our users have found themselves able to replace Java systems with 20% as much
-.. Python code!
-
-.. Python + *pandas* is fast enough for most production use cases while still
-.. providing all the advantages of an agile research environment.
