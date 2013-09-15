@@ -63,6 +63,7 @@ Step-by-step overview
 #. Fork the `pandas repository <http://www.github.com./pydata/pandas>`__ (`Instructions <http://help.github.com/fork-a-repo/>`__).
 #. Create a new working branch for your changes.
 #. Make sure your patch includes test coverage and performance benchmarks!
+#. `Hook up Travis-CI <http://about.travis-ci.org/docs/user/getting-started/>`__
 #. Commit your changes and submit a pull request (`Instructions <http://help.github.com/send-pull-requests/>`__).
 
 Development Roadmap
