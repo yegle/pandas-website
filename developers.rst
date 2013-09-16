@@ -69,19 +69,19 @@ Step-by-step overview
 Development Roadmap
 ~~~~~~~~~~~~~~~~~~~
 
-* DONE ``numpy.datetime64`` integration, ``scikits.timeseries`` codebase
-  integration. Substantially improved time series functionality.
-* Improved PyTables (HDF5) integration
+* (0.13) Improved SQL / relational database tools
 * Tools for working with data sets that do not fit into memory
-* Improved SQL / relational database tools
+* (0.10) Better memory usage and performance when reading very large CSV files
 * Better statistical graphics using matplotlib
 * `Integration with D3.js <https://github.com/mikedewar/D3py>`__
-* ``NDFrame`` data structure for arbitrarily high-dimensional labeled data
-* Extend GroupBy functionality to regular ndarrays, record arrays
-* Better support for NumPy dtype hierarchy without sacrificing usability
-* DONE Add a Factor data type (in R parlance)
 * Better support for integer ``NA`` values
-* (0.10) Better memory usage and performance when reading very large CSV files
+* Extend GroupBy functionality to regular ndarrays, record arrays
+* ✔ ``numpy.datetime64`` integration, ``scikits.timeseries`` codebase
+  integration. Substantially improved time series functionality.
+* ✔ Improved PyTables (HDF5) integration
+* ✔ ``NDFrame`` data structure for arbitrarily high-dimensional labeled data
+* ✔ Better support for NumPy dtype hierarchy without sacrificing usability
+* ✔ Add a Factor data type (in R parlance)
 
 Code design and organization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
