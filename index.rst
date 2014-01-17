@@ -6,28 +6,16 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.12.0 released (July 24, 2013)
+0.13.0 released (January 15, 2014)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The new major 0.12 release is out. This includes the usual large slate of bug
-fixes and performance improvements, and many new important features. Some
-highlights among new features include:
+fixes and performance improvements, and many new important (and some
+experimental) features. See the `Release Notes
+<http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_ to read
+all about it.
 
-  - Integrated JSON reading and writing with the `read_json` functions and
-    methods like `DataFrame.to_json`.
-  - New HTML table reading function `read_html` which will use either lxml or
-    BeautifulSoup under the hood.
-  - Support for reading and writing STATA format files.
-
-Please check out the `What's New page
-<http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_ for much more detail.
-
-Find binaries and source archives for v0.12.0 are `available now <getpandas.html>`_
-
-Note we are posting stable daily development builds of the pandas windows
-binaries `here <http://pandas.pydata.org/pandas-build/dev/>`_. You can download
-them via the `Development Version <getpandas.html#development-version>`_
-section of the "get pandas" page.
+Find binaries and source archives for v0.13.0 are `available now <getpandas.html>`_
 
 Quick vignette
 ~~~~~~~~~~~~~~
@@ -109,7 +97,6 @@ What do our users have to say?
 	getpandas
 	community
 	talks
-	commercialsupport
 	developers
 
 Library Highlights
