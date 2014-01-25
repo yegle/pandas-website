@@ -12,6 +12,9 @@ irc.freenode.net, on the `user <http://groups.google.com/group/pydata>`__ or
 `developer <http://mail.python.org/mailman/listinfo/pandas-dev>`__ 
 mailing list.
 
+.. contents:: Table of contents:
+   :local:
+
 Contributing to the documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
