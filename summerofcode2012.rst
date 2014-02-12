@@ -41,16 +41,16 @@ Extending dtype support in pandas
 Description
 -----------
 
-In the pandas data analysis library for Python, all data elements are stored as one of four basic data types: 64-bit integer, 64-bit floating point, 8-bit boolean, and python object pointer. Support for additional numpy dtypes (such as int8, int16, float8, etc.) is important for several reasons, one of which is to reduce memory footprint where extra space is unnecessary; another reason is to lay the groundwork for a "structured array" back-end for the pandas data objects. This latter implementation is an important step toward supporting memory-mapped objects for larger-than-memory data sets in pandas. The developer will become familiar with the internals of pandas as well as the C, Cython, and numpy extension code that drives pandas array-based processing.
+In the pandas data analysis library for Python, all data elements are stored as one of four basic data types: 64-bit integer, 64-bit floating point, 8-bit boolean, and python object pointer. Support for additional NumPy dtypes (such as int8, int16, float8, etc.) is important for several reasons, one of which is to reduce memory footprint where extra space is unnecessary; another reason is to lay the groundwork for a "structured array" back-end for the pandas data objects. This latter implementation is an important step toward supporting memory-mapped objects for larger-than-memory data sets in pandas. The developer will become familiar with the internals of pandas as well as the C, Cython, and NumPy extension code that drives pandas array-based processing.
 
 Expected Results
 ----------------
-- extend Panel, DataFrame, and Series functionality to work on additional numpy dtypes
+- extend Panel, DataFrame, and Series functionality to work on additional NumPy dtypes
 - comprehensive test additions to test suite to verify functionality
 
 Knowledge Prerequisite
 ----------------------
-Python [expert], C [intermediate], Cython [intermediate], Numpy [intermediate]
+Python [expert], C [intermediate], Cython [intermediate], NumPy [intermediate]
 
 Mentor
 ------
