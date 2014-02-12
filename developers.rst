@@ -4,7 +4,7 @@ Developers
 
 So you want to contribute to *pandas* by offering a patch? Excellent! This is
 the page you need to read. After you read the below guidelines, the first
-place to contribute issues & ideas to *pandas* is the `Github Issue Tracker
+place to contribute issues & ideas to *pandas* is the `GitHub Issue Tracker
 <https://github.com/pydata/pandas/issues>`__. You can filter using the
 `"Community" <https://github.com/pydata/pandas/issues?labels=Community&state=open>`__ label to see issues we believe are easy entry points for community
 contribution. Some longer discussions occur on the #pydata channel on
@@ -29,7 +29,7 @@ by experts. If something in the docs doesn't make sense to you, updating the
 relevant section after you figure it out is a simple way to ensure it will
 help the next person.
 
-Once you have followed the steps below to download the source code from github
+Once you have followed the steps below to download the source code from GitHub
 and set up your environment, make sure you have built the C extensions in place,
 then navigate to your local pandas/docs directory and run
 
@@ -61,7 +61,7 @@ Step-by-step overview
 
 #. Read carefully through the below guidelines on working with *pandas* code.
 #. Find a bug or feature you'd like to work on.
-#. Create a free account on `github <http://www.github.com>`__, where we host our version controlled source repository.
+#. Create a free account on `GitHub <http://www.github.com>`__, where we host our version controlled source repository.
 #. Set up your local development environment with git (`Instructions <http://help.github.com/set-up-git-redirect>`__).
 #. Fork the `pandas repository <http://www.github.com./pydata/pandas>`__ (`Instructions <http://help.github.com/fork-a-repo/>`__).
 #. Create a new working branch for your changes.
@@ -120,24 +120,24 @@ Conventions
 Working with the code
 ~~~~~~~~~~~~~~~~~~~~~
 
-Version Control, Git, and Github
+Version Control, Git, and GitHub
 --------------------------------
 
-The code is hosted on `Github <https://www.github.com/pydata/pandas>`_. To
-contribute you will need to sign up for a `free Github account
+The code is hosted on `GitHub <https://www.github.com/pydata/pandas>`_. To
+contribute you will need to sign up for a `free GitHub account
 <https://github.com/signup/free>`_. We use `Git <http://git-scm.com/>`_ for
 version control to allow many people to work together on the project.
 
 Some great resources for learning git:
 
- * the `Github help pages <http://help.github.com/>`__.
+ * the `GitHub help pages <http://help.github.com/>`__.
  * the `NumPy's documentation <http://docs.scipy.org/doc/numpy/dev/index.html>`__.
  * Matthew Brett's `Pydagogue <http://matthew-brett.github.com/pydagogue/>`__.
 
 Getting Started with Git
 ------------------------
 
-`Github has instructions <http://help.github.com/set-up-git-redirect>`__ for installing git, setting up your SSH key, and configuring git.
+`GitHub has instructions <http://help.github.com/set-up-git-redirect>`__ for installing git, setting up your SSH key, and configuring git.
 
 Forking
 -------
@@ -193,12 +193,12 @@ Your changes are now committed in your local repository.
 Pushing your changes
 --------------------
 
-When you want your changes to appear publicly on your Github page, push your
+When you want your changes to appear publicly on your GitHub page, push your
 forked feature branch's commits ::
 
     git push origin shiny-new-feature
 
-Here `origin` is the default name given to your remote repository on Github.
+Here `origin` is the default name given to your remote repository on GitHub.
 You can see the remote repositories ::
 
     git remote -v
@@ -211,7 +211,7 @@ like ::
     upstream        git://github.com/pydata/pandas.git (fetch)
     upstream        git://github.com/pydata/pandas.git (push)
 
-Now your code is on Github, but it is not yet a part of the pandas project.
+Now your code is on GitHub, but it is not yet a part of the pandas project.
 Before we get there, we need to address our testing and performance
 requirements for new code.
 
@@ -302,7 +302,7 @@ First, double check your code
 
 When you're ready to ask for a code review, you will file a pull request. Before you do, again make sure you've followed all the guidelines outlined in this document. You should also double check your branch changes against the branch it was based off of:
 
-#. Navigate to your repository on Github.
+#. Navigate to your repository on GitHub.
 #. Click on `Branches`.
 #. Click on the `Compare` button for your feature branch.
 #. Select the `base` and `compare` branches, if necessary. This will be `master` and `shiny-new-feature`, respectively.
@@ -325,7 +325,7 @@ Finally, make the pull request
 
 If everything looks good you are ready to make a pull request:
 
-#. Navigate to your repository on Github.
+#. Navigate to your repository on GitHub.
 #. Click on the `Pull Request` button.
 #. You can then click on `Commits` and `Files Changed` to make sure everything looks okay one last time.
 #. Write a description of your changes in the `Preview Discussion` tab.
@@ -333,7 +333,7 @@ If everything looks good you are ready to make a pull request:
 
 This request then appears to the repository maintainers, and they will review
 the code. If you need to make more changes, you can make them in
-your branch, push them to Github, and the pull request will be automatically
+your branch, push them to GitHub, and the pull request will be automatically
 updated.
 
 Optional: delete your merged branch
@@ -352,6 +352,6 @@ Then you can just do::
 Make sure you use a lower-case -d, or else git won't warn you if your feature
 branch has not actually been merged.
 
-The branch will still exist on Github, so to delete it there do ::
+The branch will still exist on GitHub, so to delete it there do ::
 
     git push origin --delete shiny-new-feature
