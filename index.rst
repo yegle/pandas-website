@@ -6,14 +6,16 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.13.1 released (February 3, 2014)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0.14.1 released (July 11, 2014)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is a scheduled bugfix release for 0.13.0, with multiple issues and regressions
-addressed, and several back-compatible enhancements introduced. See the `Release Notes <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_
+Announcing v0.14.1, a minor release from 0.14.0. This release includes a small number of API changes,
+several new features, enhancements, and performance improvements along with a large number of bug fixes.
+
+We recommend that all users upgrade to this version. See the `Release Notes <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_
 to read all about it.
 
-For binaries and source archives of v0.13.1 see the `Download page <getpandas.html>`_.
+For binaries and source archives of v0.14.1 see the Download page.
 
 Quick vignette
 ~~~~~~~~~~~~~~
