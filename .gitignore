@@ -1,5 +1,3 @@
-_build/
-
 *.pyc
 .DS_Store
 _static/.DS_Store
