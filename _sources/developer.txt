@@ -1,0 +1,7 @@
+**********
+Developers
+**********
+
+If you're a developer, feel free to look at the open issues and contribute
+some code. And everyone should feel free to help improve the `documentation
+<http://pandas.sourceforge.net/>`__.
