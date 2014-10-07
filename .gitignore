@@ -9,6 +9,7 @@ _themes/pydata/static/.DS_Store
 .buildinfo
 amd-driver-install.run
 bak/
+_build
 *.html
 objects.inv
 pandas-build/
