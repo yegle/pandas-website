@@ -6,16 +6,32 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.14.1 released (July 11, 2014)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0.15.0 release candidate (October 7, 2014)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Announcing v0.14.1, a minor release from 0.14.0. This release includes a small number of API changes,
-several new features, enhancements, and performance improvements along with a large number of bug fixes.
+The release candidate for 0.15.0 is now previewing.
 
-We recommend that all users upgrade to this version. See the `Release Notes <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_
-to read all about it.
+This is a major release from 0.14.1 and includes a number of API changes, several new features, enhancements, and
+performance improvements along with a large number of bug fixes.
 
-For binaries and source archives of v0.14.1 see the Download page.
+Highlights include:
+
+- Drop support for numpy < 1.7.0
+- The ``Categorical`` type was integrated as a first-class pandas type
+- New scalar type ``Timedelta``, and a new index type ``TimedeltaIndex``
+- New DataFrame default display for ``df.info()`` to include memory usage
+- New datetimelike properties accessor ``.dt`` for Series
+- Split indexing documentation into ``Indexing and Selecting Data`` and ``MultiIndex / Advanced Indexing``
+- Split out string methods documentation into ``Working with Text Data``
+- ``read_csv`` will now by default ignore blank lines when parsing
+- API change in using Indexes in set operations
+- Internal refactoring of the ``Index`` class to no longer sub-class ``ndarray``
+- dropping support for ``PyTables`` less than version 3.0.0, and ``numexpr`` less than version 2.1
+
+See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.15.0/whatsnew.html>`_ for an extensive list
+of all API changes, enhancements and bugs that have been fixed in 0.15.0.
+
+For binaries and source archives of v0.15.0 release candidate, see the `GitHub Releases <https://github.com/pydata/pandas/releases>`_.
 
 Quick vignette
 ~~~~~~~~~~~~~~
