@@ -6,3 +6,14 @@ _themes/pydata/.DS_Store
 _themes/pydata/static/.DS_Store
 *.~
 *.swp
+.buildinfo
+amd-driver-install.run
+bak/
+*.html
+objects.inv
+pandas-build/
+pandas-docs/
+pandas.conf
+requirements-2.6.txt
+searchindex.js
+robots.txt
