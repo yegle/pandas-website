@@ -6,10 +6,8 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.15.0 release candidate (October 7, 2014)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The release candidate for 0.15.0 is now previewing.
+0.15.0 final (October 20, 2014)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is a major release from 0.14.1 and includes a number of API changes, several new features, enhancements, and
 performance improvements along with a large number of bug fixes.
