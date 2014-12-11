@@ -6,14 +6,14 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.15.1 final (November 9, 2014)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0.15.1 final (December 12, 2014)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is a minor release from 0.15.0 and includes a small number of API changes, several new features, enhancements, and
+This is a minor release from 0.15.1 and includes a small number of API changes, several new features, enhancements, and
 performance improvements along with a large number of bug fixes.
 
-See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.15.1/whatsnew.html>`_ for an extensive list
-of all API changes, enhancements and bugs that have been fixed in 0.15.1
+See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.15.2/whatsnew.html>`_ for an extensive list
+of all API changes, enhancements and bugs that have been fixed in 0.15.2
 
 Quick vignette
 ~~~~~~~~~~~~~~
