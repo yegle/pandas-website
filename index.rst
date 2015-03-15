@@ -6,14 +6,26 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.15.2 final (December 12, 2014)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0.16.0 release candidate (March 13, 2015)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is a minor release from 0.15.1 and includes a small number of API changes, several new features, enhancements, and
-performance improvements along with a large number of bug fixes.
+The release candidate for 0.16.0 is now previewing.
 
-See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.15.2/whatsnew.html>`_ for an extensive list
-of all API changes, enhancements and bugs that have been fixed in 0.15.2
+This is a major release from 0.15.2 and includes a small number of API changes, several new features, enhancements, and performance improvements along with a large number of bug fixes. We recommend that all users upgrade to this version.
+
+Highlights include:
+
+- ``DataFrame.assign`` method, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0160-enhancements-assign>`_
+- ``Series.to_coo/from_coo`` methods to interact with ``scipy.sparse``, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0160-enhancements-sparse>`_
+- Backwards incompatible change to ``Timedelta`` to conform the ``.seconds`` attribute with ``datetime.timedelta``, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0160-api-breaking-timedelta>`_
+- Changes to the ``.loc`` slicing API to conform with the behavior of ``.ix`` see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0160-api-breaking-indexing>`_
+- Changes to the default for ordering in the ``Categorical`` constructor, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0160-api-breaking-categorical>`_
+
+See the `Whatsnew <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html>`_ for an extensive list
+of all API changes, enhancements and bugs that have been fixed in 0.15.0.
+
+For binaries and source archives of v0.16.0 release candidate, see the `GitHub Releases <https://github.com/pydata/pandas/releases>`_.
+
 
 Quick vignette
 ~~~~~~~~~~~~~~

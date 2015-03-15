@@ -4,7 +4,7 @@ _static/.DS_Store
 _themes/.DS_Store
 _themes/pydata/.DS_Store
 _themes/pydata/static/.DS_Store
-*.~
+*~
 *.swp
 .buildinfo
 amd-driver-install.run
