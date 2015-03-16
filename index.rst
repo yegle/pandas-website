@@ -22,7 +22,7 @@ Highlights include:
 - Changes to the default for ordering in the ``Categorical`` constructor, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0160-api-breaking-categorical>`_
 
 See the `Whatsnew <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html>`_ for an extensive list
-of all API changes, enhancements and bugs that have been fixed in 0.15.0.
+of all API changes, enhancements and bugs that have been fixed in 0.16.0.
 
 For binaries and source archives of v0.16.0 release candidate, see the `GitHub Releases <https://github.com/pydata/pandas/releases>`_.
 
