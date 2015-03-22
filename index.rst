@@ -6,25 +6,30 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.16.0 release candidate (March 13, 2015)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The release candidate for 0.16.0 is now previewing.
+0.16.0 final (March 22, 2015)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is a major release from 0.15.2 and includes a small number of API changes, several new features, enhancements, and performance improvements along with a large number of bug fixes. We recommend that all users upgrade to this version.
 
 Highlights include:
 
-- ``DataFrame.assign`` method, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0160-enhancements-assign>`_
-- ``Series.to_coo/from_coo`` methods to interact with ``scipy.sparse``, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0160-enhancements-sparse>`_
-- Backwards incompatible change to ``Timedelta`` to conform the ``.seconds`` attribute with ``datetime.timedelta``, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0160-api-breaking-timedelta>`_
-- Changes to the ``.loc`` slicing API to conform with the behavior of ``.ix`` see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0160-api-breaking-indexing>`_
-- Changes to the default for ordering in the ``Categorical`` constructor, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0160-api-breaking-categorical>`_
+- ``DataFrame.assign`` method, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0160-enhancements-assign>`_
+- ``Series.to_coo/from_coo`` methods to interact with ``scipy.sparse``, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0160-enhancements-sparse>`_
+- Backwards incompatible change to ``Timedelta`` to conform the ``.seconds`` attribute with ``datetime.timedelta``, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0160-api-breaking-timedelta>`_
+- Changes to the ``.loc`` slicing API to conform with the behavior of ``.ix`` see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0160-api-breaking-indexing>`_
+- Changes to the default for ordering in the ``Categorical`` constructor, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0160-api-breaking-categorical>`_
+-  Enhancement to the ``.str`` accessor to make string operations easier, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0160-enhancements-string>`_
+- The ``pandas.tools.rplot``, ``pandas.sandbox.qtpandas`` and ``pandas.rpy``
+  modules are deprecated. We refer users to external packages like
+  `seaborn <http://stanford.edu/~mwaskom/software/seaborn/>`_,
+  `pandas-qt <https://github.com/datalyze-solutions/pandas-qt>`_ and
+  `rpy2 <http://rpy.sourceforge.net/>`_ for similar or equivalent
+  functionality, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#deprecations>`_
 
-See the `Whatsnew <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html>`_ for an extensive list
+See the `Whatsnew <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_ for an extensive list
 of all API changes, enhancements and bugs that have been fixed in 0.16.0.
 
-For binaries and source archives of v0.16.0 release candidate, see the `GitHub Releases <https://github.com/pydata/pandas/releases>`_.
+For binaries and source archives of v0.16.0 final, see the `GitHub Releases <https://github.com/pydata/pandas/releases>`_.
 
 
 Quick vignette
