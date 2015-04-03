@@ -14,7 +14,7 @@ are logged and discussed. Search for relevant existing issues to comment on,
 or submit your own.
 
 To learn more about how to contribute to the ongoing development of *pandas*,
-please check out our `developer page <developers.html>`_. For deeper
+please check out our `contributing guidelines <http://pandas-docs.github.io/pandas-docs-travis/contributing.html>`_. For deeper
 development discussions related to the direction of the project, you can join
 the developer `mailing list <http://groups.google.com/group/pydata>`__.
 

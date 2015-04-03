@@ -112,7 +112,6 @@ What do our users have to say?
 	getpandas
 	community
 	talks
-	developers
 
 Library Highlights
 ~~~~~~~~~~~~~~~~~~

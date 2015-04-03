@@ -24,6 +24,6 @@ Stable windows binaries are built on a rotating basis every hour, as long as
 there have been code changes on GitHub since the previous build. You can find
 the latest builds `here <http://pandas.pydata.org/pandas-build/dev/>`_.
 
-Development is source controlled using git. Here's a handy guide to `getting started <http://help.github.com/set-up-git-redirect>`__. If you're interested in contributing to development, please visit our `developer page <developers.html>`__.
+Development is source controlled using git. Here's a handy guide to `getting started <http://help.github.com/set-up-git-redirect>`__. If you're interested in contributing to development, please visit our `contributing guidelines <http://pandas-docs.github.io/pandas-docs-travis/contributing.html>`__.
 
 	* https://github.com/pydata/pandas
