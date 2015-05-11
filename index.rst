@@ -6,30 +6,26 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.16.0 final (March 22, 2015)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0.16.1 final (May 11, 2015)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is a major release from 0.15.2 and includes a small number of API changes, several new features, enhancements, and performance improvements along with a large number of bug fixes. We recommend that all users upgrade to this version.
+This is a minor bug-fix release from 0.16.0 and includes a a large number of
+bug fixes along several new features, enhancements, and performance improvements.
+We recommend that all users upgrade to this version.
 
 Highlights include:
 
-- ``DataFrame.assign`` method, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0160-enhancements-assign>`_
-- ``Series.to_coo/from_coo`` methods to interact with ``scipy.sparse``, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0160-enhancements-sparse>`_
-- Backwards incompatible change to ``Timedelta`` to conform the ``.seconds`` attribute with ``datetime.timedelta``, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0160-api-breaking-timedelta>`_
-- Changes to the ``.loc`` slicing API to conform with the behavior of ``.ix`` see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0160-api-breaking-indexing>`_
-- Changes to the default for ordering in the ``Categorical`` constructor, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0160-api-breaking-categorical>`_
--  Enhancement to the ``.str`` accessor to make string operations easier, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0160-enhancements-string>`_
-- The ``pandas.tools.rplot``, ``pandas.sandbox.qtpandas`` and ``pandas.rpy``
-  modules are deprecated. We refer users to external packages like
-  `seaborn <http://stanford.edu/~mwaskom/software/seaborn/>`_,
-  `pandas-qt <https://github.com/datalyze-solutions/pandas-qt>`_ and
-  `rpy2 <http://rpy.sourceforge.net/>`_ for similar or equivalent
-  functionality, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#deprecations>`_
+- Support for a ``CategoricalIndex``, a category based index, see [here](http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0161-enhancements-categoricalindex)
+- New section on how-to-contribute to *pandas*, see [here](http://pandas.pydata.org/pandas-docs/stable/contributing.html)
+- Revised "Merge, join, and concatenate" documentation, including graphical examples to make it easier to understand each operations, see [here](http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#merging)
+- New method ``sample`` for drawing random samples from Series, DataFrames and Panels. See [here](http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0161-enhancements-sample)
+- The default ``Index`` printing has changed to a more uniform format, see [here](http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0161-index-repr)
+- ``BusinessHour`` datetime-offset is now supported, see [here](http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#timeseries-businesshour)
+-  Further enhancement to the ``.str`` accessor to make string operations easier, see [here](http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0161-enhancements-string)
 
-See the `Whatsnew <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_ for an extensive list
-of all API changes, enhancements and bugs that have been fixed in 0.16.0.
+See the full [Whatsnew](http://pandas.pydata.org/pandas-docs/stable/whatsnew.html)
 
-For binaries and source archives of v0.16.0 final, see the `GitHub Releases <https://github.com/pydata/pandas/releases>`_.
+For binaries and source archives of v0.16.1 final, see the `GitHub Releases <https://github.com/pydata/pandas/releases>`_.
 
 
 Quick vignette
