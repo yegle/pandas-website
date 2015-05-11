@@ -17,10 +17,10 @@ Highlights include:
 
 - Support for a ``CategoricalIndex``, a category based index, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0161-enhancements-categoricalindex>`_
 - New section on how-to-contribute to *pandas*, see `here <http://pandas.pydata.org/pandas-docs/stable/contributing.html>`_
-- Revised "Merge, join, and concatenate" documentation, including graphical examples to make it easier to understand each operations, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#merging>`_
+- Revised "Merge, join, and concatenate" documentation, including graphical examples to make it easier to understand each operations, see `here <http://pandas.pydata.org/pandas-docs/stable/merging>`_
 - New method ``sample`` for drawing random samples from Series, DataFrames and Panels. See `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0161-enhancements-sample>`_
 - The default ``Index`` printing has changed to a more uniform format, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0161-index-repr>`_
-- ``BusinessHour`` datetime-offset is now supported, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#timeseries-businesshour>`_
+- ``BusinessHour`` datetime-offset is now supported, see `here <http://pandas.pydata.org/pandas-docs/stable/timeseries#business-hour>`_
 -  Further enhancement to the ``.str`` accessor to make string operations easier, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0161-enhancements-string>`_
 
 See the full `Whatsnew <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_
