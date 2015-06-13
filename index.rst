@@ -16,7 +16,7 @@ We recommend that all users upgrade to this version.
 Highlights include:
 
 - A new ``pipe`` method, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0162-enhancements-pipe>`_
- - Documentation on how to use `numba <http://numba.pydata.org>`_ with *pandas*, see `here <http://pandas.pydata.org/pandas-docs/stable/enhancingperf.html#enhancingperf-numba>`_
+- Documentation on how to use `numba <http://numba.pydata.org>`_ with *pandas*, see `here <http://pandas.pydata.org/pandas-docs/stable/enhancingperf.html#enhancingperf-numba>`_
 
 See the full `Whatsnew <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_
 
