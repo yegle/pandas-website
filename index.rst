@@ -15,21 +15,21 @@ This is a major release from 0.16.2 and includes a small number of API changes, 
 
 Highlights include:
 
-- Release the Global Interpreter Lock (GIL) on some cython operations, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-gil)
-- Plotting methods are now available as attributes of the .plot accessor, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-plot)
-- The sorting API has been revamped to remove some long-time inconsistencies, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-api-breaking-sorting)
-- Support for a ``datetime64[ns]`` with timezones as a first-class dtype, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-tz)
-- The default for ``to_datetime`` will now be to raise when presented with unparseable formats, previously this would return the original input, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-api-breaking-to-datetime)
-- The default for ``dropna`` in ``HDFStore`` has changed to ``False``, to store by default all rows even if they are all NaN, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-api-breaking-hdf-dropna)
-- Support for ``Series.dt.strftime`` to generate formatted strings for datetime-likes, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-strftime)
-- Development installed versions of pandas will now have PEP440 compliant version strings [GH9518](https://github.com/pydata/pandas/issues/9518)
-- Development support for benchmarking with the Air Speed Velocity library [GH8316](https://github.com/pydata/pandas/pull/8316)
-- Support for reading SAS xport files, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-enhancements-sas-xport)
-- Removal of the automatic TimeSeries broadcasting, deprecated since 0.8.0, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-prior-deprecations)
+- Release the Global Interpreter Lock (GIL) on some cython operations, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-gil>`__
+- Plotting methods are now available as attributes of the .plot accessor, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-plot>`__
+- The sorting API has been revamped to remove some long-time inconsistencies, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-api-breaking-sorting>`__
+- Support for a ``datetime64[ns]`` with timezones as a first-class dtype, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-tz>`__
+- The default for ``to_datetime`` will now be to raise when presented with unparseable formats, previously this would return the original input, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-api-breaking-to-datetime>`__
+- The default for ``dropna`` in ``HDFStore`` has changed to ``False``, to store by default all rows even if they are all NaN, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-api-breaking-hdf-dropna>`__
+- Support for ``Series.dt.strftime`` to generate formatted strings for datetime-likes, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-strftime>`__
+- Development installed versions of pandas will now have PEP440 compliant version strings `GH9518 <https://github.com/pydata/pandas/issues/9518>`__
+- Development support for benchmarking with the Air Speed Velocity library `GH8316 <https://github.com/pydata/pandas/pull/8316>`__
+- Support for reading SAS xport files, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-enhancements-sas-xport>`__
+- Removal of the automatic TimeSeries broadcasting, deprecated since 0.8.0, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-prior-deprecations>`__
 
-See the [Whatsnew](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html) for much more information. Please report any issues [here](https://github.com/pydata/pandas/issues/10848)
+See the `Whatsnew <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html>`__ for much more information. Please report any issues `here <https://github.com/pydata/pandas/issues/10848>`__
 
-best way to get this is to install via [conda](http://pandas-docs.github.io/pandas-docs-travis/install.html#installing-pandas-with-anaconda) from our development channel. Builds for ``osx-64,linux-64,win-64`` for ``Python 2.7 and Python 3.4`` are all available.
+best way to get this is to install via `conda <http://pandas-docs.github.io/pandas-docs-travis/install.html#installing-pandas-with-anaconda>`__ from our development channel. Builds for ``osx-64,linux-64,win-64`` for ``Python 2.7 and Python 3.4`` are all available.
 
 ``conda install pandas -c pandas``
 
