@@ -6,21 +6,32 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.16.2 final (June 12, 2015)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0.17.0 release candidate (September 11, 2015)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is a minor bug-fix release from 0.16.1 and includes a a large number of
-bug fixes along several new features, enhancements, and performance improvements.
-We recommend that all users upgrade to this version.
+**RELEASE CANDIDATE 1**
+
+This is a major release from 0.16.2 and includes a small number of API changes, several new features, enhancements, and performance improvements along with a large number of bug fixes. We recommend that all users upgrade to this version.
 
 Highlights include:
 
-- A new ``pipe`` method, see `here <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0162-enhancements-pipe>`_
-- Documentation on how to use `numba <http://numba.pydata.org>`_ with *pandas*, see `here <http://pandas.pydata.org/pandas-docs/stable/enhancingperf.html#enhancingperf-numba>`_
+- Release the Global Interpreter Lock (GIL) on some cython operations, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-gil)
+- Plotting methods are now available as attributes of the .plot accessor, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-plot)
+- The sorting API has been revamped to remove some long-time inconsistencies, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-api-breaking-sorting)
+- Support for a ``datetime64[ns]`` with timezones as a first-class dtype, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-tz)
+- The default for ``to_datetime`` will now be to raise when presented with unparseable formats, previously this would return the original input, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-api-breaking-to-datetime)
+- The default for ``dropna`` in ``HDFStore`` has changed to ``False``, to store by default all rows even if they are all NaN, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-api-breaking-hdf-dropna)
+- Support for ``Series.dt.strftime`` to generate formatted strings for datetime-likes, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-strftime)
+- Development installed versions of pandas will now have PEP440 compliant version strings [GH9518](https://github.com/pydata/pandas/issues/9518)
+- Development support for benchmarking with the Air Speed Velocity library [GH8316](https://github.com/pydata/pandas/pull/8316)
+- Support for reading SAS xport files, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-enhancements-sas-xport)
+- Removal of the automatic TimeSeries broadcasting, deprecated since 0.8.0, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-prior-deprecations)
 
-See the full `Whatsnew <http://pandas.pydata.org/pandas-docs/stable/whatsnew.html>`_
+See the [Whatsnew](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html) for much more information. Please report any issues [here](https://github.com/pydata/pandas/issues/10848)
 
-For binaries and source archives of v0.16.2 final, see the `GitHub Releases <https://github.com/pydata/pandas/releases>`_.
+best way to get this is to install via [conda](http://pandas-docs.github.io/pandas-docs-travis/install.html#installing-pandas-with-anaconda) from our development channel. Builds for ``osx-64,linux-64,win-64`` for ``Python 2.7 and Python 3.4`` are all available.
+
+``conda install pandas -c pandas``
 
 
 Quick vignette
