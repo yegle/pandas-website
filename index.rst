@@ -29,7 +29,10 @@ Highlights include:
 
 See the `Whatsnew <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html>`__ for much more information. Please report any issues `here <https://github.com/pydata/pandas/issues/10848>`__
 
-best way to get this is to install via `conda <http://pandas-docs.github.io/pandas-docs-travis/install.html#installing-pandas-with-anaconda>`__ from our development channel. Builds for ``osx-64,linux-64,win-64`` for ``Python 2.7 and Python 3.4`` are all available.
+Best way to Install
+~~~~~~~~~~~~~~~~~~~
+
+Best way to get this release-candidate is to install via `conda <http://pandas-docs.github.io/pandas-docs-travis/install.html#installing-pandas-with-anaconda>`__ from our development channel. Builds for ``osx-64,linux-64,win-64`` for ``Python 2.7 and Python 3.4`` are all available.
 
 ``conda install pandas -c pandas``
 
