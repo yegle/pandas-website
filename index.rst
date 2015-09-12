@@ -21,7 +21,8 @@ Highlights include:
 - Support for a ``datetime64[ns]`` with timezones as a first-class dtype, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-tz>`__
 - The default for ``to_datetime`` will now be to raise when presented with unparseable formats, previously this would return the original input, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-api-breaking-to-datetime>`__
 - The default for ``dropna`` in ``HDFStore`` has changed to ``False``, to store by default all rows even if they are all NaN, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-api-breaking-hdf-dropna>`__
-- Support for ``Series.dt.strftime`` to generate formatted strings for datetime-likes, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-strftime>`__
+- Datetime accessor (``dt``) now supports ``Series.dt.strftime`` to generate formatted strings for datetime-likes, and ``Series.dt.total_seconds`` to generate each duration of the timedelta in seconds. See `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-strftime>`__
+- Period and PeriodIndex can handle multiplied freq like 3D, which corresponding to 3 days span. See `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-periodfreq>`__
 - Development installed versions of pandas will now have PEP440 compliant version strings `GH9518 <https://github.com/pydata/pandas/issues/9518>`__
 - Development support for benchmarking with the Air Speed Velocity library `GH8316 <https://github.com/pydata/pandas/pull/8316>`__
 - Support for reading SAS xport files, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-enhancements-sas-xport>`__
