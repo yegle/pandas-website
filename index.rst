@@ -6,10 +6,15 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.17.0 release candidate (September 11, 2015)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0.17.0 release candidate 2 (October 3, 2015)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**RELEASE CANDIDATE 1**
+**RELEASE CANDIDATE 2**
+
+
+- compat for ``Python 3.5``
+- compat for ``matplotlib 1.5.0``
+- ``.convert_objects`` is now restored to the original, and is deprecated
 
 This is a major release from 0.16.2 and includes a small number of API changes, several new features, enhancements, and performance improvements along with a large number of bug fixes. We recommend that all users upgrade to this version.
 
@@ -27,6 +32,10 @@ Highlights include:
 - Development support for benchmarking with the Air Speed Velocity library `GH8316 <https://github.com/pydata/pandas/pull/8316>`__
 - Support for reading SAS xport files, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-enhancements-sas-xport>`__
 - Removal of the automatic TimeSeries broadcasting, deprecated since 0.8.0, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-prior-deprecations>`__
+- Display format with plain text can optionally align with Unicode East Asian Width, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-east-asian-width>`__
+- Compatibility with Python 3.5 `GH11097 <https://github.com/pydata/pandas/issues/11097>`__
+- Compatibility with matplotlib 1.5.0 `GH11111 <https://github.com/pydata/pandas/issues/11111>`__
+
 
 See the `Whatsnew <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html>`__ for much more information. Please report any issues `here <https://github.com/pydata/pandas/issues/10848>`__
 
