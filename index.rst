@@ -29,7 +29,7 @@ Highlights include:
 - Datetime accessor (``dt``) now supports ``Series.dt.strftime`` to generate formatted strings for datetime-likes, and ``Series.dt.total_seconds`` to generate each duration of the timedelta in seconds. See `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-strftime>`__
 - Period and PeriodIndex can handle multiplied freq like 3D, which corresponding to 3 days span. See `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-periodfreq>`__
 - Development installed versions of pandas will now have PEP440 compliant version strings `GH9518 <https://github.com/pydata/pandas/issues/9518>`__
-- Development support for benchmarking with the Air Speed Velocity library `GH8316 <https://github.com/pydata/pandas/pull/8316>`__
+- Development support for benchmarking with the Air Speed Velocity library `GH8361 <https://github.com/pydata/pandas/pull/8361>`__
 - Support for reading SAS xport files, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-enhancements-sas-xport>`__
 - Removal of the automatic TimeSeries broadcasting, deprecated since 0.8.0, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-prior-deprecations>`__
 - Display format with plain text can optionally align with Unicode East Asian Width, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-east-asian-width>`__
