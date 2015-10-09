@@ -6,45 +6,39 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.17.0 release candidate 2 (October 3, 2015)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-**RELEASE CANDIDATE 2**
-
-
-- compat for ``Python 3.5``
-- compat for ``matplotlib 1.5.0``
-- ``.convert_objects`` is now restored to the original, and is deprecated
+0.17.0 Final (October 9, 2015)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is a major release from 0.16.2 and includes a small number of API changes, several new features, enhancements, and performance improvements along with a large number of bug fixes. We recommend that all users upgrade to this version.
 
 Highlights include:
 
-- Release the Global Interpreter Lock (GIL) on some cython operations, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-gil>`__
-- Plotting methods are now available as attributes of the .plot accessor, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-plot>`__
-- The sorting API has been revamped to remove some long-time inconsistencies, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-api-breaking-sorting>`__
-- Support for a ``datetime64[ns]`` with timezones as a first-class dtype, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-tz>`__
-- The default for ``to_datetime`` will now be to raise when presented with unparseable formats, previously this would return the original input, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-api-breaking-to-datetime>`__
-- The default for ``dropna`` in ``HDFStore`` has changed to ``False``, to store by default all rows even if they are all NaN, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-api-breaking-hdf-dropna>`__
-- Datetime accessor (``dt``) now supports ``Series.dt.strftime`` to generate formatted strings for datetime-likes, and ``Series.dt.total_seconds`` to generate each duration of the timedelta in seconds. See `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-strftime>`__
-- Period and PeriodIndex can handle multiplied freq like 3D, which corresponding to 3 days span. See `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-periodfreq>`__
+- Release the Global Interpreter Lock (GIL) on some cython operations, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-gil>`__
+- Plotting methods are now available as attributes of the .plot accessor, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-plot>`__
+- The sorting API has been revamped to remove some long-time inconsistencies, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-api-breaking-sorting>`__
+- Support for a ``datetime64[ns]`` with timezones as a first-class dtype, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-tz>`__
+- The default for ``to_datetime`` will now be to raise when presented with unparseable formats, previously this would return the original input, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-api-breaking-to-datetime>`__
+- The default for ``dropna`` in ``HDFStore`` has changed to ``False``, to store by default all rows even if they are all NaN, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-api-breaking-hdf-dropna>`__
+- Datetime accessor (``dt``) now supports ``Series.dt.strftime`` to generate formatted strings for datetime-likes, and ``Series.dt.total_seconds`` to generate each duration of the timedelta in seconds. See `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-strftime>`__
+- Period and PeriodIndex can handle multiplied freq like 3D, which corresponding to 3 days span. See `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-periodfreq>`__
 - Development installed versions of pandas will now have PEP440 compliant version strings `GH9518 <https://github.com/pydata/pandas/issues/9518>`__
 - Development support for benchmarking with the Air Speed Velocity library `GH8361 <https://github.com/pydata/pandas/pull/8361>`__
-- Support for reading SAS xport files, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-enhancements-sas-xport>`__
-- Removal of the automatic TimeSeries broadcasting, deprecated since 0.8.0, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-prior-deprecations>`__
-- Display format with plain text can optionally align with Unicode East Asian Width, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0170-east-asian-width>`__
+- Support for reading SAS xport files, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-enhancements-sas-xport>`__
+- Removal of the automatic TimeSeries broadcasting, deprecated since 0.8.0, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-prior-deprecations>`__
+- Display format with plain text can optionally align with Unicode East Asian Width, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-east-asian-width>`__
 - Compatibility with Python 3.5 `GH11097 <https://github.com/pydata/pandas/issues/11097>`__
 - Compatibility with matplotlib 1.5.0 `GH11111 <https://github.com/pydata/pandas/issues/11111>`__
 
 
-See the `Whatsnew <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html>`__ for much more information. Please report any issues `here <https://github.com/pydata/pandas/issues/10848>`__
+See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html>`__ for much more information.
 
 Best way to Install
 ~~~~~~~~~~~~~~~~~~~
 
-Best way to get this release-candidate is to install via `conda <http://pandas-docs.github.io/pandas-docs-travis/install.html#installing-pandas-with-anaconda>`__ from our development channel. Builds for ``osx-64,linux-64,win-64`` for ``Python 2.7 and Python 3.4`` are all available.
+Best way to get pandas is to install via `conda <http://pandas-docs.github.io/pandas-docs-travis/install.html#installing-pandas-with-anaconda>`__
+Builds for ``osx-64,linux-64,linux-32,win-64,win-32`` for ``Python 2.6,Python 2.7, Python 3.3, Python 3.4, and Python 3.5`` are all available.
 
-``conda install pandas -c pandas``
+``conda install pandas``
 
 
 Quick vignette
