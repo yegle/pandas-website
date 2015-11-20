@@ -6,31 +6,26 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-0.17.0 Final (October 9, 2015)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. note::
 
-This is a major release from 0.16.2 and includes a small number of API changes, several new features, enhancements, and performance improvements along with a large number of bug fixes. We recommend that all users upgrade to this version.
+   We are proud to announce that *pandas* has become a sponsored project of the (`NUMFocus organization`_). This will help ensure the success of development of *pandas* as a world-class open-source project.
+
+.. _numfocus organization: http://numfocus.org/news/2015/10/09/numfocus-announces-new-fiscally-sponsored-project-pandas/
+
+0.17.1 Final (November 20, 2015)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is a minor bug-fix release from 0.17.0 and includes a large number of
+bug fixes along several new features, enhancements, and performance improvements.
+We recommend that all users upgrade to this version.
 
 Highlights include:
 
-- Release the Global Interpreter Lock (GIL) on some cython operations, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-gil>`__
-- Plotting methods are now available as attributes of the .plot accessor, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-plot>`__
-- The sorting API has been revamped to remove some long-time inconsistencies, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-api-breaking-sorting>`__
-- Support for a ``datetime64[ns]`` with timezones as a first-class dtype, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-tz>`__
-- The default for ``to_datetime`` will now be to raise when presented with unparseable formats, previously this would return the original input, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-api-breaking-to-datetime>`__
-- The default for ``dropna`` in ``HDFStore`` has changed to ``False``, to store by default all rows even if they are all NaN, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-api-breaking-hdf-dropna>`__
-- Datetime accessor (``dt``) now supports ``Series.dt.strftime`` to generate formatted strings for datetime-likes, and ``Series.dt.total_seconds`` to generate each duration of the timedelta in seconds. See `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-strftime>`__
-- Period and PeriodIndex can handle multiplied freq like 3D, which corresponding to 3 days span. See `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-periodfreq>`__
-- Development installed versions of pandas will now have PEP440 compliant version strings `GH9518 <https://github.com/pydata/pandas/issues/9518>`__
-- Development support for benchmarking with the Air Speed Velocity library `GH8361 <https://github.com/pydata/pandas/pull/8361>`__
-- Support for reading SAS xport files, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-enhancements-sas-xport>`__
-- Removal of the automatic TimeSeries broadcasting, deprecated since 0.8.0, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-prior-deprecations>`__
-- Display format with plain text can optionally align with Unicode East Asian Width, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html#whatsnew-0170-east-asian-width>`__
-- Compatibility with Python 3.5 `GH11097 <https://github.com/pydata/pandas/issues/11097>`__
-- Compatibility with matplotlib 1.5.0 `GH11111 <https://github.com/pydata/pandas/issues/11111>`__
+- Support for Conditional HTML Formatting, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.1/whatsnew.html#whatsnew-0171-style>`__
+- Releasing the GIL on the csv reader & other ops, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.1/whatsnew.html#whatsnew-0171-performance>`__
+- Fixed regression in ``DataFrame.drop_duplicates`` from 0.16.2, causing incorrect results on integer values `GH11376 <https://github.com/pydata/pandas/issues/11376>`__
 
-
-See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.17.0/whatsnew.html>`__ for much more information.
+See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.17.1/whatsnew.html>`__ for much more information.
 
 Best way to Install
 ~~~~~~~~~~~~~~~~~~~
