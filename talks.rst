@@ -7,8 +7,23 @@
 * pandas: a Foundational Python Library for Data Analysis and Statistics; presented at PyHPC2011 [`pdf <http://www.scribd.com/doc/71048089/pandas-a-Foundational-Python-Library-for-Data-Analysis-and-Statistics>`__][ :download:`bib</_static/reference_foundational_library.bib>`]
 
 ***********************************************
-*pandas* Talks 
+*pandas* Talks
 ***********************************************
+
+PyCon US 2015
+--------------
+
+* `Pandas From The Ground Up (Speaker Brandon Rhodes) <https://www.youtube.com/watch?v=5JnMutdy6Fw>`__
+
+  ::
+
+  The typical Pandas user learns one dataframe method at a time, slowly scraping features together through trial and error until they can solve the task in front of them. In this tutorial you will re-learn how to think about dataframes from the ground up, and discover how to select intelligently from their abilities to solve your data processing problems through direct and deliberately-chosen steps.
+
+  ::
+
+  Material of the Talk can be found `here <https://github.com/brandon-rhodes/pycon-pandas-tutorial>`__
+
+  Duration: Talk = 2:24:57, with yourself doing also all the Exercises = 1 day (requires a python Distribution + material)
 
 Kiwi PyCon 2013
 ---------------
@@ -78,4 +93,3 @@ More presentations:
 	* `Python for Financial Data Analysis with pandas <http://www.slideshare.net/wesm/python-for-financial-data-analysis-with-pandas>`_ (10/17/11)
 	* `Data Analysis and Statistics in Python <http://www.slideshare.net/wesm/data-analysis-and-statistics-in-python-using-pandas-and-statsmodels>`_ (9/14/11)
 	* `Older presentations on slideshare <http://www.slideshare.net/wesm>`_
-
