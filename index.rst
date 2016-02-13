@@ -12,20 +12,28 @@ easy-to-use data structures and data analysis tools for the `Python
 
 .. _numfocus organization: http://numfocus.org/news/2015/10/09/numfocus-announces-new-fiscally-sponsored-project-pandas/
 
-0.17.1 Final (November 20, 2015)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0.18.0rc1 Release Candidate (February 13, 2016)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is a minor bug-fix release from 0.17.0 and includes a large number of
-bug fixes along several new features, enhancements, and performance improvements.
-We recommend that all users upgrade to this version.
+** RELEASE CANDIDATE **
+
+This is a major release from 0.17.1 and includes a small number of API changes, several new features,
+enhancements, and performance improvements along with a large number of bug fixes. We recommend that all
+users upgrade to this version.
 
 Highlights include:
 
-- Support for Conditional HTML Formatting, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.1/whatsnew.html#whatsnew-0171-style>`__
-- Releasing the GIL on the csv reader & other ops, see `here <http://pandas.pydata.org/pandas-docs/version/0.17.1/whatsnew.html#whatsnew-0171-performance>`__
-- Fixed regression in ``DataFrame.drop_duplicates`` from 0.16.2, causing incorrect results on integer values `GH11376 <https://github.com/pydata/pandas/issues/11376>`__
+-  pandas >= 0.18.0 will no longer support compatibility with Python version 2.6 [GH7718](https://github.com/pydata/pandas/issues/7718)
+-  pandas >= 0.18.0 will no longer support compatibility with Python version 3.3 [GH11273](https://github.com/pydata/pandas/issues/11273)
+- Window functions are now methods on ``.groupby`` like objects, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-enhancements-moments).
+- ``pd.test()`` top-level nose test runner is available [GH4327](https://github.com/pydata/pandas/issues/4327)
+- Adding support for a ``RangeIndex`` as a specialized form of the ``Int64Index`` for memory savings, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-enhancements-rangeindex).
+- API breaking ``.resample`` changes to make it more ``.groupby`` like, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-breaking-resample)
+- Removal of support for deprecated float indexers; these will now raise a ``TypeError``, see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-enhancements-float_indexers)
+- The ``.to_xarray()`` function has been added for compatibility with the [xarray package](http://xarray.pydata.org/en/stable/) see [here](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-enhancements-xarray).
+- Addition of the [.str.extractall() method](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-enhancements-extractall), and API changes to the the [.str.extract() method](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-enhancements-extract), and the[.str.cat() method](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-enhancements-strcat)
 
-See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.17.1/whatsnew.html>`__ for much more information.
+See the [Whatsnew](http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html) for much more information. Please report any issues [here](https://github.com/pydata/pandas/issues/)
 
 Best way to Install
 ~~~~~~~~~~~~~~~~~~~
@@ -33,7 +41,7 @@ Best way to Install
 Best way to get pandas is to install via `conda <http://pandas-docs.github.io/pandas-docs-travis/install.html#installing-pandas-with-anaconda>`__
 Builds for ``osx-64,linux-64,linux-32,win-64,win-32`` for ``Python 2.6,Python 2.7, Python 3.3, Python 3.4, and Python 3.5`` are all available.
 
-``conda install pandas``
+``conda install pandas=v0.18.0rc1 -c pandas``
 
 
 Quick vignette
