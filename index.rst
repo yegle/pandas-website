@@ -23,15 +23,16 @@ users upgrade to this version.
 
 Highlights include:
 
--  pandas >= 0.18.0 will no longer support compatibility with Python version 2.6 `GH7718 <https://github.com/pydata/pandas/issues/7718>`__
--  pandas >= 0.18.0 will no longer support compatibility with Python version 3.3 `GH11273 <https://github.com/pydata/pandas/issues/11273>`__
-- Window functions are now methods on ``.groupby`` like objects, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-enhancements-moments>`__
-- ``pd.test()`` top-level nose test runner is available `GH4327 <https://github.com/pydata/pandas/issues/4327>`__
-- Adding support for a ``RangeIndex`` as a specialized form of the ``Int64Index`` for memory savings, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-enhancements-rangeindex>`__.
+-  pandas >= 0.18.0 will no longer support compatibility with Python version 2.6 `GH7718 <https://github.com/pydata/pandas/issues/7718>`__ or version 3.3 `GH11273 <https://github.com/pydata/pandas/issues/11273>`__
+- Moving and expanding window functions are now methods on Series and DataFrame,
+  similar to ``.groupby``, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-enhancements-moments>`__
+- Adding support for a ``RangeIndex`` as a specialized form of the ``Int64Index``
+  for memory savings, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-enhancements-rangeindex>`__.
 - API breaking ``.resample`` changes to make it more ``.groupby`` like, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-breaking-resample>`__
-- Removal of support for deprecated float indexers; these will now raise a ``TypeError``, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-enhancements-float_indexers>`__
-- The ``.to_xarray()`` function has been added for compatibility with the `xarray package <http://xarray.pydata.org/en/stable/>`__ see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-enhancements-xarray>`__.
-- Addition of the `.str.extractall() method <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-enhancements-extractall>`__, and API changes to the the `.str.extract() method <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-enhancements-extract>`__, and the `.str.cat() method <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-enhancements-strcat>`__
+- Removal of support for deprecated float indexers; these will now raise a ``TypeError``, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-enhancements-float-indexers>`__
+- The ``.to_xarray()`` function has been added for compatibility with the `xarray package <http://xarray.pydata.org/en/stable/>`__ see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-enhancements-xarray>`__.
+- Addition of the `.str.extractall() method <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-enhancements-extractall>`__, and API changes to the the `.str.extract() method <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-enhancements-extract>`__, and the `.str.cat() method <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-enhancements-strcat>`__
+- ``pd.test()`` top-level nose test runner is available `GH4327 <https://github.com/pydata/pandas/issues/4327>`__
 
 See the `Whatsnew <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html>`__ for much more information. Please report any issues `here <https://github.com/pydata/pandas/issues/>`__
 
