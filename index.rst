@@ -12,10 +12,14 @@ easy-to-use data structures and data analysis tools for the `Python
 
 .. _numfocus organization: http://numfocus.org/news/2015/10/09/numfocus-announces-new-fiscally-sponsored-project-pandas/
 
-0.18.0rc1 Release Candidate (February 13, 2016)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0.18.0rc2 Release Candidate (March 9, 2016)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-** RELEASE CANDIDATE **
+** RELEASE CANDIDATE 2 **
+
+Compared to RC1, this includes the update to ``read_sas`` as well as fixes for float indexing.
+
+THIS IS NOT A PRODUCTION RELEASE
 
 This is a major release from 0.17.1 and includes a small number of API changes, several new features,
 enhancements, and performance improvements along with a large number of bug fixes. We recommend that all
@@ -31,6 +35,7 @@ Highlights include:
 - API breaking ``.resample`` changes to make it more ``.groupby`` like, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-breaking-resample>`__
 - Removal of support for positional indexing with floats, which was deprecated since 0.14.0. This will now raise a ``TypeError``, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-float-indexers>`__
 - The ``.to_xarray()`` function has been added for compatibility with the `xarray package <http://xarray.pydata.org/en/stable/>`__ see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-enhancements-xarray>`__.
+- The ``.read_sas()`` function has been enhanced to read ``sas7bdat`` files, see `here <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-enhancements-sas>`__
 - Addition of the `.str.extractall() method <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-enhancements-extractall>`__, and API changes to the the `.str.extract() method <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-enhancements-extract>`__, and the `.str.cat() method <http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0180-enhancements-strcat>`__
 - ``pd.test()`` top-level nose test runner is available `GH4327 <https://github.com/pydata/pandas/issues/4327>`__
 
@@ -42,7 +47,7 @@ Best way to Install
 Best way to get pandas is to install via `conda <http://pandas-docs.github.io/pandas-docs-travis/install.html#installing-pandas-with-anaconda>`__
 Builds for ``osx-64,linux-64,linux-32,win-64,win-32`` for ``Python 2.6,Python 2.7, Python 3.3, Python 3.4, and Python 3.5`` are all available.
 
-``conda install pandas=v0.18.0rc1 -c pandas``
+``conda install pandas=v0.18.0rc2 -c pandas``
 
 
 Quick vignette
