@@ -13,33 +13,35 @@ easy-to-use data structures and data analysis tools for the `Python
 
 .. _numfocus organization: http://numfocus.org/news/2015/10/09/numfocus-announces-new-fiscally-sponsored-project-pandas/
 
-0.18.0 Final (March 13, 2016)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0.18.1 Final (May 3, 2016)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is a major release from 0.17.1 and includes a small number of API changes, several new features,
-enhancements, and performance improvements along with a large number of bug fixes. We recommend that all
-users upgrade to this version.
+This is a minor release from 0.18.0 and includes a large number of bug fixes
+along with several new features, enhancements, and performance improvements.
+We recommend that all users upgrade to this version.
 
 Highlights include:
 
--  pandas >= 0.18.0 will no longer support compatibility with Python version 2.6 `GH7718 <https://github.com/pydata/pandas/issues/7718>`__ or version 3.3 `GH11273 <https://github.com/pydata/pandas/issues/11273>`__
-- Moving and expanding window functions are now methods on Series and DataFrame,
-  similar to ``.groupby``, see `here <http://pandas.pydata.org/pandas-docs/version/0.18.0/whatsnew.html#whatsnew-0180-enhancements-moments>`__
-- Adding support for a ``RangeIndex`` as a specialized form of the ``Int64Index``
-  for memory savings, see `here <http://pandas.pydata.org/pandas-docs/version/0.18.0/whatsnew.html#whatsnew-0180-enhancements-rangeindex>`__.
-- API breaking ``.resample`` changes to make it more ``.groupby`` like, see `here <http://pandas.pydata.org/pandas-docs/version/0.18.0/whatsnew.html#whatsnew-0180-breaking-resample>`__
-- Removal of support for positional indexing with floats, which was deprecated since 0.14.0. This will now raise a ``TypeError``, see `here <http://pandas.pydata.org/pandas-docs/version/0.18.0/whatsnew.html#whatsnew-0180-float-indexers>`__
-- The ``.to_xarray()`` function has been added for compatibility with the `xarray package <http://xarray.pydata.org/en/stable/>`__ see `here <http://pandas.pydata.org/pandas-docs/version/0.18.0/whatsnew.html#whatsnew-0180-enhancements-xarray>`__.
-- The ``.read_sas()`` function has been enhanced to read ``sas7bdat`` files, see `here <http://pandas.pydata.org/pandas-docs/version/0.18.0/whatsnew.html#whatsnew-0180-enhancements-sas>`__
-- Addition of the `.str.extractall() method <http://pandas.pydata.org/pandas-docs/version/0.18.0/whatsnew.html#whatsnew-0180-enhancements-extractall>`__, and API changes to the the `.str.extract() method <http://pandas.pydata.org/pandas-docs/version/0.18.0/whatsnew.html#whatsnew-0180-enhancements-extract>`__, and the `.str.cat() method <http://pandas.pydata.org/pandas-docs/version/0.18.0/whatsnew.html#whatsnew-0180-enhancements-strcat>`__
-- ``pd.test()`` top-level nose test runner is available `GH4327 <https://github.com/pydata/pandas/issues/4327>`__
+- ``.groupby(...)`` has been enhanced to provide convenient syntax when working with ``.rolling(..)``, ``.expanding(..)`` and ``.resample(..)`` per group, see `here <http://pandas.pydata.org/pandas-docs/version/0.18.1/whatsnew.html#whatsnew-0181-deferred-ops>`__
+- ``pd.to_datetime()`` has gained the ability to assemble dates from a ``DataFrame``, see `here <http://pandas.pydata.org/pandas-docs/version/0.18.1/whatsnew.html#whatsnew-0181-enhancements-assembling>`__
+- Method chaining improvements, see `here <http://pandas.pydata.org/pandas-docs/version/0.18.1/whatsnew.html#whatsnew-0181-enhancements-method-chain>`__
+- Custom business hour offset, see `here <http://pandas.pydata.org/pandas-docs/version/0.18.1/whatsnew.html#whatsnew-0181-enhancements-custombusinesshour>`__
+- Many bug fixes in the handling of ``sparse``, see `here <http://pandas.pydata.org/pandas-docs/version/0.18.1/whatsnew.html#whatsnew-0181-sparse>`__
+- Expanded the `Tutorials section <http://pandas.pydata.org/pandas-docs/version/0.18.1/tutorials.html#tutorial-modern>`__ with a feature on modern pandas, courtesy of `@TomAugsburger <https://twitter.com/TomAugspurger>`__.
 
-See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.18.0/whatsnew.html>`__ for much more information. Please report any issues `here <https://github.com/pydata/pandas/issues/>`__
+See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.18.1/whatsnew.html>`__ for much more information. Please report any issues `here <https://github.com/pydata/pandas/issues/>`__
+
+Highlights include:
+
+You an install the latest version of pandas via conda:
+
+``conda install pandas``
+
 
 Best way to Install
 ~~~~~~~~~~~~~~~~~~~
 
-Best way to get pandas is to install via `conda <http://pandas.pydata.org/pandas-docs/version/0.18.0/install.html#installing-pandas-with-anaconda>`__
+Best way to get pandas is to install via `conda <http://pandas.pydata.org/pandas-docs/stable/install.html#installing-pandas-with-anaconda>`__
 Builds for ``osx-64,linux-64,linux-32,win-64,win-32`` for ``Python 2.7, Python 3.4, and Python 3.5`` are all available.
 
 ``conda install pandas``
