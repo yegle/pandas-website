@@ -32,13 +32,6 @@ Highlights include:
 
 See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.18.1/whatsnew.html>`__ for much more information. Please report any issues `here <https://github.com/pydata/pandas/issues/>`__
 
-Highlights include:
-
-You an install the latest version of pandas via conda:
-
-``conda install pandas``
-
-
 Best way to Install
 ~~~~~~~~~~~~~~~~~~~
 
