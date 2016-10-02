@@ -14,23 +14,28 @@ easy-to-use data structures and data analysis tools for the `Python
 	:target: http://www.numfocus.org/open-source-projects.html
 
 
-0.18.1 Final (May 3, 2016)
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+0.19.0 Final (October 2, 2016)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is a minor release from 0.18.0 and includes a large number of bug fixes
-along with several new features, enhancements, and performance improvements.
-We recommend that all users upgrade to this version.
+This is a major release from 0.18.1 and includes number of API changes, several new features,
+enhancements, and performance improvements along with a large number of bug fixes. We recommend that all
+users upgrade to this version.
 
 Highlights include:
 
-- ``.groupby(...)`` has been enhanced to provide convenient syntax when working with ``.rolling(..)``, ``.expanding(..)`` and ``.resample(..)`` per group, see `here <http://pandas.pydata.org/pandas-docs/version/0.18.1/whatsnew.html#whatsnew-0181-deferred-ops>`__
-- ``pd.to_datetime()`` has gained the ability to assemble dates from a ``DataFrame``, see `here <http://pandas.pydata.org/pandas-docs/version/0.18.1/whatsnew.html#whatsnew-0181-enhancements-assembling>`__
-- Method chaining improvements, see `here <http://pandas.pydata.org/pandas-docs/version/0.18.1/whatsnew.html#whatsnew-0181-enhancements-method-chain>`__
-- Custom business hour offset, see `here <http://pandas.pydata.org/pandas-docs/version/0.18.1/whatsnew.html#whatsnew-0181-enhancements-custombusinesshour>`__
-- Many bug fixes in the handling of ``sparse``, see `here <http://pandas.pydata.org/pandas-docs/version/0.18.1/whatsnew.html#whatsnew-0181-sparse>`__
-- Expanded the `Tutorials section <http://pandas.pydata.org/pandas-docs/version/0.18.1/tutorials.html#tutorial-modern>`__ with a feature on modern pandas, courtesy of `@TomAugsburger <https://twitter.com/TomAugspurger>`__.
+- :func:`merge_asof` for asof-style time-series joining, see `here <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-enhancements-asof-merge>`__
+- ``.rolling()`` is now time-series aware, see `here <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-enhancements-rolling-ts>`__
+- :func:`read_csv` now supports parsing ``Categorical`` data, see `here <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-enhancements-read-csv-categorical>`__
+- A function :func:`union_categorical` has been added for combining categoricals, see `here <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-enhancements-union-categoricals>`__
+- ``PeriodIndex`` now has its own ``period`` dtype, and changed to be more consistent with other ``Index`` classes. See `here <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-api-period>`__
+- Sparse data structures gained enhanced support of ``int`` and ``bool`` dtypes, see `here <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-sparse>`__
+- Comparison operations with ``Series`` no longer ignores the index, see `here <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-api-series-ops>`__ for an overview of the API changes.
+- Introduction of a pandas development API for utility functions, see `here <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-dev-api>`__.
+- Deprecation of ``Panel4D`` and ``PanelND``. We recommend to represent these types of n-dimensional data with the `xarray package <http://xarray.pydata.org/en/stable/>`__.
+- Removal of the previously deprecated modules ``pandas.io.data``, ``pandas.io.wb``, ``pandas.tools.rplot``.
 
-See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.18.1/whatsnew.html>`__ for much more information. Please report any issues `here <https://github.com/pydata/pandas/issues/>`__
+See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html>`__ overview for an extensive list
+of all enhancements and bugs that have been fixed in 0.19.0. Please report any issues `here <https://github.com/pydata/pandas/issues/>`__
 
 Best way to Install
 ~~~~~~~~~~~~~~~~~~~
