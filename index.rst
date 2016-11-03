@@ -13,6 +13,14 @@ easy-to-use data structures and data analysis tools for the `Python
 	:alt: NUMFocus Logo
 	:target: http://www.numfocus.org/open-source-projects.html
 
+0.19.1 Final (November 3, 2016)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is a minor bug-fix release from 0.19.0 and includes some small regression fixes,
+bug fixes and performance improvements.
+
+See the `v0.19.1 Whatsnew page <http://pandas.pydata.org/pandas-docs/version/0.19.1/whatsnew.html>`__ for an overview of all bugs that have been fixed in 0.19.1.
+
 
 0.19.0 Final (October 2, 2016)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
