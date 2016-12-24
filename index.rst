@@ -13,6 +13,23 @@ easy-to-use data structures and data analysis tools for the `Python
 	:alt: NUMFocus Logo
 	:target: http://www.numfocus.org/open-source-projects.html
 
+
+
+0.19.2 Final (December 24, 2016)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is a minor bug-fix release in the 0.19.x series and includes some small regression fixes,
+bug fixes and performance improvements.
+
+Highlights include:
+
+- Compatibility with Python 3.6
+- Added a `Pandas Cheat Sheet <https://github.com/pandas-dev/pandas/tree/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf>`__.
+
+See the `v0.19.2 Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.19.2/whatsnew.html>` page for an overview of all
+bugs that have been fixed in 0.19.2.
+
+
 0.19.1 Final (November 3, 2016)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
