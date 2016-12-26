@@ -26,7 +26,7 @@ Highlights include:
 - Compatibility with Python 3.6
 - Added a `Pandas Cheat Sheet <https://github.com/pandas-dev/pandas/tree/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf>`__.
 
-See the `v0.19.2 Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.19.2/whatsnew.html>` page for an overview of all
+See the `v0.19.2 Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.19.2/whatsnew.html>`__ page for an overview of all
 bugs that have been fixed in 0.19.2.
 
 
