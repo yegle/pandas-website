@@ -13,5 +13,5 @@ script:
   - set -e
   - pip install sphinx doctr
   - python make.py html
-  - doctr deploy .
+  - doctr deploy --gh-pages-docs .
 
