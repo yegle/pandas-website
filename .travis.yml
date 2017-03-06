@@ -1,0 +1,17 @@
+language: python
+
+python:
+  - 3.6
+
+sudo: false
+
+env:
+  global:
+    - secure: "bkKeFReNgVpQlDn3HjGHPwQb9jBORAzE7SOA9JDOP7ulTNv+FlQT58IVPL7kZTYUinpZL+UWhFkDg2s77LMl0NjzhIvERT8BboA7CKpP1sJQzg051wVNPuc6OYL+m4T9J7HZueqFFp6Y+ONOs8kFrvmY3WJAd4qhvnH0EIazvfI="
+
+script:
+  - set -e
+  - pip install sphinx doctr
+  - python make.py html
+  - doctr deploy
+
