@@ -16,7 +16,7 @@ or submit your own.
 To learn more about how to contribute to the ongoing development of *pandas*,
 please check out our `contributing guidelines <http://pandas-docs.github.io/pandas-docs-travis/contributing.html>`_. For deeper
 development discussions related to the direction of the project, you can join
-the developer `mailing list <http://groups.google.com/group/pydata>`__.
+the developer `mailing list <https://mail.python.org/mailman/listinfo/pandas-dev>`__.
 
 History of Development
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -24,11 +24,10 @@ History of Development
 In 2008, *pandas* development began at `AQR Capital Management
 <http://www.aqr.com>`_. By the end of 2009 it had been `open sourced
 <http://en.wikipedia.org/wiki/Open_source>`_, and is actively supported today
-by `Lambda Foundry <http://www.lambdafoundry.com>`_, a company focused on
-building high-performance and high-productivity tools for Finance. Please see
-the `commercial support <commercialsupport.html>`_ page for full details.
-
-There is also a community of like-minded individuals around the world who
+by a community of like-minded individuals around the world who
 contribute their valuable time and energy to help make open source *pandas*
 possible. Thank you to `all of our contributors
 <https://github.com/pydata/pandas/contributors>`_.
+
+Since 2015, *pandas* is a `NUMFocus <http://www.numfocus.org/open-source-projects.html>`__ sponsored project. This will help ensure the success of development of *pandas* as a world-class open-source project.
+
