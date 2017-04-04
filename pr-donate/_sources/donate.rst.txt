@@ -13,13 +13,6 @@ Donations are managed by the `NUMFocus <http://www.numfocus.org/open-source-proj
     </div>
 
 
-.. raw:: html
-
-    <div>
-    <a href="https://www.flipcause.com/widget/MzA3OA==" class="donate-button">Support pandas</a>
-    </div>
-
-
 More specifically, donations can be used to work towards major improvements of the *pandas* Project, including:
 
 * Fixing long-standing limitations or inconsistencies in missing data (null values in integer and boolean data, and a more consistent notion of null / NA).
