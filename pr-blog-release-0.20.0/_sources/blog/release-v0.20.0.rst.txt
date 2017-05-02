@@ -91,18 +91,20 @@ Oftentimes, one can simply use a MultiIndex DataFrame for easily working with hi
 If you need higher dimensional data objects, fortunately there are other great projects like `xarray`_ that is much better suited for such kind of data. To easily try this out and convert your pandas objects to xarray, you can use the ``to_xarray`` method.
 
 
-Towards 1.0
-===========
+Towards pandas 1.0 ...
+======================
+
+The bigger deprecations and the clearer separation of public and private method are part of the effort to move towards a pandas 1.0.
 
 Development focus is shifting to pandas 1.0.
 
-Towards 2.0
-===========
+... and pandas 2.0
+==================
 
-Work on `pandas 2`_ is ongoing.
+Even though pandas 1.0 isn't yet out of the door, we are already thinking about pandas 2.0. We won't go into detail here, but for this we envision some more profound improvements (performance improvements, C-API access, integer NA values, ...), and more details can be found in the `pandas 2 repo`_.
 
 
-.. _pandas2: https://github.com/pandas-dev/pandas2
+.. _pandas 2 repo: https://github.com/pandas-dev/pandas2
 .. _release notes: http://pandas.pydata.org/pandas-docs/version/0.20.0/
 .. _xarray: http://xarray.pydata.org/en/stable/
 .. _new module privacy: http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0200-privacy
