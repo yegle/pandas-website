@@ -7,7 +7,7 @@ Python Data Analysis Library
 easy-to-use data structures and data analysis tools for the `Python
 <http://www.python.org/>`__ programming language.
 
-*pandas* is a `NUMFocus <http://www.numfocus.org/open-source-projects.html>`__ sponsored project. This will help ensure the success of development of *pandas* as a world-class open-source project.
+*pandas* is a `NUMFocus <http://www.numfocus.org/open-source-projects.html>`__ sponsored project. This will help ensure the success of development of *pandas* as a world-class open-source project, and makes it possible to :doc:`donate <donate>` to the project.
 
 .. image:: /_static/SponsoredProjectStamp_300px.png
 	:alt: NUMFocus Logo
@@ -151,6 +151,7 @@ What do our users have to say?
 	getpandas
 	community
 	talks
+	donate
 
 Library Highlights
 ~~~~~~~~~~~~~~~~~~
