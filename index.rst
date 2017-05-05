@@ -13,7 +13,38 @@ easy-to-use data structures and data analysis tools for the `Python
 	:alt: NUMFocus Logo
 	:target: http://www.numfocus.org/open-source-projects.html
 
+0.20.0 Final (May 4, 2017)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+This is a major release from 0.19.2 and includes a number of API changes, deprecations, new features,
+enhancements, and performance improvements along with a large number of bug fixes. We recommend that all
+users upgrade to this version.
+
+Highlights include:
+
+- New ``.agg()`` API for Series/DataFrame similar to the groupby-rolling-resample API's, see `here <https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-enhancements-agg>`__
+- Integration with the ``feather-format``, including a new top-level ``pd.read_feather()`` and ``DataFrame.to_feather()`` method, see `here <https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-io-feather>`__.
+- The ``.ix`` indexer has been deprecated, see `here <https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200-api_breaking-deprecate_ix>`__
+- ``Panel`` has been deprecated, see `here <https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200.api_breaking-deprecate_panel>`__
+- Addition of an ``IntervalIndex`` and ``Interval`` scalar type, see `here <https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200-enhancements-intervalindex>`__
+- Improved user API when accessing levels in ``.groupby()``, see `here <https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200-enhancements-groupby_access>`__
+- Improved support for ``UInt64`` dtypes, see `here <https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200-enhancements-uint64_support>`__
+- A new orient for JSON serialization, ``orient='table'`` that uses the Table Schema spec, see `here <https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-enhancements-table_schema>`__
+- Experimental support for exporting ``DataFrame.style`` formats to Excel , see `here <https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200-enhancements-style_excel>`__
+- Window Binary Corr/Cov operations now return a MultiIndexed ``DataFrame`` rather than a ``Panel``, as ``Panel`` is now deprecated, see `here <https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200-api_breaking-rolling_pairwise>`__
+- Support for S3 handling now uses ``s3fs``, see `here <https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200-api_breaking-s3>`__
+- Google BigQuery support now uses the ``pandas-gbq`` library, see `here <https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200-api_breaking-gbq>`__
+- Switched the test framework to use `pytest <http://doc.pytest.org/en/latest>`__
+
+.. warning::
+
+  Pandas has changed the internal structure and layout of the codebase.
+  This can affect imports that are not from the top-level ``pandas.*`` namespace, please see the changes `here <https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200.privacy>`.
+
+Check the `API Changes <whatsnew_0200.api_breaking>` and `deprecations <whatsnew_0200.deprecations>` before updating.
+
+See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html>`__ overview for an extensive list
+of all enhancements, bug fixes, and breaking changes in 0.20.0. Please report any issues `here <https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-https://github.com/pydata/pandas/issues/>`__
 
 0.19.2 Final (December 24, 2016)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -28,39 +59,6 @@ Highlights include:
 
 See the `v0.19.2 Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.19.2/whatsnew.html>`__ page for an overview of all
 bugs that have been fixed in 0.19.2.
-
-
-0.19.1 Final (November 3, 2016)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This is a minor bug-fix release from 0.19.0 and includes some small regression fixes,
-bug fixes and performance improvements.
-
-See the `v0.19.1 Whatsnew page <http://pandas.pydata.org/pandas-docs/version/0.19.1/whatsnew.html>`__ for an overview of all bugs that have been fixed in 0.19.1.
-
-
-0.19.0 Final (October 2, 2016)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This is a major release from 0.18.1 and includes number of API changes, several new features,
-enhancements, and performance improvements along with a large number of bug fixes. We recommend that all
-users upgrade to this version.
-
-Highlights include:
-
-- :func:`merge_asof` for asof-style time-series joining, see `here <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-enhancements-asof-merge>`__
-- ``.rolling()`` is now time-series aware, see `here <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-enhancements-rolling-ts>`__
-- :func:`read_csv` now supports parsing ``Categorical`` data, see `here <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-enhancements-read-csv-categorical>`__
-- A function :func:`union_categorical` has been added for combining categoricals, see `here <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-enhancements-union-categoricals>`__
-- ``PeriodIndex`` now has its own ``period`` dtype, and changed to be more consistent with other ``Index`` classes. See `here <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-api-period>`__
-- Sparse data structures gained enhanced support of ``int`` and ``bool`` dtypes, see `here <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-sparse>`__
-- Comparison operations with ``Series`` no longer ignores the index, see `here <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-api-series-ops>`__ for an overview of the API changes.
-- Introduction of a pandas development API for utility functions, see `here <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-dev-api>`__.
-- Deprecation of ``Panel4D`` and ``PanelND``. We recommend to represent these types of n-dimensional data with the `xarray package <http://xarray.pydata.org/en/stable/>`__.
-- Removal of the previously deprecated modules ``pandas.io.data``, ``pandas.io.wb``, ``pandas.tools.rplot``.
-
-See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html>`__ overview for an extensive list
-of all enhancements and bugs that have been fixed in 0.19.0. Please report any issues `here <https://github.com/pydata/pandas/issues/>`__
 
 Best way to Install
 ~~~~~~~~~~~~~~~~~~~
