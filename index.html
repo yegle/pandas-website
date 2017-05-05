@@ -76,7 +76,7 @@
 
 	<div class="tile">
 		<h4>Development</h4>
-        0.20.2 - 2017<br/>
+        0.21.0 - 2017<br/>
         <a href="https://github.com/pydata/pandas">github</a> //
         <a href="http://pandas-docs.github.io/pandas-docs-travis/">docs</a>
     </div>
@@ -315,33 +315,33 @@ enhancements, and performance improvements along with a large number of bug fixe
 users upgrade to this version.</p>
 <p>Highlights include:</p>
 <ul class="simple">
-<li>New <code class="docutils literal"><span class="pre">.agg()</span></code> API for Series/DataFrame similar to the groupby-rolling-resample API&#8217;s, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.1/whatsnew.html#whatsnew-0201-enhancements-agg">here</a></li>
-<li>Integration with the <code class="docutils literal"><span class="pre">feather-format</span></code>, including a new top-level <code class="docutils literal"><span class="pre">pd.read_feather()</span></code> and <code class="docutils literal"><span class="pre">DataFrame.to_feather()</span></code> method, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.1/whatsnew.html#whatsnew-0201-io-feather">here</a>.</li>
-<li>The <code class="docutils literal"><span class="pre">.ix</span></code> indexer has been deprecated, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.1/whatsnew.html#whatsnew-0201-whatsnew_0201-api_breaking-deprecate_ix">here</a></li>
-<li><code class="docutils literal"><span class="pre">Panel</span></code> has been deprecated, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.1/whatsnew.html#whatsnew-0201-whatsnew_0201.api_breaking-deprecate_panel">here</a></li>
-<li>Addition of an <code class="docutils literal"><span class="pre">IntervalIndex</span></code> and <code class="docutils literal"><span class="pre">Interval</span></code> scalar type, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.1/whatsnew.html#whatsnew-0201-whatsnew_0201-enhancements-intervalindex">here</a></li>
-<li>Improved user API when accessing levels in <code class="docutils literal"><span class="pre">.groupby()</span></code>, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.1/whatsnew.html#whatsnew-0201-whatsnew_0201-enhancements-groupby_access">here</a></li>
-<li>Improved support for <code class="docutils literal"><span class="pre">UInt64</span></code> dtypes, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.1/whatsnew.html#whatsnew-0201-whatsnew_0201-enhancements-uint64_support">here</a></li>
-<li>A new orient for JSON serialization, <code class="docutils literal"><span class="pre">orient='table'</span></code> that uses the Table Schema spec, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.1/whatsnew.html#whatsnew-0201-enhancements-table_schema">here</a></li>
-<li>Experimental support for exporting <code class="docutils literal"><span class="pre">DataFrame.style</span></code> formats to Excel , see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.1/whatsnew.html#whatsnew-0201-whatsnew_0201-enhancements-style_excel">here</a></li>
-<li>Window Binary Corr/Cov operations now return a MultiIndexed <code class="docutils literal"><span class="pre">DataFrame</span></code> rather than a <code class="docutils literal"><span class="pre">Panel</span></code>, as <code class="docutils literal"><span class="pre">Panel</span></code> is now deprecated, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.1/whatsnew.html#whatsnew-0201-whatsnew_0201-api_breaking-rolling_pairwise">here</a></li>
-<li>Support for S3 handling now uses <code class="docutils literal"><span class="pre">s3fs</span></code>, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.1/whatsnew.html#whatsnew-0201-whatsnew_0201-api_breaking-s3">here</a></li>
-<li>Google BigQuery support now uses the <code class="docutils literal"><span class="pre">pandas-gbq</span></code> library, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.1/whatsnew.html#whatsnew-0201-whatsnew_0201-api_breaking-gbq">here</a></li>
+<li>New <code class="docutils literal"><span class="pre">.agg()</span></code> API for Series/DataFrame similar to the groupby-rolling-resample API&#8217;s, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-agg">here</a></li>
+<li>Integration with the <code class="docutils literal"><span class="pre">feather-format</span></code>, including a new top-level <code class="docutils literal"><span class="pre">pd.read_feather()</span></code> and <code class="docutils literal"><span class="pre">DataFrame.to_feather()</span></code> method, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-io-feather">here</a>.</li>
+<li>The <code class="docutils literal"><span class="pre">.ix</span></code> indexer has been deprecated, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api_breaking-deprecate_ix">here</a></li>
+<li><code class="docutils literal"><span class="pre">Panel</span></code> has been deprecated, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api_breaking-deprecate_panel">here</a></li>
+<li>Addition of an <code class="docutils literal"><span class="pre">IntervalIndex</span></code> and <code class="docutils literal"><span class="pre">Interval</span></code> scalar type, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-intervalindex">here</a></li>
+<li>Improved user API when accessing levels in <code class="docutils literal"><span class="pre">.groupby()</span></code>, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-groupby_access">here</a></li>
+<li>Improved support for <code class="docutils literal"><span class="pre">UInt64</span></code> dtypes, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-uint64_support">here</a></li>
+<li>A new orient for JSON serialization, <code class="docutils literal"><span class="pre">orient='table'</span></code> that uses the Table Schema spec, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0201-enhancements-table_schema">here</a></li>
+<li>Experimental support for exporting <code class="docutils literal"><span class="pre">DataFrame.style</span></code> formats to Excel , see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-style_excel">here</a></li>
+<li>Window Binary Corr/Cov operations now return a MultiIndexed <code class="docutils literal"><span class="pre">DataFrame</span></code> rather than a <code class="docutils literal"><span class="pre">Panel</span></code>, as <code class="docutils literal"><span class="pre">Panel</span></code> is now deprecated, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api_breaking-rolling_pairwise">here</a></li>
+<li>Support for S3 handling now uses <code class="docutils literal"><span class="pre">s3fs</span></code>, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api_breaking-s3">here</a></li>
+<li>Google BigQuery support now uses the <code class="docutils literal"><span class="pre">pandas-gbq</span></code> library, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api_breaking-gbq">here</a></li>
 <li>Switched the test framework to use <a class="reference external" href="http://doc.pytest.org/en/latest">pytest</a></li>
 </ul>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Pandas has changed the internal structure and layout of the codebase.
-This can affect imports that are not from the top-level <code class="docutils literal"><span class="pre">pandas.*</span></code> namespace, please see the changes <cite>here &lt;https://pandas.pydata.org/pandas-docs/version/0.20.1/whatsnew.html#whatsnew-0201-whatsnew_0201.privacy&gt;</cite>.</p>
+This can affect imports that are not from the top-level <code class="docutils literal"><span class="pre">pandas.*</span></code> namespace, please see the changes <cite>here &lt;https://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200.privacy&gt;</cite>.</p>
 </div>
-<p>Check the <cite>API Changes &lt;whatsnew_0201.api_breaking&gt;</cite> and <cite>deprecations &lt;whatsnew_0201.deprecations&gt;</cite> before updating.</p>
+<p>Check the <cite>API Changes &lt;whatsnew_0200.api_breaking&gt;</cite> and <cite>deprecations &lt;whatsnew_0200.deprecations&gt;</cite> before updating.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">This is a combined release for 0.20.1 and and 0.20.1.
-Version 0.20.1 contains one additional change for backwards-compatibility with downstream projects using pandas&#8217; hashing routines. (<a href="#id1"><span class="problematic" id="id2">:issue:`16250`</span></a>)</p>
+<p class="last">This is a combined release for 0.20.0 and and 0.20.1.
+Version 0.20.1 contains one additional change for backwards-compatibility with downstream projects using pandas&#8217; hashing routines.</p>
 </div>
-<p>See the <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.20.1/whatsnew.html">Whatsnew</a> overview for an extensive list
-of all enhancements, bug fixes, and breaking changes in 0.20.1. Please report any issues <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.1/whatsnew.html#whatsnew-0201-https://github.com/pydata/pandas/issues/">here</a></p>
+<p>See the <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html">Whatsnew</a> overview for an extensive list
+of all enhancements, bug fixes, and breaking changes in 0.20.1. Please report any issues <a class="reference external" href="https://github.com/pydata/pandas/issues/">here</a></p>
 </div>
 <div class="section" id="final-december-24-2016">
 <h2>0.19.2 Final (December 24, 2016)<a class="headerlink" href="#final-december-24-2016" title="Permalink to this headline">¶</a></h2>
