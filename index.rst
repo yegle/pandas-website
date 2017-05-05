@@ -39,9 +39,9 @@ Highlights include:
 .. warning::
 
   Pandas has changed the internal structure and layout of the codebase.
-  This can affect imports that are not from the top-level ``pandas.*`` namespace, please see the changes `here <https://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200.privacy>`.
+  This can affect imports that are not from the top-level ``pandas.*`` namespace, please see the changes `here <https://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200.privacy>`__.
 
-Check the `API Changes <whatsnew_0200.api_breaking>` and `deprecations <whatsnew_0200.deprecations>` before updating.
+Check the `API Changes <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api-breaking>`__ and `deprecations <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-deprecations>`__ before updating.
 
 .. note::
 
