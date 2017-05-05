@@ -23,17 +23,17 @@ users upgrade to this version.
 Highlights include:
 
 - New ``.agg()`` API for Series/DataFrame similar to the groupby-rolling-resample API's, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-agg>`__
-- Integration with the ``feather-format``, including a new top-level ``pd.read_feather()`` and ``DataFrame.to_feather()`` method, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-io-feather>`__.
-- The ``.ix`` indexer has been deprecated, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api_breaking-deprecate_ix>`__
-- ``Panel`` has been deprecated, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api_breaking-deprecate_panel>`__
+- Integration with the ``feather-format``, including a new top-level ``pd.read_feather()`` and ``DataFrame.to_feather()`` method, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/io.html#io-feather>`__.
+- The ``.ix`` indexer has been deprecated, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api-breaking-deprecate-ix>`__
+- ``Panel`` has been deprecated, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api-breaking-deprecate-panel>`__
 - Addition of an ``IntervalIndex`` and ``Interval`` scalar type, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-intervalindex>`__
-- Improved user API when accessing levels in ``.groupby()``, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-groupby_access>`__
-- Improved support for ``UInt64`` dtypes, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-uint64_support>`__
-- A new orient for JSON serialization, ``orient='table'`` that uses the Table Schema spec, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0201-enhancements-table_schema>`__
+- Improved user API when accessing levels in ``.groupby()``, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-groupby-access>`__
+- Improved support for ``UInt64`` dtypes, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-uint64-support>`__
+- A new orient for JSON serialization, ``orient='table'`` that uses the Table Schema spec, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-table-schema>`__
 - Experimental support for exporting ``DataFrame.style`` formats to Excel , see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-style_excel>`__
-- Window Binary Corr/Cov operations now return a MultiIndexed ``DataFrame`` rather than a ``Panel``, as ``Panel`` is now deprecated, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api_breaking-rolling_pairwise>`__
-- Support for S3 handling now uses ``s3fs``, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api_breaking-s3>`__
-- Google BigQuery support now uses the ``pandas-gbq`` library, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api_breaking-gbq>`__
+- Window Binary Corr/Cov operations now return a MultiIndexed ``DataFrame`` rather than a ``Panel``, as ``Panel`` is now deprecated, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api-breaking-rolling-pairwise>`__
+- Support for S3 handling now uses ``s3fs``, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api-breaking-s3>`__
+- Google BigQuery support now uses the ``pandas-gbq`` library, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api-breaking-gbq>`__
 - Switched the test framework to use `pytest <http://doc.pytest.org/en/latest>`__
 
 .. warning::
