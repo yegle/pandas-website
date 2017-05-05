@@ -68,7 +68,7 @@
 
 	<div class="tile">
 				<h4>Release</h4>
-				0.19.2 - December 2016<br/>
+				0.20.0 - May 2017<br/>
 				<a href="http://pypi.python.org/pypi/pandas/#downloads">download</a>          //
 				<a href="http://pandas.pydata.org/pandas-docs/stable/">docs</a> //
 				<a href="http://pandas.pydata.org/pandas-docs/stable/pandas.pdf">pdf</a>
@@ -76,7 +76,7 @@
 
 	<div class="tile">
 		<h4>Development</h4>
-        0.20.0 - 2017<br/>
+        0.20.1 - 2017<br/>
         <a href="https://github.com/pydata/pandas">github</a> //
         <a href="http://pandas-docs.github.io/pandas-docs-travis/">docs</a>
     </div>
@@ -84,6 +84,12 @@
     <div class="tile">
       <h4>Previous Releases</h4>
 
+			<div>
+		        0.19.2 -
+		        <a href="http://pypi.python.org/pypi/pandas/0.19.2/#downloads">download</a>          //
+		        <a href="http://pandas.pydata.org/pandas-docs/version/0.19.2/">docs</a> //
+		        <a href="http://pandas.pydata.org/pandas-docs/version/0.19.2/pandas.pdf">pdf</a>
+			</div>
 			<div>
 		        0.19.1 -
 		        <a href="http://pypi.python.org/pypi/pandas/0.19.1/#downloads">download</a>          //
@@ -302,6 +308,36 @@
 easy-to-use data structures and data analysis tools for the <a class="reference external" href="http://www.python.org/">Python</a> programming language.</p>
 <p><em>pandas</em> is a <a class="reference external" href="http://www.numfocus.org/open-source-projects.html">NUMFocus</a> sponsored project. This will help ensure the success of development of <em>pandas</em> as a world-class open-source project, and makes it possible to <a class="reference internal" href="donate.html"><span class="doc">donate</span></a> to the project.</p>
 <a class="reference external image-reference" href="http://www.numfocus.org/open-source-projects.html"><img alt="NUMFocus Logo" src="_images/SponsoredProjectStamp_300px.png" /></a>
+<div class="section" id="final-may-4-2017">
+<h2>0.20.0 Final (May 4, 2017)<a class="headerlink" href="#final-may-4-2017" title="Permalink to this headline">¶</a></h2>
+<p>This is a major release from 0.19.2 and includes a number of API changes, deprecations, new features,
+enhancements, and performance improvements along with a large number of bug fixes. We recommend that all
+users upgrade to this version.</p>
+<p>Highlights include:</p>
+<ul class="simple">
+<li>New <code class="docutils literal"><span class="pre">.agg()</span></code> API for Series/DataFrame similar to the groupby-rolling-resample API&#8217;s, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-enhancements-agg">here</a></li>
+<li>Integration with the <code class="docutils literal"><span class="pre">feather-format</span></code>, including a new top-level <code class="docutils literal"><span class="pre">pd.read_feather()</span></code> and <code class="docutils literal"><span class="pre">DataFrame.to_feather()</span></code> method, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-io-feather">here</a>.</li>
+<li>The <code class="docutils literal"><span class="pre">.ix</span></code> indexer has been deprecated, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200-api_breaking-deprecate_ix">here</a></li>
+<li><code class="docutils literal"><span class="pre">Panel</span></code> has been deprecated, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200.api_breaking-deprecate_panel">here</a></li>
+<li>Addition of an <code class="docutils literal"><span class="pre">IntervalIndex</span></code> and <code class="docutils literal"><span class="pre">Interval</span></code> scalar type, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200-enhancements-intervalindex">here</a></li>
+<li>Improved user API when accessing levels in <code class="docutils literal"><span class="pre">.groupby()</span></code>, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200-enhancements-groupby_access">here</a></li>
+<li>Improved support for <code class="docutils literal"><span class="pre">UInt64</span></code> dtypes, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200-enhancements-uint64_support">here</a></li>
+<li>A new orient for JSON serialization, <code class="docutils literal"><span class="pre">orient='table'</span></code> that uses the Table Schema spec, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-enhancements-table_schema">here</a></li>
+<li>Experimental support for exporting <code class="docutils literal"><span class="pre">DataFrame.style</span></code> formats to Excel , see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200-enhancements-style_excel">here</a></li>
+<li>Window Binary Corr/Cov operations now return a MultiIndexed <code class="docutils literal"><span class="pre">DataFrame</span></code> rather than a <code class="docutils literal"><span class="pre">Panel</span></code>, as <code class="docutils literal"><span class="pre">Panel</span></code> is now deprecated, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200-api_breaking-rolling_pairwise">here</a></li>
+<li>Support for S3 handling now uses <code class="docutils literal"><span class="pre">s3fs</span></code>, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200-api_breaking-s3">here</a></li>
+<li>Google BigQuery support now uses the <code class="docutils literal"><span class="pre">pandas-gbq</span></code> library, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200-api_breaking-gbq">here</a></li>
+<li>Switched the test framework to use <a class="reference external" href="http://doc.pytest.org/en/latest">pytest</a></li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Pandas has changed the internal structure and layout of the codebase.
+This can affect imports that are not from the top-level <code class="docutils literal"><span class="pre">pandas.*</span></code> namespace, please see the changes <cite>here &lt;https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-whatsnew_0200.privacy&gt;</cite>.</p>
+</div>
+<p>Check the <cite>API Changes &lt;whatsnew_0200.api_breaking&gt;</cite> and <cite>deprecations &lt;whatsnew_0200.deprecations&gt;</cite> before updating.</p>
+<p>See the <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html">Whatsnew</a> overview for an extensive list
+of all enhancements, bug fixes, and breaking changes in 0.20.0. Please report any issues <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/0.20.0/whatsnew.html#whatsnew-0200-https://github.com/pydata/pandas/issues/">here</a></p>
+</div>
 <div class="section" id="final-december-24-2016">
 <h2>0.19.2 Final (December 24, 2016)<a class="headerlink" href="#final-december-24-2016" title="Permalink to this headline">¶</a></h2>
 <p>This is a minor bug-fix release in the 0.19.x series and includes some small regression fixes,
@@ -313,33 +349,6 @@ bug fixes and performance improvements.</p>
 </ul>
 <p>See the <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.19.2/whatsnew.html">v0.19.2 Whatsnew</a> page for an overview of all
 bugs that have been fixed in 0.19.2.</p>
-</div>
-<div class="section" id="final-november-3-2016">
-<h2>0.19.1 Final (November 3, 2016)<a class="headerlink" href="#final-november-3-2016" title="Permalink to this headline">¶</a></h2>
-<p>This is a minor bug-fix release from 0.19.0 and includes some small regression fixes,
-bug fixes and performance improvements.</p>
-<p>See the <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.19.1/whatsnew.html">v0.19.1 Whatsnew page</a> for an overview of all bugs that have been fixed in 0.19.1.</p>
-</div>
-<div class="section" id="final-october-2-2016">
-<h2>0.19.0 Final (October 2, 2016)<a class="headerlink" href="#final-october-2-2016" title="Permalink to this headline">¶</a></h2>
-<p>This is a major release from 0.18.1 and includes number of API changes, several new features,
-enhancements, and performance improvements along with a large number of bug fixes. We recommend that all
-users upgrade to this version.</p>
-<p>Highlights include:</p>
-<ul class="simple">
-<li><code class="xref py py-func docutils literal"><span class="pre">merge_asof()</span></code> for asof-style time-series joining, see <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-enhancements-asof-merge">here</a></li>
-<li><code class="docutils literal"><span class="pre">.rolling()</span></code> is now time-series aware, see <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-enhancements-rolling-ts">here</a></li>
-<li><code class="xref py py-func docutils literal"><span class="pre">read_csv()</span></code> now supports parsing <code class="docutils literal"><span class="pre">Categorical</span></code> data, see <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-enhancements-read-csv-categorical">here</a></li>
-<li>A function <code class="xref py py-func docutils literal"><span class="pre">union_categorical()</span></code> has been added for combining categoricals, see <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-enhancements-union-categoricals">here</a></li>
-<li><code class="docutils literal"><span class="pre">PeriodIndex</span></code> now has its own <code class="docutils literal"><span class="pre">period</span></code> dtype, and changed to be more consistent with other <code class="docutils literal"><span class="pre">Index</span></code> classes. See <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-api-period">here</a></li>
-<li>Sparse data structures gained enhanced support of <code class="docutils literal"><span class="pre">int</span></code> and <code class="docutils literal"><span class="pre">bool</span></code> dtypes, see <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-sparse">here</a></li>
-<li>Comparison operations with <code class="docutils literal"><span class="pre">Series</span></code> no longer ignores the index, see <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-api-series-ops">here</a> for an overview of the API changes.</li>
-<li>Introduction of a pandas development API for utility functions, see <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html#whatsnew-0190-dev-api">here</a>.</li>
-<li>Deprecation of <code class="docutils literal"><span class="pre">Panel4D</span></code> and <code class="docutils literal"><span class="pre">PanelND</span></code>. We recommend to represent these types of n-dimensional data with the <a class="reference external" href="http://xarray.pydata.org/en/stable/">xarray package</a>.</li>
-<li>Removal of the previously deprecated modules <code class="docutils literal"><span class="pre">pandas.io.data</span></code>, <code class="docutils literal"><span class="pre">pandas.io.wb</span></code>, <code class="docutils literal"><span class="pre">pandas.tools.rplot</span></code>.</li>
-</ul>
-<p>See the <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.19.0/whatsnew.html">Whatsnew</a> overview for an extensive list
-of all enhancements and bugs that have been fixed in 0.19.0. Please report any issues <a class="reference external" href="https://github.com/pydata/pandas/issues/">here</a></p>
 </div>
 <div class="section" id="best-way-to-install">
 <h2>Best way to Install<a class="headerlink" href="#best-way-to-install" title="Permalink to this headline">¶</a></h2>
