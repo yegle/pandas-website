@@ -64,33 +64,24 @@ versions. Here's a small example.
 
 .. code-block:: python
 
-   In [1]: df = pd.DataFrame(np.random.randn(10, 3), columns=['A', 'B', 'C'],
-                             index=pd.date_range('1/1/2000', periods=10))
-
-   In [2]: df
-   Out[2]:
-                      A         B         C
-   2000-01-01  1.171020 -0.700012  1.940064
-   2000-01-02 -0.478268  0.523242  2.595180
-   2000-01-03 -0.442089 -0.037680 -0.213981
-   2000-01-04 -0.584561 -1.124468  1.101208
-   2000-01-05 -1.656095  1.325920 -1.251329
-   2000-01-06  1.206701 -0.894617 -0.470827
-   2000-01-07 -0.604539 -0.341046 -0.314466
-   2000-01-08  0.801233 -0.667875  1.279062
-   2000-01-09  2.562500 -1.346682  1.994776
-   2000-01-10  1.542442  0.468068 -0.749461
+   In [3]: df
+   Out[3]:
+                      A         B
+   2000-01-01  0.365907  0.663300
+   2000-01-02 -0.143427  0.230071
+   2000-01-03  1.669802  0.560368
+   2000-01-04  1.955856 -1.016898
 
 We can perform a ``.describe()`` like aggregation quite easily. The items
 that we are aggregating are returned as the *rows*.
 
 .. code-block:: python
 
-   In [3]: df.agg(['min', 'max'])
-   Out[3]:
-               A         B         C
-   min -1.656095 -1.346682 -1.251329
-   max  2.562500  1.325920  2.595180
+   In [4]: df.agg(['min', 'max'])
+   Out[4]:
+               A         B
+   min -0.143427 -1.016898
+   max  1.955856  0.663300
 
 
 If we perform the same aggregation when grouping, notice that the
@@ -99,39 +90,30 @@ composed of the column and the aggregation name.
 
 .. code-block:: python
 
-   In [7]: df.groupby(df.index.weekday_name).agg(['min', 'max'])
-   Out[7]:
-                     A                   B                   C
-                   min       max       min       max       min       max
-   Friday    -0.604539 -0.604539 -0.341046 -0.341046 -0.314466 -0.314466
-   Monday    -0.442089  1.542442 -0.037680  0.468068 -0.749461 -0.213981
-   Saturday   0.801233  1.171020 -0.700012 -0.667875  1.279062  1.940064
-   Sunday    -0.478268  2.562500 -1.346682  0.523242  1.994776  2.595180
-   Thursday   1.206701  1.206701 -0.894617 -0.894617 -0.470827 -0.470827
-   Tuesday   -0.584561 -0.584561 -1.124468 -1.124468  1.101208  1.101208
-   Wednesday -1.656095 -1.656095  1.325920  1.325920 -1.251329 -1.251329
+   In [5]: df.groupby(df.index.weekday_name).agg(['min', 'max'])
+   Out[5]:
+                    A                   B
+                  min       max       min       max
+   Monday    1.669802  1.669802  0.560368  0.560368
+   Saturday  0.365907  0.365907  0.663300  0.663300
+   Sunday   -0.143427 -0.143427  0.230071  0.230071
+   Tuesday   1.955856  1.955856 -1.016898 -1.016898
 
 In fact you can easily transform between these formats via ``.stack()``:
 
 .. code-block:: python
 
-   In [8]: df.groupby(df.index.weekday_name).agg(['min', 'max']).stack()
-   Out[8]:
-                         A         B         C
-   Friday    min -0.604539 -0.341046 -0.314466
-             max -0.604539 -0.341046 -0.314466
-   Monday    min -0.442089 -0.037680 -0.749461
-             max  1.542442  0.468068 -0.213981
-   Saturday  min  0.801233 -0.700012  1.279062
-             max  1.171020 -0.667875  1.940064
-   Sunday    min -0.478268 -1.346682  1.994776
-             max  2.562500  0.523242  2.595180
-   Thursday  min  1.206701 -0.894617 -0.470827
-             max  1.206701 -0.894617 -0.470827
-   Tuesday   min -0.584561 -1.124468  1.101208
-             max -0.584561 -1.124468  1.101208
-   Wednesday min -1.656095  1.325920 -1.251329
-             max -1.656095  1.325920 -1.251329
+   In [6]: df.groupby(df.index.weekday_name).agg(['min', 'max']).stack()
+   Out[6]:
+                        A         B
+   Monday   min  1.669802  0.560368
+            max  1.669802  0.560368
+   Saturday min  0.365907  0.663300
+            max  0.365907  0.663300
+   Sunday   min -0.143427  0.230071
+            max -0.143427  0.230071
+   Tuesday  min  1.955856 -1.016898
+            max  1.955856 -1.016898
 
 Fundamentally, grouping with an aggregation has an additional dimension compared
 to aggregation on a Series/DataFrame. We choose to conform to the ``.describe()``
