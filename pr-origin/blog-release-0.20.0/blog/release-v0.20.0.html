@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-27880019-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <title>Pandas 0.20 &#8212; pandas: Python Data Analysis Library</title>
+    
+    <link rel="stylesheet" href="../_static/pydata.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+  </head>
+  <body role="document">
+<div class="header-wrapper">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img class="logo" src="_static/pandas_logo.png" alt="Logo"/></a>
+		</div>
+
+        <div class="rel">
+			<a href="index.html">overview</a> //
+			<a href="getpandas.html">get pandas</a> //
+			<a href="http://pandas.pydata.org/pandas-docs/stable">documentation</a> //
+			<a href="community.html">community</a> //
+			<a href="talks.html">talks</a>
+		</div>
+
+	</div>
+</div>
+
+<div class="content-wrapper">
+<div class="content">
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+
+<div class="sidebarblock">
+<h3>Versions</h3>
+
+	<div class="tile">
+				<h4>Release</h4>
+				0.19.2 - December 2016<br/>
+				<a href="http://pypi.python.org/pypi/pandas/#downloads">download</a>          //
+				<a href="http://pandas.pydata.org/pandas-docs/stable/">docs</a> //
+				<a href="http://pandas.pydata.org/pandas-docs/stable/pandas.pdf">pdf</a>
+	</div>
+
+	<div class="tile">
+		<h4>Development</h4>
+        0.20.0 - 2017<br/>
+        <a href="https://github.com/pydata/pandas">github</a> //
+        <a href="http://pandas-docs.github.io/pandas-docs-travis/">docs</a>
+    </div>
+
+    <div class="tile">
+      <h4>Previous Releases</h4>
+
+			<div>
+		        0.19.1 -
+		        <a href="http://pypi.python.org/pypi/pandas/0.19.1/#downloads">download</a>          //
+		        <a href="http://pandas.pydata.org/pandas-docs/version/0.19.1/">docs</a> //
+		        <a href="http://pandas.pydata.org/pandas-docs/version/0.19.1/pandas.pdf">pdf</a>
+			</div>
+		<div>
+	        0.19.0 -
+	        <a href="http://pypi.python.org/pypi/pandas/0.19.0/#downloads">download</a>          //
+	        <a href="http://pandas.pydata.org/pandas-docs/version/0.19.0/">docs</a> //
+	        <a href="http://pandas.pydata.org/pandas-docs/version/0.19.0/pandas.pdf">pdf</a>
+		</div>
+		<div>
+	        0.18.1 -
+	        <a href="http://pypi.python.org/pypi/pandas/0.18.1/#downloads">download</a>          //
+	        <a href="http://pandas.pydata.org/pandas-docs/version/0.18.1/">docs</a> //
+	        <a href="http://pandas.pydata.org/pandas-docs/version/0.18.1/pandas.pdf">pdf</a>
+		</div>
+    <div>
+        0.18.0 -
+        <a href="http://pypi.python.org/pypi/pandas/0.18.0/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.18.0/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.18.0/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.17.1 -
+        <a href="http://pypi.python.org/pypi/pandas/0.17.1/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.17.1/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.17.1/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.17.0 -
+        <a href="http://pypi.python.org/pypi/pandas/0.17.0/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.16.2 -
+        <a href="http://pypi.python.org/pypi/pandas/0.16.2/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.16.2/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.16.2/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.16.1 -
+        <a href="http://pypi.python.org/pypi/pandas/0.16.1/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.16.1/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.16.1/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.16.0 -
+        <a href="http://pypi.python.org/pypi/pandas/0.16.0/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.16.0/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.16.0/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.15.2 -
+        <a href="http://pypi.python.org/pypi/pandas/0.15.2/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.15.2/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.15.2/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.15.1 -
+        <a href="http://pypi.python.org/pypi/pandas/0.15.1/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.15.1/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.15.1/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.15.0 -
+        <a href="http://pypi.python.org/pypi/pandas/0.15.0/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.15.0/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.15.0/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.14.1 -
+        <a href="http://pypi.python.org/pypi/pandas/0.14.1/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.14.1/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.14.1/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.14.0 -
+        <a href="http://pypi.python.org/pypi/pandas/0.14.0/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.14.0/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.14.0/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.13.1 -
+        <a href="http://pypi.python.org/pypi/pandas/0.13.1/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.13.1/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.13.1/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.13.0 -
+        <a href="http://pypi.python.org/pypi/pandas/0.13.0/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.13.0/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.13.0/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.12.0 -
+        <a href="http://pypi.python.org/pypi/pandas/0.12.0/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.12.0/">docs</a>              //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.12.0/pandas.pdf">pdf</a>
+      </div>
+    <!-- <div>
+    <!--     0.11.0 -
+    <!--     <a href="http://pypi.python.org/pypi/pandas/0.11.0/#downloads">download</a>          //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.11.0/">docs</a> //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.11.0/pandas.pdf">pdf</a>
+    <!--   </div>
+    <!-- <div>
+    <!--     0.10.1 -
+    <!--     <a href="http://pypi.python.org/pypi/pandas/0.10.1/#downloads">download</a>          //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.10.1/">docs</a> //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.10.1/pandas.pdf">pdf</a>
+    <!--   </div>
+    <!-- <div>
+    <!--     0.10.0 -
+    <!--     <a href="http://pypi.python.org/pypi/pandas/0.10.0/#downloads">download</a>          //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.10.0/">docs</a> //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.10.0/pandas.pdf">pdf</a>
+    <!--   </div>
+    <!-- <div>
+    <!--     0.9.1 -
+    <!--     <a href="http://pypi.python.org/pypi/pandas/0.9.1/#downloads">download</a>          //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.9.1/">docs</a> //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.9.1/pandas.pdf">pdf</a>
+    <!--   </div>
+    <!-- <div>
+    <!--     0.9.0 -
+    <!--     <a href="http://pypi.python.org/pypi/pandas/0.9.0/#downloads">download</a>          //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.9.0/">docs</a> //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.9.0/pandas.pdf">pdf</a>
+    <!--   </div>
+    <!-- <div> -->
+    <!--     0.8.1 - -->
+    <!--     <a href="http://pypi.python.org/pypi/pandas/0.8.1/#downloads">download</a>          // -->
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.8.1/">docs</a> // -->
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.8.1/pandas.pdf">pdf</a> -->
+    <!--   </div> -->
+    <!--   <div> -->
+    <!--     0.8.0 - -->
+    <!--     <a href="http://pypi.python.org/pypi/pandas/0.8.0/#downloads">download</a>          // -->
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.8.0/">docs</a> // -->
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.8.0/pandas.pdf">pdf</a> -->
+    <!--   </div> -->
+    <!--   <div> -->
+    <!--     0.7.3 - -->
+    <!--     <a href="http://pypi.python.org/pypi/pandas/0.7.3/#downloads">download</a>          // -->
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.7.3/">docs</a> // -->
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.7.3/pandas.pdf">pdf</a> -->
+    <!--   </div> -->
+      <!-- <div> -->
+      <!--   0.7.2 - -->
+      <!--   <a href="http://pypi.python.org/pypi/pandas/0.7.2/#downloads">download</a>          // -->
+      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.2/">docs</a> // -->
+      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.2/pandas.pdf">pdf</a> -->
+      <!-- </div> -->
+      <!-- <div> -->
+      <!--   0.7.1 - -->
+      <!--   <a href="http://pypi.python.org/pypi/pandas/0.7.1/#downloads">download</a>          // -->
+      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.1/">docs</a> // -->
+      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.1/pandas.pdf">pdf</a> -->
+      <!-- </div> -->
+      <!-- <div> -->
+      <!--   0.7.0 - -->
+      <!--   <a href="http://pypi.python.org/pypi/pandas/0.7.0/#downloads">download</a>          // -->
+      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.0/">docs</a> // -->
+      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.0/pandas.pdf">pdf</a> -->
+      <!-- </div> -->
+
+
+    </div>
+
+
+</div>
+
+<div class="sidebarblock">
+	<h3>About pandas</h3>
+  	<ul>
+    	<li><a href="http://pandas.pydata.org/pandas-docs/dev/whatsnew.html">What's New</a></li>
+		<li><a href="http://pandas.pydata.org/pandas-docs/stable/install.html">Getting Started</a></li>
+		<li><a href="https://github.com/pydata/pandas/issues">Issue Tracker</a></li>
+    	<li><a href="http://pandas.pydata.org/pandas-docs/stable/overview.html#license">License</a></li>
+		<li><a href="http://pandas.pydata.org/pandas-docs/stable/contributing.html">Contributing Guidelines</a></li>
+  	</ul>
+</div>
+
+<div class="sidebarblock">
+<h3>Get the book</h3>
+   <a href="http://www.kqzyfj.com/click-7040302-11260198?url=http%3A%2F%2Fshop.oreilly.com%2Fproduct%2F0636920023784.do&cjsku=0636920023784"><img src="_static/pydata_cover.jpg" alt="Python for Data Analysis", width=180, height=240></a>
+</div>
+
+<div class="sidebarblock">
+	<h3>Related Tools</h3>
+	<ul>
+    	<li><a href="http://www.scipy.org/">SciPy</a></li>
+    	<li><a href="http://www.numpy.org/">NumPy</a></li>
+    	<li><a href="http://statsmodels.sourceforge.net/">StatsModels</a></li>
+    	<li><a href="http://scikit-learn.org">scikit-learn</a></li>
+		<li><a href="http://jupyter.org/">Jupyter</a></li>
+		<li><a href="http://matplotlib.org/">matplotlib</a></li>
+  	</ul>
+</div>
+
+</div>
+</div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pandas-0-20">
+<h1>Pandas 0.20<a class="headerlink" href="#pandas-0-20" title="Permalink to this headline">¶</a></h1>
+<p>This has grown to be quite a release, so we thought it&#8217;d be worthwhile to write a bit more about what went into this release.
+As always, the full <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.20.0/">release notes</a> are available for a detailed description of all the changes.</p>
+</div>
+<div class="section" id="ix-deprecation">
+<h1><code class="docutils literal"><span class="pre">ix</span></code> Deprecation<a class="headerlink" href="#ix-deprecation" title="Permalink to this headline">¶</a></h1>
+<p>A big deprecation in 0.20.0 is the <code class="docutils literal"><span class="pre">.ix</span></code> indexing method. This was though because there&#8217;s so much code out there using <code class="docutils literal"><span class="pre">.ix</span></code>.
+To illustrate <em>why</em> we decided to deprecate it, consider the following two Series objects:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="s1">&#39;abcd&#39;</span><span class="p">))</span>
+
+<span class="go">In [15]: s1</span>
+<span class="go">Out[15]:</span>
+<span class="go">2    0</span>
+<span class="go">3    1</span>
+<span class="go">4    2</span>
+<span class="go">5    3</span>
+<span class="go">dtype: int64</span>
+
+<span class="go">In [16]: s2</span>
+<span class="go">Out[16]:</span>
+<span class="go">a    0</span>
+<span class="go">b    1</span>
+<span class="go">c    2</span>
+<span class="go">d    3</span>
+<span class="go">dtype: int64</span>
+</pre></div>
+</div>
+<p>One series with an integer index and one with an index with strings. When using <code class="docutils literal"><span class="pre">.ix</span></code> with the same values provided, the behaviour however depends on the type of the index:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s1</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="go">2    0</span>
+<span class="go">3    1</span>
+<span class="go">dtype: int64</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s2</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="go">b    1</span>
+<span class="go">c    2</span>
+<span class="go">dtype: int64</span>
+</pre></div>
+</div>
+<p>So different rows were selected with the same indexing operation. This is because in the <code class="docutils literal"><span class="pre">s1</span></code> case, <em>label-based</em> indexing was used (rows with labels 1, 2 and 3), while in the <code class="docutils literal"><span class="pre">s2</span></code> case <em>positional</em> indexing was used (rows at integer position 1 and 2, so second and third row).</p>
+<p>The fact that <code class="docutils literal"><span class="pre">.ix</span></code> could do both label-based and positional indexing caused confusion, and therefore we decided to deprecate it. Instead of using <code class="docutils literal"><span class="pre">.ix</span></code> and let pandas decide on label-based vs positional, you can explicitly use <code class="docutils literal"><span class="pre">.loc</span></code> or <code class="docutils literal"><span class="pre">.iloc</span></code> for label-based and positional indexing, respectively.</p>
+</div>
+<div class="section" id="new-highlights">
+<h1>New Highlights<a class="headerlink" href="#new-highlights" title="Permalink to this headline">¶</a></h1>
+<p>The release notes have a highlights section, so I&#8217;ll just talk briefly about a new major enhancement: <code class="docutils literal"><span class="pre">.agg</span></code>.
+This methods should feel familiar to users; an API that mirrors the <code class="docutils literal"><span class="pre">.groupby()</span></code>, <code class="docutils literal"><span class="pre">.rolling()</span></code>, and <code class="docutils literal"><span class="pre">.resample()</span></code>
+versions. Here&#8217;s a small example.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">],</span>
+                          <span class="n">index</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="s1">&#39;1/1/2000&#39;</span><span class="p">,</span> <span class="n">periods</span><span class="o">=</span><span class="mi">10</span><span class="p">))</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">df</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span>
+                   <span class="n">A</span>         <span class="n">B</span>         <span class="n">C</span>
+<span class="mi">2000</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mo">01</span>  <span class="mf">1.171020</span> <span class="o">-</span><span class="mf">0.700012</span>  <span class="mf">1.940064</span>
+<span class="mi">2000</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mo">02</span> <span class="o">-</span><span class="mf">0.478268</span>  <span class="mf">0.523242</span>  <span class="mf">2.595180</span>
+<span class="mi">2000</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mo">03</span> <span class="o">-</span><span class="mf">0.442089</span> <span class="o">-</span><span class="mf">0.037680</span> <span class="o">-</span><span class="mf">0.213981</span>
+<span class="mi">2000</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mo">04</span> <span class="o">-</span><span class="mf">0.584561</span> <span class="o">-</span><span class="mf">1.124468</span>  <span class="mf">1.101208</span>
+<span class="mi">2000</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mo">05</span> <span class="o">-</span><span class="mf">1.656095</span>  <span class="mf">1.325920</span> <span class="o">-</span><span class="mf">1.251329</span>
+<span class="mi">2000</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mo">06</span>  <span class="mf">1.206701</span> <span class="o">-</span><span class="mf">0.894617</span> <span class="o">-</span><span class="mf">0.470827</span>
+<span class="mi">2000</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mo">07</span> <span class="o">-</span><span class="mf">0.604539</span> <span class="o">-</span><span class="mf">0.341046</span> <span class="o">-</span><span class="mf">0.314466</span>
+<span class="mi">2000</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mi">08</span>  <span class="mf">0.801233</span> <span class="o">-</span><span class="mf">0.667875</span>  <span class="mf">1.279062</span>
+<span class="mi">2000</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mi">09</span>  <span class="mf">2.562500</span> <span class="o">-</span><span class="mf">1.346682</span>  <span class="mf">1.994776</span>
+<span class="mi">2000</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mi">10</span>  <span class="mf">1.542442</span>  <span class="mf">0.468068</span> <span class="o">-</span><span class="mf">0.749461</span>
+</pre></div>
+</div>
+<p>We can perform a <code class="docutils literal"><span class="pre">.describe()</span></code> like aggregation quite easily. The items
+that we are aggregating are returned as the <em>rows</em>.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">df</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="s1">&#39;min&#39;</span><span class="p">,</span> <span class="s1">&#39;max&#39;</span><span class="p">])</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span>
+            <span class="n">A</span>         <span class="n">B</span>         <span class="n">C</span>
+<span class="nb">min</span> <span class="o">-</span><span class="mf">1.656095</span> <span class="o">-</span><span class="mf">1.346682</span> <span class="o">-</span><span class="mf">1.251329</span>
+<span class="nb">max</span>  <span class="mf">2.562500</span>  <span class="mf">1.325920</span>  <span class="mf">2.595180</span>
+</pre></div>
+</div>
+<p>If we perform the same aggregation when grouping, notice that the
+returned rows are the <em>group</em> names, and the columns are a <code class="docutils literal"><span class="pre">MultiIndex</span></code>
+composed of the column and the aggregation name.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">weekday_name</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="s1">&#39;min&#39;</span><span class="p">,</span> <span class="s1">&#39;max&#39;</span><span class="p">])</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">7</span><span class="p">]:</span>
+                  <span class="n">A</span>                   <span class="n">B</span>                   <span class="n">C</span>
+                <span class="nb">min</span>       <span class="nb">max</span>       <span class="nb">min</span>       <span class="nb">max</span>       <span class="nb">min</span>       <span class="nb">max</span>
+<span class="n">Friday</span>    <span class="o">-</span><span class="mf">0.604539</span> <span class="o">-</span><span class="mf">0.604539</span> <span class="o">-</span><span class="mf">0.341046</span> <span class="o">-</span><span class="mf">0.341046</span> <span class="o">-</span><span class="mf">0.314466</span> <span class="o">-</span><span class="mf">0.314466</span>
+<span class="n">Monday</span>    <span class="o">-</span><span class="mf">0.442089</span>  <span class="mf">1.542442</span> <span class="o">-</span><span class="mf">0.037680</span>  <span class="mf">0.468068</span> <span class="o">-</span><span class="mf">0.749461</span> <span class="o">-</span><span class="mf">0.213981</span>
+<span class="n">Saturday</span>   <span class="mf">0.801233</span>  <span class="mf">1.171020</span> <span class="o">-</span><span class="mf">0.700012</span> <span class="o">-</span><span class="mf">0.667875</span>  <span class="mf">1.279062</span>  <span class="mf">1.940064</span>
+<span class="n">Sunday</span>    <span class="o">-</span><span class="mf">0.478268</span>  <span class="mf">2.562500</span> <span class="o">-</span><span class="mf">1.346682</span>  <span class="mf">0.523242</span>  <span class="mf">1.994776</span>  <span class="mf">2.595180</span>
+<span class="n">Thursday</span>   <span class="mf">1.206701</span>  <span class="mf">1.206701</span> <span class="o">-</span><span class="mf">0.894617</span> <span class="o">-</span><span class="mf">0.894617</span> <span class="o">-</span><span class="mf">0.470827</span> <span class="o">-</span><span class="mf">0.470827</span>
+<span class="n">Tuesday</span>   <span class="o">-</span><span class="mf">0.584561</span> <span class="o">-</span><span class="mf">0.584561</span> <span class="o">-</span><span class="mf">1.124468</span> <span class="o">-</span><span class="mf">1.124468</span>  <span class="mf">1.101208</span>  <span class="mf">1.101208</span>
+<span class="n">Wednesday</span> <span class="o">-</span><span class="mf">1.656095</span> <span class="o">-</span><span class="mf">1.656095</span>  <span class="mf">1.325920</span>  <span class="mf">1.325920</span> <span class="o">-</span><span class="mf">1.251329</span> <span class="o">-</span><span class="mf">1.251329</span>
+</pre></div>
+</div>
+<p>In fact you can easily transform between these formats via <code class="docutils literal"><span class="pre">.stack()</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">weekday_name</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="s1">&#39;min&#39;</span><span class="p">,</span> <span class="s1">&#39;max&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">stack</span><span class="p">()</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">8</span><span class="p">]:</span>
+                      <span class="n">A</span>         <span class="n">B</span>         <span class="n">C</span>
+<span class="n">Friday</span>    <span class="nb">min</span> <span class="o">-</span><span class="mf">0.604539</span> <span class="o">-</span><span class="mf">0.341046</span> <span class="o">-</span><span class="mf">0.314466</span>
+          <span class="nb">max</span> <span class="o">-</span><span class="mf">0.604539</span> <span class="o">-</span><span class="mf">0.341046</span> <span class="o">-</span><span class="mf">0.314466</span>
+<span class="n">Monday</span>    <span class="nb">min</span> <span class="o">-</span><span class="mf">0.442089</span> <span class="o">-</span><span class="mf">0.037680</span> <span class="o">-</span><span class="mf">0.749461</span>
+          <span class="nb">max</span>  <span class="mf">1.542442</span>  <span class="mf">0.468068</span> <span class="o">-</span><span class="mf">0.213981</span>
+<span class="n">Saturday</span>  <span class="nb">min</span>  <span class="mf">0.801233</span> <span class="o">-</span><span class="mf">0.700012</span>  <span class="mf">1.279062</span>
+          <span class="nb">max</span>  <span class="mf">1.171020</span> <span class="o">-</span><span class="mf">0.667875</span>  <span class="mf">1.940064</span>
+<span class="n">Sunday</span>    <span class="nb">min</span> <span class="o">-</span><span class="mf">0.478268</span> <span class="o">-</span><span class="mf">1.346682</span>  <span class="mf">1.994776</span>
+          <span class="nb">max</span>  <span class="mf">2.562500</span>  <span class="mf">0.523242</span>  <span class="mf">2.595180</span>
+<span class="n">Thursday</span>  <span class="nb">min</span>  <span class="mf">1.206701</span> <span class="o">-</span><span class="mf">0.894617</span> <span class="o">-</span><span class="mf">0.470827</span>
+          <span class="nb">max</span>  <span class="mf">1.206701</span> <span class="o">-</span><span class="mf">0.894617</span> <span class="o">-</span><span class="mf">0.470827</span>
+<span class="n">Tuesday</span>   <span class="nb">min</span> <span class="o">-</span><span class="mf">0.584561</span> <span class="o">-</span><span class="mf">1.124468</span>  <span class="mf">1.101208</span>
+          <span class="nb">max</span> <span class="o">-</span><span class="mf">0.584561</span> <span class="o">-</span><span class="mf">1.124468</span>  <span class="mf">1.101208</span>
+<span class="n">Wednesday</span> <span class="nb">min</span> <span class="o">-</span><span class="mf">1.656095</span>  <span class="mf">1.325920</span> <span class="o">-</span><span class="mf">1.251329</span>
+          <span class="nb">max</span> <span class="o">-</span><span class="mf">1.656095</span>  <span class="mf">1.325920</span> <span class="o">-</span><span class="mf">1.251329</span>
+</pre></div>
+</div>
+<p>Fundamentally, grouping with an aggregation has an additional dimension compared
+to aggregation on a Series/DataFrame. We choose to conform to the <code class="docutils literal"><span class="pre">.describe()</span></code>
+layout as this allows easy display and further processing of the results.</p>
+</div>
+<div class="section" id="new-module-privacy">
+<h1>New Module Privacy<a class="headerlink" href="#new-module-privacy" title="Permalink to this headline">¶</a></h1>
+<p>Like any project of reasonable size, pandas has developed a smattering of supporting modules to deliver that great experience you know and love.
+Quite a few of these &#8220;internal&#8221; modules have been moved to new homes, as part of a broad effort make the code base more sensible and maintainable.</p>
+<p>The fact that &#8220;internal&#8221; is in scare-quotes reveals a problem we had before.
+Modules like <code class="docutils literal"><span class="pre">pandas.lib.pyx</span></code> were public, according to Python&#8217;s conventions of designating private modules with a single leading underscore.
+However, nothing in there was ever intended to be used by anyone outside pandas; methods in there were never included in our documentation.</p>
+<p>To clarify the situation, this release moved around a lot of code. See the <a class="reference external" href="http://pandas-docs.github.io/pandas-docs-travis/whatsnew.html#whatsnew-0200-privacy">new module privacy</a> section for more.
+This shouldn&#8217;t affect most end users. Some library authors will need to release updates to avoid the deprecations.
+Libraries like dask, statsmodels, and seaborn are already OK.</p>
+<p>Are there methods or functions that have been moved or deprecated that you find very useful, but haven&#8217;t gotten a public location to access it from?
+If you have such a case, please open an issue on github to ask about the public/private status!</p>
+</div>
+<div class="section" id="new-deprecations">
+<h1>New Deprecations<a class="headerlink" href="#new-deprecations" title="Permalink to this headline">¶</a></h1>
+<p>We had two new deprecations of note in this cycle: <code class="docutils literal"><span class="pre">Panel</span></code> and <code class="docutils literal"><span class="pre">.ix</span></code>.</p>
+<p>It&#8217;s a bit sad to see <code class="docutils literal"><span class="pre">Panel</span></code> go (it&#8217;s at least partially responsible for pandas&#8217; moniker), but this has been a long-time coming.
+Panel support has always been a bit behind the tabular-dataset workflows pandas has focused in on.
+The 3-D structure of a Panel is much less common for many types of data analysis, than the 1-D of the Series or the 2-D of the DataFrame. Going forward it makes sense for pandas to focus on these areas exclusively.</p>
+<p>Oftentimes, one can simply use a MultiIndex DataFrame for easily working with higher dimensional data.
+If you need higher dimensional data objects, fortunately there are other great projects like <a class="reference external" href="http://xarray.pydata.org/en/stable/">xarray</a> that is much better suited for such kind of data. To easily try this out and convert your pandas objects to xarray, you can use the <code class="docutils literal"><span class="pre">to_xarray</span></code> method.</p>
+</div>
+<div class="section" id="towards-pandas-1-0">
+<h1>Towards pandas 1.0 ...<a class="headerlink" href="#towards-pandas-1-0" title="Permalink to this headline">¶</a></h1>
+<p>The bigger deprecations and the clearer separation of public and private method are part of the effort to move towards a pandas 1.0.</p>
+<p>Development focus is shifting to pandas 1.0.</p>
+</div>
+<div class="section" id="and-pandas-2-0">
+<h1>... and pandas 2.0<a class="headerlink" href="#and-pandas-2-0" title="Permalink to this headline">¶</a></h1>
+<p>Even though pandas 1.0 isn&#8217;t yet out of the door, we are already thinking about pandas 2.0. We won&#8217;t go into detail here, but for this we envision some more profound improvements (performance improvements, C-API access, integer NA values, ...), and more details can be found in the <a class="reference external" href="https://github.com/pandas-dev/pandas2">pandas 2 repo</a>.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+<div class="footer-wrapper">
+</div>
+
+<a href="http://github.com/pydata/pandas"><img style="position: fixed; top: 0; right: 0; border: 0;"
+   src="_static/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a></div>
+
+</body>
+</html>
+
+  </body>
+</html>
