@@ -13,7 +13,7 @@ easy-to-use data structures and data analysis tools for the `Python
 	:alt: NUMFocus Logo
 	:target: http://www.numfocus.org/open-source-projects.html
 
-v0.20.2 Final (June 3, 2017)
+v0.20.2 Final (June 4, 2017)
 ----------------------------
 
 This is a minor bug-fix release in the 0.20.x series and includes some small regression fixes,
