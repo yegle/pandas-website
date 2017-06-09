@@ -11,7 +11,7 @@ env:
 
 script:
   - set -e
-  - pip install sphinx doctr sphinxcontrib-googleanalytics
+  - pip install sphinx doctr
   - python make.py html
   - if [[ "${TRAVIS_BRANCH}" == "master" ]]; then
       doctr deploy .;
