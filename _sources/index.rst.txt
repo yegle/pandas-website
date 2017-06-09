@@ -13,6 +13,16 @@ easy-to-use data structures and data analysis tools for the `Python
 	:alt: NUMFocus Logo
 	:target: http://www.numfocus.org/open-source-projects.html
 
+v0.20.2 Final (June 4, 2017)
+----------------------------
+
+This is a minor bug-fix release in the 0.20.x series and includes some small regression fixes,
+bug fixes and performance improvements.
+We recommend that all users upgrade to this version.
+
+See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html>`__ overview for an extensive list
+of all enhancements, bug fixes, and breaking changes in 0.20.2. Please report any issues `here <https://github.com/pydata/pandas/issues/>`__
+
 0.20.0 / 0.20.1 Final (May 5, 2017)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -50,20 +60,6 @@ Check the `API Changes <http://pandas.pydata.org/pandas-docs/version/0.20/whatsn
 
 See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html>`__ overview for an extensive list
 of all enhancements, bug fixes, and breaking changes in 0.20.1. Please report any issues `here <https://github.com/pydata/pandas/issues/>`__
-
-0.19.2 Final (December 24, 2016)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This is a minor bug-fix release in the 0.19.x series and includes some small regression fixes,
-bug fixes and performance improvements.
-
-Highlights include:
-
-- Compatibility with Python 3.6
-- Added a `Pandas Cheat Sheet <https://github.com/pandas-dev/pandas/tree/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf>`__.
-
-See the `v0.19.2 Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.19.2/whatsnew.html>`__ page for an overview of all
-bugs that have been fixed in 0.19.2.
 
 Best way to Install
 ~~~~~~~~~~~~~~~~~~~

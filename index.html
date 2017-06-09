@@ -1,6 +1,6 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
@@ -39,7 +39,7 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Get pandas!" href="getpandas.html" /> 
   </head>
-  <body role="document">
+  <body>
 <div class="header-wrapper">
 	<div class="header">
 		<div class="logo">
@@ -68,7 +68,7 @@
 
 	<div class="tile">
 				<h4>Release</h4>
-				0.20.1 - May 2017<br/>
+				0.20.2 - June 2017<br/>
 				<a href="http://pypi.python.org/pypi/pandas/#downloads">download</a>          //
 				<a href="http://pandas.pydata.org/pandas-docs/stable/">docs</a> //
 				<a href="http://pandas.pydata.org/pandas-docs/stable/pandas.pdf">pdf</a>
@@ -248,14 +248,21 @@
 easy-to-use data structures and data analysis tools for the <a class="reference external" href="http://www.python.org/">Python</a> programming language.</p>
 <p><em>pandas</em> is a <a class="reference external" href="http://www.numfocus.org/open-source-projects.html">NUMFocus</a> sponsored project. This will help ensure the success of development of <em>pandas</em> as a world-class open-source project, and makes it possible to <a class="reference internal" href="donate.html"><span class="doc">donate</span></a> to the project.</p>
 <a class="reference external image-reference" href="http://www.numfocus.org/open-source-projects.html"><img alt="NUMFocus Logo" src="_images/SponsoredProjectStamp_300px.png" /></a>
+<div class="section" id="v0-20-2-final-june-4-2017">
+<h2>v0.20.2 Final (June 4, 2017)<a class="headerlink" href="#v0-20-2-final-june-4-2017" title="Permalink to this headline">¶</a></h2>
+<p>This is a minor bug-fix release in the 0.20.x series and includes some small regression fixes,
+bug fixes and performance improvements.
+We recommend that all users upgrade to this version.</p>
+<p>See the <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html">Whatsnew</a> overview for an extensive list
+of all enhancements, bug fixes, and breaking changes in 0.20.2. Please report any issues <a class="reference external" href="https://github.com/pydata/pandas/issues/">here</a></p>
 <div class="section" id="final-may-5-2017">
-<h2>0.20.0 / 0.20.1 Final (May 5, 2017)<a class="headerlink" href="#final-may-5-2017" title="Permalink to this headline">¶</a></h2>
+<h3>0.20.0 / 0.20.1 Final (May 5, 2017)<a class="headerlink" href="#final-may-5-2017" title="Permalink to this headline">¶</a></h3>
 <p>This is a major release from 0.19.2 and includes a number of API changes, deprecations, new features,
 enhancements, and performance improvements along with a large number of bug fixes. We recommend that all
 users upgrade to this version.</p>
 <p>Highlights include:</p>
 <ul class="simple">
-<li>New <code class="docutils literal"><span class="pre">.agg()</span></code> API for Series/DataFrame similar to the groupby-rolling-resample API&#8217;s, see <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-agg">here</a></li>
+<li>New <code class="docutils literal"><span class="pre">.agg()</span></code> API for Series/DataFrame similar to the groupby-rolling-resample API’s, see <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-agg">here</a></li>
 <li>Integration with the <code class="docutils literal"><span class="pre">feather-format</span></code>, including a new top-level <code class="docutils literal"><span class="pre">pd.read_feather()</span></code> and <code class="docutils literal"><span class="pre">DataFrame.to_feather()</span></code> method, see <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.20/io.html#io-feather">here</a>.</li>
 <li>The <code class="docutils literal"><span class="pre">.ix</span></code> indexer has been deprecated, see <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api-breaking-deprecate-ix">here</a></li>
 <li><code class="docutils literal"><span class="pre">Panel</span></code> has been deprecated, see <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api-breaking-deprecate-panel">here</a></li>
@@ -278,38 +285,26 @@ This can affect imports that are not from the top-level <code class="docutils li
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This is a combined release for 0.20.0 and and 0.20.1.
-Version 0.20.1 contains one additional change for backwards-compatibility with downstream projects using pandas&#8217; hashing routines.</p>
+Version 0.20.1 contains one additional change for backwards-compatibility with downstream projects using pandas’ hashing routines.</p>
 </div>
 <p>See the <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html">Whatsnew</a> overview for an extensive list
 of all enhancements, bug fixes, and breaking changes in 0.20.1. Please report any issues <a class="reference external" href="https://github.com/pydata/pandas/issues/">here</a></p>
 </div>
-<div class="section" id="final-december-24-2016">
-<h2>0.19.2 Final (December 24, 2016)<a class="headerlink" href="#final-december-24-2016" title="Permalink to this headline">¶</a></h2>
-<p>This is a minor bug-fix release in the 0.19.x series and includes some small regression fixes,
-bug fixes and performance improvements.</p>
-<p>Highlights include:</p>
-<ul class="simple">
-<li>Compatibility with Python 3.6</li>
-<li>Added a <a class="reference external" href="https://github.com/pandas-dev/pandas/tree/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf">Pandas Cheat Sheet</a>.</li>
-</ul>
-<p>See the <a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.19.2/whatsnew.html">v0.19.2 Whatsnew</a> page for an overview of all
-bugs that have been fixed in 0.19.2.</p>
-</div>
 <div class="section" id="best-way-to-install">
-<h2>Best way to Install<a class="headerlink" href="#best-way-to-install" title="Permalink to this headline">¶</a></h2>
+<h3>Best way to Install<a class="headerlink" href="#best-way-to-install" title="Permalink to this headline">¶</a></h3>
 <p>Best way to get pandas is to install via <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/install.html#installing-pandas-with-anaconda">conda</a>
 Builds for <code class="docutils literal"><span class="pre">osx-64,linux-64,linux-32,win-64,win-32</span></code> for <code class="docutils literal"><span class="pre">Python</span> <span class="pre">2.7,</span> <span class="pre">Python</span> <span class="pre">3.4,</span> <span class="pre">and</span> <span class="pre">Python</span> <span class="pre">3.5</span></code> are all available.</p>
 <p><code class="docutils literal"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">pandas</span></code></p>
 </div>
 <div class="section" id="quick-vignette">
-<h2>Quick vignette<a class="headerlink" href="#quick-vignette" title="Permalink to this headline">¶</a></h2>
+<h3>Quick vignette<a class="headerlink" href="#quick-vignette" title="Permalink to this headline">¶</a></h3>
 <iframe src="http://player.vimeo.com/video/59324550" width="500"
 height="309" frameborder="0" webkitAllowFullScreen mozallowfullscreen
 allowFullScreen></iframe> <p><a href="http://vimeo.com/59324550">10-minute
 tour of pandas</a> from <a href="http://vimeo.com/user10077863">Wes
 McKinney</a> on <a href="http://vimeo.com">Vimeo</a>.</p></div>
 <div class="section" id="what-problem-does-pandas-solve">
-<h2>What problem does <em>pandas</em> solve?<a class="headerlink" href="#what-problem-does-pandas-solve" title="Permalink to this headline">¶</a></h2>
+<h3>What problem does <em>pandas</em> solve?<a class="headerlink" href="#what-problem-does-pandas-solve" title="Permalink to this headline">¶</a></h3>
 <p>Python has long been great for data munging and preparation, but less so for
 data analysis and modeling. <em>pandas</em> helps fill this gap, enabling you to
 carry out your entire data analysis workflow in Python without having to
@@ -323,7 +318,7 @@ class statistical modeling environment, but we are well on our way toward that
 goal.</p>
 </div>
 <div class="section" id="what-do-our-users-have-to-say">
-<h2>What do our users have to say?<a class="headerlink" href="#what-do-our-users-have-to-say" title="Permalink to this headline">¶</a></h2>
+<h3>What do our users have to say?<a class="headerlink" href="#what-do-our-users-have-to-say" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><a class="reference external image-reference" href="http://www.aqr.com/"><img alt="AQR Capital Management Logo" class="align-right" src="_images/aqr_capital_management_logo.png" /></a>
 </div></blockquote>
@@ -333,9 +328,9 @@ goal.</p>
 <div class="line"><a class="reference external" href="http://www.aqr.com/">AQR Capital Management</a></div>
 </div>
 <blockquote>
-<div><p>&#8220;<em>pandas</em> allows us to focus more on research and less on programming. We
+<div><p>“<em>pandas</em> allows us to focus more on research and less on programming. We
 have found <em>pandas</em> easy to learn, easy to use, and easy to maintain.
-The bottom line is that it has increased our productivity.&#8221;</p>
+The bottom line is that it has increased our productivity.”</p>
 <a class="reference external image-reference" href="http://www.appnexus.com/"><img alt="AppNexus Logo" class="align-right" src="_images/appnexus_logo.png" /></a>
 </div></blockquote>
 <div class="line-block">
@@ -344,10 +339,10 @@ The bottom line is that it has increased our productivity.&#8221;</p>
 <div class="line"><a class="reference external" href="http://www.appnexus.com/">AppNexus</a></div>
 </div>
 <blockquote>
-<div><p>&#8220;<em>pandas</em> is the perfect tool for bridging the gap between rapid
+<div><p>“<em>pandas</em> is the perfect tool for bridging the gap between rapid
 iterations of ad-hoc analysis and production quality code. If you
 want one tool to be used across a multi-disciplined organization of
-engineers, mathematicians and analysts, look no further.&#8221;</p>
+engineers, mathematicians and analysts, look no further.”</p>
 <a class="reference external image-reference" href="http://www.datadoghq.com/"><img alt="Datadog Logo" class="align-right" src="_images/datadog_logo.png" /></a>
 </div></blockquote>
 <div class="line-block">
@@ -356,15 +351,15 @@ engineers, mathematicians and analysts, look no further.&#8221;</p>
 <div class="line"><a class="reference external" href="http://www.datadoghq.com/">Datadog</a></div>
 </div>
 <blockquote>
-<div>&#8220;We use <em>pandas</em> to process time series data on our production servers.
+<div>“We use <em>pandas</em> to process time series data on our production servers.
 The simplicity and elegance of its API, and its high level
 of performance for high-volume datasets, made it a perfect choice for
-us.&#8221;</div></blockquote>
+us.”</div></blockquote>
 <div class="toctree-wrapper compound">
 </div>
 </div>
 <div class="section" id="library-highlights">
-<h2>Library Highlights<a class="headerlink" href="#library-highlights" title="Permalink to this headline">¶</a></h2>
+<h3>Library Highlights<a class="headerlink" href="#library-highlights" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>A fast and efficient <strong>DataFrame</strong> object for data manipulation with
 integrated indexing;</li>
@@ -394,6 +389,7 @@ series without losing data;</li>
 commercial</strong> domains, including Finance, Neuroscience, Economics,
 Statistics, Advertising, Web Analytics, and more.</li>
 </ul>
+</div>
 </div>
 </div>
 
