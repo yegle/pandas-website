@@ -31,7 +31,7 @@ possible. Thank you to `all of our contributors
 Project Governance
 ~~~~~~~~~~~~~~~~~~
 
-The purpose of the :ref:`Project Governance documents <https://github.com/pandas-dev/pandas-governance>`__ is to formalize the governance process that the pandas project has used informally since its inception in 2008. The documents clarify how decisions are made and how the various elements of our community interact, including the relationship between open source collaborative development and work that may be funded by for-profit or non-profit entities.
+The purpose of the `Project Governance documents <https://github.com/pandas-dev/pandas-governance>`__ is to formalize the governance process that the pandas project has used informally since its inception in 2008. The documents clarify how decisions are made and how the various elements of our community interact, including the relationship between open source collaborative development and work that may be funded by for-profit or non-profit entities.
 
 Wes McKinney is the Benevolent Dictator for Life (BDFL).
 
