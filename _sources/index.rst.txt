@@ -147,6 +147,7 @@ What do our users have to say?
 .. toctree::
 	:hidden:
 
+	about
 	getpandas
 	community
 	talks
