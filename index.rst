@@ -13,15 +13,14 @@ easy-to-use data structures and data analysis tools for the `Python
 	:alt: NUMFocus Logo
 	:target: http://www.numfocus.org/open-source-projects.html
 
-v0.20.2 Final (June 4, 2017)
+v0.20.3 Final (July 7, 2017)
 ----------------------------
 
-This is a minor bug-fix release in the 0.20.x series and includes some small regression fixes,
-bug fixes and performance improvements.
-We recommend that all users upgrade to this version.
+This is a minor bug-fix release in the 0.20.x series and includes some small regression fixes
+and bug fixes. We recommend that all users upgrade to this version.
 
-See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html>`__ overview for an extensive list
-of all enhancements, bug fixes, and breaking changes in 0.20.2. Please report any issues `here <https://github.com/pydata/pandas/issues/>`__
+See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.20.3/whatsnew.html>`__ overview for an extensive list
+of all bug fixes in 0.20.3. Please report any issues `here <https://github.com/pydata/pandas/issues/>`__
 
 0.20.0 / 0.20.1 Final (May 5, 2017)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
