@@ -1,0 +1,309 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-27880019-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <title>The pandas project &#8212; pandas: Python Data Analysis Library</title>
+    <link rel="stylesheet" href="_static/pydata.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Get pandas!" href="getpandas.html" />
+    <link rel="prev" title="Python Data Analysis Library" href="index.html" /> 
+  </head>
+  <body>
+<div class="header-wrapper">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img class="logo" src="_static/pandas_logo.png" alt="Logo"/></a>
+		</div>
+
+        <div class="rel">
+			<a href="index.html">home</a> //
+			<a href="about.html">about</a> //
+			<a href="getpandas.html">get pandas</a> //
+			<a href="http://pandas.pydata.org/pandas-docs/stable">documentation</a> //
+			<a href="community.html">community</a> //
+			<a href="talks.html">talks</a> //
+			<a href="donate.html">donate</a>
+		</div>
+
+	</div>
+</div>
+
+<div class="content-wrapper">
+<div class="content">
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+
+<div class="sidebarblock">
+<h3>Versions</h3>
+
+	<div class="tile">
+				<h4>Release</h4>
+				0.20.2 - June 2017<br/>
+				<a href="http://pypi.python.org/pypi/pandas/#downloads">download</a>          //
+				<a href="http://pandas.pydata.org/pandas-docs/stable/">docs</a> //
+				<a href="http://pandas.pydata.org/pandas-docs/stable/pandas.pdf">pdf</a>
+	</div>
+
+	<div class="tile">
+		<h4>Development</h4>
+        0.21.0 - 2017<br/>
+        <a href="https://github.com/pydata/pandas">github</a> //
+        <a href="http://pandas-docs.github.io/pandas-docs-travis/">docs</a>
+    </div>
+
+    <div class="tile">
+      <h4>Previous Releases</h4>
+
+        <div>
+            0.19.2 -
+            <a href="http://pypi.python.org/pypi/pandas/0.19.2/#downloads">download</a>          //
+            <a href="http://pandas.pydata.org/pandas-docs/version/0.19.2/">docs</a> //
+            <a href="http://pandas.pydata.org/pandas-docs/version/0.19.2/pandas.pdf">pdf</a>
+        </div>
+		<div>
+	        0.18.1 -
+	        <a href="http://pypi.python.org/pypi/pandas/0.18.1/#downloads">download</a>          //
+	        <a href="http://pandas.pydata.org/pandas-docs/version/0.18.1/">docs</a> //
+	        <a href="http://pandas.pydata.org/pandas-docs/version/0.18.1/pandas.pdf">pdf</a>
+		</div>
+    <div>
+        0.17.1 -
+        <a href="http://pypi.python.org/pypi/pandas/0.17.1/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.17.1/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.17.1/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.16.2 -
+        <a href="http://pypi.python.org/pypi/pandas/0.16.2/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.16.2/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.16.2/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.15.2 -
+        <a href="http://pypi.python.org/pypi/pandas/0.15.2/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.15.2/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.15.2/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.14.1 -
+        <a href="http://pypi.python.org/pypi/pandas/0.14.1/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.14.1/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.14.1/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.13.1 -
+        <a href="http://pypi.python.org/pypi/pandas/0.13.1/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.13.1/">docs</a> //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.13.1/pandas.pdf">pdf</a>
+      </div>
+    <div>
+        0.12.0 -
+        <a href="http://pypi.python.org/pypi/pandas/0.12.0/#downloads">download</a>          //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.12.0/">docs</a>              //
+        <a href="http://pandas.pydata.org/pandas-docs/version/0.12.0/pandas.pdf">pdf</a>
+      </div>
+    <!-- <div>
+    <!--     0.11.0 -
+    <!--     <a href="http://pypi.python.org/pypi/pandas/0.11.0/#downloads">download</a>          //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.11.0/">docs</a> //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.11.0/pandas.pdf">pdf</a>
+    <!--   </div>
+    <!-- <div>
+    <!--     0.10.1 -
+    <!--     <a href="http://pypi.python.org/pypi/pandas/0.10.1/#downloads">download</a>          //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.10.1/">docs</a> //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.10.1/pandas.pdf">pdf</a>
+    <!--   </div>
+    <!-- <div>
+    <!--     0.10.0 -
+    <!--     <a href="http://pypi.python.org/pypi/pandas/0.10.0/#downloads">download</a>          //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.10.0/">docs</a> //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.10.0/pandas.pdf">pdf</a>
+    <!--   </div>
+    <!-- <div>
+    <!--     0.9.1 -
+    <!--     <a href="http://pypi.python.org/pypi/pandas/0.9.1/#downloads">download</a>          //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.9.1/">docs</a> //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.9.1/pandas.pdf">pdf</a>
+    <!--   </div>
+    <!-- <div>
+    <!--     0.9.0 -
+    <!--     <a href="http://pypi.python.org/pypi/pandas/0.9.0/#downloads">download</a>          //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.9.0/">docs</a> //
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.9.0/pandas.pdf">pdf</a>
+    <!--   </div>
+    <!-- <div> -->
+    <!--     0.8.1 - -->
+    <!--     <a href="http://pypi.python.org/pypi/pandas/0.8.1/#downloads">download</a>          // -->
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.8.1/">docs</a> // -->
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.8.1/pandas.pdf">pdf</a> -->
+    <!--   </div> -->
+    <!--   <div> -->
+    <!--     0.8.0 - -->
+    <!--     <a href="http://pypi.python.org/pypi/pandas/0.8.0/#downloads">download</a>          // -->
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.8.0/">docs</a> // -->
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.8.0/pandas.pdf">pdf</a> -->
+    <!--   </div> -->
+    <!--   <div> -->
+    <!--     0.7.3 - -->
+    <!--     <a href="http://pypi.python.org/pypi/pandas/0.7.3/#downloads">download</a>          // -->
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.7.3/">docs</a> // -->
+    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.7.3/pandas.pdf">pdf</a> -->
+    <!--   </div> -->
+      <!-- <div> -->
+      <!--   0.7.2 - -->
+      <!--   <a href="http://pypi.python.org/pypi/pandas/0.7.2/#downloads">download</a>          // -->
+      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.2/">docs</a> // -->
+      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.2/pandas.pdf">pdf</a> -->
+      <!-- </div> -->
+      <!-- <div> -->
+      <!--   0.7.1 - -->
+      <!--   <a href="http://pypi.python.org/pypi/pandas/0.7.1/#downloads">download</a>          // -->
+      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.1/">docs</a> // -->
+      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.1/pandas.pdf">pdf</a> -->
+      <!-- </div> -->
+      <!-- <div> -->
+      <!--   0.7.0 - -->
+      <!--   <a href="http://pypi.python.org/pypi/pandas/0.7.0/#downloads">download</a>          // -->
+      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.0/">docs</a> // -->
+      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.0/pandas.pdf">pdf</a> -->
+      <!-- </div> -->
+
+
+    </div>
+
+
+</div>
+
+<div class="sidebarblock">
+	<h3>About pandas</h3>
+  	<ul>
+    	<li><a href="http://pandas.pydata.org/pandas-docs/dev/whatsnew.html">What's New</a></li>
+		<li><a href="http://pandas.pydata.org/pandas-docs/stable/install.html">Getting Started</a></li>
+		<li><a href="https://github.com/pydata/pandas/issues">Issue Tracker</a></li>
+    	<li><a href="http://pandas.pydata.org/pandas-docs/stable/overview.html#license">License</a></li>
+		<li><a href="http://pandas.pydata.org/pandas-docs/stable/contributing.html">Contributing Guidelines</a></li>
+  	</ul>
+</div>
+
+<div class="sidebarblock">
+<h3>Get the book</h3>
+   <a href="http://www.kqzyfj.com/click-7040302-11260198?url=http%3A%2F%2Fshop.oreilly.com%2Fproduct%2F0636920023784.do&cjsku=0636920023784"><img src="_static/pydata_cover.jpg" alt="Python for Data Analysis", width=180, height=240></a>
+</div>
+
+<div class="sidebarblock">
+	<h3>Related Tools</h3>
+	<ul>
+    	<li><a href="http://www.scipy.org/">SciPy</a></li>
+    	<li><a href="http://www.numpy.org/">NumPy</a></li>
+    	<li><a href="http://statsmodels.sourceforge.net/">StatsModels</a></li>
+    	<li><a href="http://scikit-learn.org">scikit-learn</a></li>
+		<li><a href="http://jupyter.org/">Jupyter</a></li>
+		<li><a href="http://matplotlib.org/">matplotlib</a></li>
+  	</ul>
+</div>
+
+</div>
+</div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="the-pandas-project">
+<h1>The <em>pandas</em> project<a class="headerlink" href="#the-pandas-project" title="Permalink to this headline">¶</a></h1>
+<p><em>pandas</em> is an open source, BSD-licensed library providing high-performance,
+easy-to-use data structures and data analysis tools for the <a class="reference external" href="http://www.python.org/">Python</a> programming language.</p>
+<div class="section" id="community">
+<h2>Community<a class="headerlink" href="#community" title="Permalink to this headline">¶</a></h2>
+<p><em>pandas</em> is actively supported today by a community of like-minded individuals around the world who
+contribute their valuable time and energy to help make open source <em>pandas</em>
+possible. Thank you to <a class="reference external" href="https://github.com/pydata/pandas/contributors">all of our contributors</a>.</p>
+<p><em>pandas</em> is a <a class="reference external" href="http://www.numfocus.org/open-source-projects.html">NUMFocus</a> sponsored project. This will help ensure the success of development of <em>pandas</em> as a world-class open-source project, and makes it possible to <a class="reference internal" href="donate.html"><span class="doc">donate</span></a> to the project.</p>
+<a class="reference external image-reference" href="http://www.numfocus.org/open-source-projects.html"><img alt="NUMFocus Logo" src="_images/SponsoredProjectStamp_300px.png" /></a>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/contributing.html">How you can contribute to the project</a></p>
+</div>
+</div>
+<div class="section" id="project-governance">
+<h2>Project Governance<a class="headerlink" href="#project-governance" title="Permalink to this headline">¶</a></h2>
+<p>The purpose of the <a class="reference external" href="https://github.com/pandas-dev/pandas-governance">Project Governance documents</a> is to formalize the governance process that the pandas project has used informally since its inception in 2008. The documents clarify how decisions are made and how the various elements of our community interact, including the relationship between open source collaborative development and work that may be funded by for-profit or non-profit entities.</p>
+<p>Wes McKinney is the Benevolent Dictator for Life (BDFL).</p>
+</div>
+<div class="section" id="core-team">
+<h2>Core Team<a class="headerlink" href="#core-team" title="Permalink to this headline">¶</a></h2>
+<p>Current Core Team:</p>
+<ul class="simple">
+<li>Tom Augspurger</li>
+<li>Chris Bartak</li>
+<li>Phillip Cloud</li>
+<li>Andy Hayden</li>
+<li>Stephan Hoyer</li>
+<li>Wes McKinney</li>
+<li>Jeff Reback</li>
+<li>Chang She</li>
+<li>Masaaki Horikoshi</li>
+<li>Joris Van den Bossche</li>
+</ul>
+<p>More details and the past Core Team members can be found on the <a class="reference external" href="https://github.com/pandas-dev/pandas-governance/blob/master/people.md">people’s page</a> of the governance repo.</p>
+</div>
+<div class="section" id="institutional-partners">
+<h2>Institutional Partners<a class="headerlink" href="#institutional-partners" title="Permalink to this headline">¶</a></h2>
+<p>Institutional Partners are companies and universities that support the project
+by employing contributors. Current Institutional Partners include:</p>
+<a class="reference external image-reference" href="https://www.continuum.io/"><img alt="_images/continuum-logo.png" src="_images/continuum-logo.png" style="width: 45%;" /></a>
+<a class="reference external image-reference" href="https://www.twosigma.com/"><img alt="_images/twosigma-logo.png" src="_images/twosigma-logo.png" style="width: 45%;" /></a>
+<a class="reference external image-reference" href="https://www.datascience-paris-saclay.fr/"><img alt="_images/logoUPSayPlusCDS_990.png" class="align-center" src="_images/logoUPSayPlusCDS_990.png" style="width: 65%;" /></a>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+<div class="footer-wrapper">
+</div>
+
+<a href="http://github.com/pydata/pandas"><img style="position: fixed; top: 0; right: 0; border: 0;"
+   src="_static/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a></div>
+
+</body>
+</html>
+
+  </body>
+</html>
