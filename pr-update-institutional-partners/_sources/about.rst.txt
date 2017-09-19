@@ -59,14 +59,14 @@ Institutional Partners
 Institutional Partners are companies and universities that support the project
 by employing contributors. Current Institutional Partners include:
 
-.. image:: /_static/continuum-logo.png
+.. image:: /_static/Anaconda_horizontal_RGB.png
     :width: 45%
     :target: https://www.continuum.io/
 
 .. image:: /_static/twosigma-logo.png
     :width: 45%
     :target: https://www.twosigma.com/
-    
+
 .. image:: /_static/logoUPSayPlusCDS_990.png
     :width: 65%
     :target: https://www.datascience-paris-saclay.fr/

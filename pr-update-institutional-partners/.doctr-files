@@ -1,9 +1,9 @@
 pr-update-institutional-partners/_downloads/reference_data_structures.bib
 pr-update-institutional-partners/_downloads/reference_foundational_library.bib
+pr-update-institutional-partners/_images/Anaconda_horizontal_RGB.png
 pr-update-institutional-partners/_images/SponsoredProjectStamp_300px.png
 pr-update-institutional-partners/_images/appnexus_logo.png
 pr-update-institutional-partners/_images/aqr_capital_management_logo.png
-pr-update-institutional-partners/_images/continuum-logo.png
 pr-update-institutional-partners/_images/datadog_logo.png
 pr-update-institutional-partners/_images/logoUPSayPlusCDS_990.png
 pr-update-institutional-partners/_images/twosigma-logo.png
@@ -13,6 +13,7 @@ pr-update-institutional-partners/_sources/donate.rst.txt
 pr-update-institutional-partners/_sources/getpandas.rst.txt
 pr-update-institutional-partners/_sources/index.rst.txt
 pr-update-institutional-partners/_sources/talks.rst.txt
+pr-update-institutional-partners/_static/Anaconda_horizontal_RGB.png
 pr-update-institutional-partners/_static/SponsoredProjectStamp_300px.png
 pr-update-institutional-partners/_static/ajax-loader.gif
 pr-update-institutional-partners/_static/appnexus_logo.png
