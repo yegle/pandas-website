@@ -1,10 +1,11 @@
 ./_downloads/reference_data_structures.bib
 ./_downloads/reference_foundational_library.bib
+./_images/Anaconda_horizontal_RGB.png
 ./_images/SponsoredProjectStamp_300px.png
 ./_images/appnexus_logo.png
 ./_images/aqr_capital_management_logo.png
-./_images/continuum-logo.png
 ./_images/datadog_logo.png
+./_images/logoUPSayPlusCDS_990.png
 ./_images/twosigma-logo.png
 ./_sources/about.rst.txt
 ./_sources/community.rst.txt
@@ -12,6 +13,7 @@
 ./_sources/getpandas.rst.txt
 ./_sources/index.rst.txt
 ./_sources/talks.rst.txt
+./_static/Anaconda_horizontal_RGB.png
 ./_static/SponsoredProjectStamp_300px.png
 ./_static/ajax-loader.gif
 ./_static/appnexus_logo.png
@@ -29,6 +31,7 @@
 ./_static/forkme_right_gray_6d6d6d.png
 ./_static/jquery-3.1.0.js
 ./_static/jquery.js
+./_static/logoUPSayPlusCDS_990.png
 ./_static/minus.png
 ./_static/pandas stickers_scrnsht2016-03-31 at 3.56.35 PM.png
 ./_static/pandas-horizontal.ai
