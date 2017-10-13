@@ -12,7 +12,14 @@
 # serve to show the default.
 
 import sys, os
+import json
 
+with open("releases.json") as f:
+    releases = json.load(f)
+
+html_context = {
+    'releases': releases
+}
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.

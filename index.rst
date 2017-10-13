@@ -13,60 +13,26 @@ easy-to-use data structures and data analysis tools for the `Python
 	:alt: NUMFocus Logo
 	:target: http://www.numfocus.org/open-source-projects.html
 
-v0.20.3 Final (July 7, 2017)
-----------------------------
+.. include:: latest.rst
 
-This is a minor bug-fix release in the 0.20.x series and includes some small regression fixes
-and bug fixes. We recommend that all users upgrade to this version.
+.. include:: previous.rst
 
-See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.20.3/whatsnew.html>`__ overview for an extensive list
-of all bug fixes in 0.20.3. Please report any issues `here <https://github.com/pydata/pandas/issues/>`__
-
-0.20.0 / 0.20.1 Final (May 5, 2017)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This is a major release from 0.19.2 and includes a number of API changes, deprecations, new features,
-enhancements, and performance improvements along with a large number of bug fixes. We recommend that all
-users upgrade to this version.
-
-Highlights include:
-
-- New ``.agg()`` API for Series/DataFrame similar to the groupby-rolling-resample API's, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-agg>`__
-- Integration with the ``feather-format``, including a new top-level ``pd.read_feather()`` and ``DataFrame.to_feather()`` method, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/io.html#io-feather>`__.
-- The ``.ix`` indexer has been deprecated, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api-breaking-deprecate-ix>`__
-- ``Panel`` has been deprecated, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api-breaking-deprecate-panel>`__
-- Addition of an ``IntervalIndex`` and ``Interval`` scalar type, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-intervalindex>`__
-- Improved user API when accessing levels in ``.groupby()``, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-groupby-access>`__
-- Improved support for ``UInt64`` dtypes, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-uint64-support>`__
-- A new orient for JSON serialization, ``orient='table'`` that uses the Table Schema spec, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-table-schema>`__
-- Experimental support for exporting ``DataFrame.style`` formats to Excel , see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-enhancements-style_excel>`__
-- Window Binary Corr/Cov operations now return a MultiIndexed ``DataFrame`` rather than a ``Panel``, as ``Panel`` is now deprecated, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api-breaking-rolling-pairwise>`__
-- Support for S3 handling now uses ``s3fs``, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api-breaking-s3>`__
-- Google BigQuery support now uses the ``pandas-gbq`` library, see `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api-breaking-gbq>`__
-- Switched the test framework to use `pytest <http://doc.pytest.org/en/latest>`__
-
-.. warning::
-
-  Pandas has changed the internal structure and layout of the codebase.
-  This can affect imports that are not from the top-level ``pandas.*`` namespace, please see the changes `here <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200.privacy>`__.
-
-Check the `API Changes <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-api-breaking>`__ and `deprecations <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html#whatsnew-0200-deprecations>`__ before updating.
-
-.. note::
-
-   This is a combined release for 0.20.0 and and 0.20.1.
-   Version 0.20.1 contains one additional change for backwards-compatibility with downstream projects using pandas' hashing routines.
-
-See the `Whatsnew <http://pandas.pydata.org/pandas-docs/version/0.20/whatsnew.html>`__ overview for an extensive list
-of all enhancements, bug fixes, and breaking changes in 0.20.1. Please report any issues `here <https://github.com/pydata/pandas/issues/>`__
 
 Best way to Install
 ~~~~~~~~~~~~~~~~~~~
 
-Best way to get pandas is to install via `conda <http://pandas.pydata.org/pandas-docs/stable/install.html#installing-pandas-with-anaconda>`__
-Builds for ``osx-64,linux-64,linux-32,win-64,win-32`` for ``Python 2.7, Python 3.4, and Python 3.5`` are all available.
+The best way to get pandas is via `conda <http://pandas.pydata.org/pandas-docs/stable/install.html#installing-pandas-with-anaconda>`__
 
 ``conda install pandas``
+
+Packages are available for `all supported python versions <http://pandas.pydata.org/pandas-docs/stable/install.html#python-version-support>`__
+on Windows, Linux, and MacOS.
+
+Wheels are also uploaded to `PyPI <https://pypi.org/project/pandas/>`__ and can be installed with
+
+.. code-block:: shell
+
+   pip install pandas
 
 
 Quick vignette

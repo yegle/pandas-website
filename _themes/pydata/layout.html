@@ -35,8 +35,8 @@
 
 	<div class="tile">
 				<h4>Release</h4>
-				0.20.3 - July 2017<br/>
-				<a href="http://pypi.python.org/pypi/pandas/#downloads">download</a>          //
+				{{ releases[0].version }} - {{ releases[0].date}} <br/>
+				<a href="https://pypi.org/project/pandas/#files">download</a>          //
 				<a href="http://pandas.pydata.org/pandas-docs/stable/">docs</a> //
 				<a href="http://pandas.pydata.org/pandas-docs/stable/pandas.pdf">pdf</a>
 	</div>
@@ -50,123 +50,15 @@
 
     <div class="tile">
       <h4>Previous Releases</h4>
+      {% for release in releases[1:] %}
+          <div>
+              {{ release.version }} -
+              <a href="https://pypi.org/project/pandas/{{ release.version }}/#files">download</a>          //
+              <a href="http://pandas.pydata.org/pandas-docs/version/{{ release.version }}/">docs</a> //
+              <a href="http://pandas.pydata.org/pandas-docs/version/{{ release.version }}/pandas.pdf">pdf</a>
+          </div>
 
-        <div>
-            0.19.2 -
-            <a href="http://pypi.python.org/pypi/pandas/0.19.2/#downloads">download</a>          //
-            <a href="http://pandas.pydata.org/pandas-docs/version/0.19.2/">docs</a> //
-            <a href="http://pandas.pydata.org/pandas-docs/version/0.19.2/pandas.pdf">pdf</a>
-        </div>
-		<div>
-	        0.18.1 -
-	        <a href="http://pypi.python.org/pypi/pandas/0.18.1/#downloads">download</a>          //
-	        <a href="http://pandas.pydata.org/pandas-docs/version/0.18.1/">docs</a> //
-	        <a href="http://pandas.pydata.org/pandas-docs/version/0.18.1/pandas.pdf">pdf</a>
-		</div>
-    <div>
-        0.17.1 -
-        <a href="http://pypi.python.org/pypi/pandas/0.17.1/#downloads">download</a>          //
-        <a href="http://pandas.pydata.org/pandas-docs/version/0.17.1/">docs</a> //
-        <a href="http://pandas.pydata.org/pandas-docs/version/0.17.1/pandas.pdf">pdf</a>
-      </div>
-    <div>
-        0.16.2 -
-        <a href="http://pypi.python.org/pypi/pandas/0.16.2/#downloads">download</a>          //
-        <a href="http://pandas.pydata.org/pandas-docs/version/0.16.2/">docs</a> //
-        <a href="http://pandas.pydata.org/pandas-docs/version/0.16.2/pandas.pdf">pdf</a>
-      </div>
-    <div>
-        0.15.2 -
-        <a href="http://pypi.python.org/pypi/pandas/0.15.2/#downloads">download</a>          //
-        <a href="http://pandas.pydata.org/pandas-docs/version/0.15.2/">docs</a> //
-        <a href="http://pandas.pydata.org/pandas-docs/version/0.15.2/pandas.pdf">pdf</a>
-      </div>
-    <div>
-        0.14.1 -
-        <a href="http://pypi.python.org/pypi/pandas/0.14.1/#downloads">download</a>          //
-        <a href="http://pandas.pydata.org/pandas-docs/version/0.14.1/">docs</a> //
-        <a href="http://pandas.pydata.org/pandas-docs/version/0.14.1/pandas.pdf">pdf</a>
-      </div>
-    <div>
-        0.13.1 -
-        <a href="http://pypi.python.org/pypi/pandas/0.13.1/#downloads">download</a>          //
-        <a href="http://pandas.pydata.org/pandas-docs/version/0.13.1/">docs</a> //
-        <a href="http://pandas.pydata.org/pandas-docs/version/0.13.1/pandas.pdf">pdf</a>
-      </div>
-    <div>
-        0.12.0 -
-        <a href="http://pypi.python.org/pypi/pandas/0.12.0/#downloads">download</a>          //
-        <a href="http://pandas.pydata.org/pandas-docs/version/0.12.0/">docs</a>              //
-        <a href="http://pandas.pydata.org/pandas-docs/version/0.12.0/pandas.pdf">pdf</a>
-      </div>
-    <!-- <div>
-    <!--     0.11.0 -
-    <!--     <a href="http://pypi.python.org/pypi/pandas/0.11.0/#downloads">download</a>          //
-    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.11.0/">docs</a> //
-    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.11.0/pandas.pdf">pdf</a>
-    <!--   </div>
-    <!-- <div>
-    <!--     0.10.1 -
-    <!--     <a href="http://pypi.python.org/pypi/pandas/0.10.1/#downloads">download</a>          //
-    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.10.1/">docs</a> //
-    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.10.1/pandas.pdf">pdf</a>
-    <!--   </div>
-    <!-- <div>
-    <!--     0.10.0 -
-    <!--     <a href="http://pypi.python.org/pypi/pandas/0.10.0/#downloads">download</a>          //
-    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.10.0/">docs</a> //
-    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.10.0/pandas.pdf">pdf</a>
-    <!--   </div>
-    <!-- <div>
-    <!--     0.9.1 -
-    <!--     <a href="http://pypi.python.org/pypi/pandas/0.9.1/#downloads">download</a>          //
-    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.9.1/">docs</a> //
-    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.9.1/pandas.pdf">pdf</a>
-    <!--   </div>
-    <!-- <div>
-    <!--     0.9.0 -
-    <!--     <a href="http://pypi.python.org/pypi/pandas/0.9.0/#downloads">download</a>          //
-    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.9.0/">docs</a> //
-    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.9.0/pandas.pdf">pdf</a>
-    <!--   </div>
-    <!-- <div> -->
-    <!--     0.8.1 - -->
-    <!--     <a href="http://pypi.python.org/pypi/pandas/0.8.1/#downloads">download</a>          // -->
-    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.8.1/">docs</a> // -->
-    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.8.1/pandas.pdf">pdf</a> -->
-    <!--   </div> -->
-    <!--   <div> -->
-    <!--     0.8.0 - -->
-    <!--     <a href="http://pypi.python.org/pypi/pandas/0.8.0/#downloads">download</a>          // -->
-    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.8.0/">docs</a> // -->
-    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.8.0/pandas.pdf">pdf</a> -->
-    <!--   </div> -->
-    <!--   <div> -->
-    <!--     0.7.3 - -->
-    <!--     <a href="http://pypi.python.org/pypi/pandas/0.7.3/#downloads">download</a>          // -->
-    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.7.3/">docs</a> // -->
-    <!--     <a href="http://pandas.pydata.org/pandas-docs/version/0.7.3/pandas.pdf">pdf</a> -->
-    <!--   </div> -->
-      <!-- <div> -->
-      <!--   0.7.2 - -->
-      <!--   <a href="http://pypi.python.org/pypi/pandas/0.7.2/#downloads">download</a>          // -->
-      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.2/">docs</a> // -->
-      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.2/pandas.pdf">pdf</a> -->
-      <!-- </div> -->
-      <!-- <div> -->
-      <!--   0.7.1 - -->
-      <!--   <a href="http://pypi.python.org/pypi/pandas/0.7.1/#downloads">download</a>          // -->
-      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.1/">docs</a> // -->
-      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.1/pandas.pdf">pdf</a> -->
-      <!-- </div> -->
-      <!-- <div> -->
-      <!--   0.7.0 - -->
-      <!--   <a href="http://pypi.python.org/pypi/pandas/0.7.0/#downloads">download</a>          // -->
-      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.0/">docs</a> // -->
-      <!--   <a href="http://pandas.pydata.org/pandas-docs/version/0.7.0/pandas.pdf">pdf</a> -->
-      <!-- </div> -->
-
-
+      {% endfor %}
     </div>
 
 
