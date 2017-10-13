@@ -12,6 +12,8 @@
 ./_sources/donate.rst.txt
 ./_sources/getpandas.rst.txt
 ./_sources/index.rst.txt
+./_sources/latest.rst.txt
+./_sources/previous.rst.txt
 ./_sources/talks.rst.txt
 ./_static/Anaconda_horizontal_RGB.png
 ./_static/SponsoredProjectStamp_300px.png
@@ -61,7 +63,9 @@
 ./genindex.html
 ./getpandas.html
 ./index.html
+./latest.html
 ./objects.inv
+./previous.html
 ./search.html
 ./searchindex.js
 ./talks.html

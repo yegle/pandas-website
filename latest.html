@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -17,7 +16,7 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-    <title>Index &#8212; pandas: Python Data Analysis Library</title>
+    <title>v0.21.0 RC1 (October 13, 2017) &#8212; pandas: Python Data Analysis Library</title>
     <link rel="stylesheet" href="_static/pydata.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -34,7 +33,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="author" title="About these documents" href="about.html" />
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
   </head>
   <body>
@@ -197,11 +196,25 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="v0-21-0-rc1-october-13-2017">
+<h1>v0.21.0 RC1 (October 13, 2017)<a class="headerlink" href="#v0-21-0-rc1-october-13-2017" title="Permalink to this headline">¶</a></h1>
+<p>This is a major release from 0.20.3 and includes a number of API
+changes, deprecations, new features, enhancements, and performance
+improvements along with a large number of bug fixes. We recommend that
+all users upgrade to this version.</p>
+<p>Highlights include:</p>
+<ul class="simple">
+<li>Integration with <a class="reference external" href="https://parquet.apache.org/">Apache Parquet</a>,
+including a new top-level read_parquet function and
+<code class="docutils literal"><span class="pre">DataFrame.to_parquet</span></code> method, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/io.html#io-parquet">here</a></li>
+<li>New user-facing pandas.api.types.CategoricalDtype for specifying
+categoricals independent of the data, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0210-enhancements-categorical-dtype">here</a></li>
+<li>The behavior of sum and prod on all-NaN Series/DataFrames is now
+consistent and no longer depends on whether bottleneck is installed,
+see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0210-api-breaking-bottleneck">here</a></li>
+<li>Compatibility fixes for pypy, see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0210-pypy">here</a></li>
+</ul>
+<p>Check the API Changes <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0210-api-breaking">whatsnew</a> and <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0210-deprecations">deprecations</a> before updating.</p>
 </div>
 
 
