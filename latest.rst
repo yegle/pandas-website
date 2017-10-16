@@ -1,5 +1,5 @@
 v0.21.0 RC1 (October 13, 2017)
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is a major release from 0.20.3 and includes a number of API
 changes, deprecations, new features, enhancements, and performance
@@ -9,7 +9,7 @@ all users upgrade to this version.
 Highlights include:
 
 * Integration with `Apache Parquet <https://parquet.apache.org/>`__,
-  including a new top-level read_parquet function and
+  including a new top-level ``read_parquet`` function and
   ``DataFrame.to_parquet`` method, see `here <https://pandas.pydata.org/pandas-docs/stable/io.html#io-parquet>`__
 
 * New user-facing pandas.api.types.CategoricalDtype for specifying
