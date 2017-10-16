@@ -33,6 +33,16 @@
 <div class="sidebarblock">
 <h3>Versions</h3>
 
+{% if pre_release %}
+  <div class="tile" >
+      <h4>Release Candidate</h4>
+      {{ pre_release.version }} - {{ pre_release.date }} <br/>
+      <a href="https://pypi.org/project/pandas/{{ pre_release.version }}/#files">download</a> //
+      <a href="http://pandas.pydata.org/pandas-docs/version/{{ pre_release.version|strip_bugfix }}/">docs</a> //
+      <a href="http://pandas.pydata.org/pandas-docs/version/{{ pre_release.version|strip_bugfix }}/pandas.pdf">pdf</a>
+  </div>
+{% endif %}
+
 	<div class="tile">
 				<h4>Release</h4>
 				{{ releases[0].version }} - {{ releases[0].date}} <br/>
@@ -54,8 +64,8 @@
           <div>
               {{ release.version }} -
               <a href="https://pypi.org/project/pandas/{{ release.version }}/#files">download</a>          //
-              <a href="http://pandas.pydata.org/pandas-docs/version/{{ release.version }}/">docs</a> //
-              <a href="http://pandas.pydata.org/pandas-docs/version/{{ release.version }}/pandas.pdf">pdf</a>
+              <a href="http://pandas.pydata.org/pandas-docs/version/{{ release.version|strip_bugfix }}/">docs</a> //
+              <a href="http://pandas.pydata.org/pandas-docs/version/{{ release.version|strip_bugfix }}/pandas.pdf">pdf</a>
           </div>
 
       {% endfor %}

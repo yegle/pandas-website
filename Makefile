@@ -17,7 +17,11 @@ _build/html: Makefile
 
 upload: _build/html
 	echo upload
-	rsync  -ravzI -e ssh _build/html/* pandas@pandas.pydata.org:/usr/share/nginx/pandas/
+  # This requires that configure your ~/.ssh/config like
+  # Host pandas.pydata.org
+  # 	HostName <ip-addr>
+  # 	User <username>
+	rsync  -ravzI -e ssh _build/html/* pandas.pydata.org:/usr/share/nginx/pandas/
 
 .PHONY: help Makefile
 

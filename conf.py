@@ -17,8 +17,14 @@ import json
 with open("releases.json") as f:
     releases = json.load(f)
 
+
+with open("pre_release.json") as f:
+    pre = json.load(f)
+
+
 html_context = {
-    'releases': releases
+    'releases': releases,
+    'pre_release': pre,
 }
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -259,3 +265,19 @@ texinfo_documents = [
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'http://docs.python.org/': None}
+
+
+def strip_bugfix(value):
+    """Used in the sidebar to link to the latest minor version in a series"""
+    return '.'.join(value.split(".")[:-1])
+
+
+def add_jinja_filters(app):
+    app.builder.templates.environment.filters['strip_bugfix'] = strip_bugfix
+
+
+def setup(app):
+    '''
+    Adds extra jinja filters.
+    '''
+    app.connect("builder-inited", add_jinja_filters)
