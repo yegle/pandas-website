@@ -10,16 +10,16 @@ Highlights include:
 
 * Integration with `Apache Parquet <https://parquet.apache.org/>`__,
   including a new top-level ``read_parquet`` function and
-  ``DataFrame.to_parquet`` method, see `here <https://pandas.pydata.org/pandas-docs/stable/io.html#io-parquet>`__
+  ``DataFrame.to_parquet`` method, see `here <https://pandas.pydata.org/pandas-docs/version/0.21/io.html#io-parquet>`__
 
 * New user-facing pandas.api.types.CategoricalDtype for specifying
-  categoricals independent of the data, see `here <https://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0210-enhancements-categorical-dtype>`__
+  categoricals independent of the data, see `here <https://pandas.pydata.org/pandas-docs/version/0.21/whatsnew.html#whatsnew-0210-enhancements-categorical-dtype>`__
 
 * The behavior of sum and prod on all-NaN Series/DataFrames is now
   consistent and no longer depends on whether bottleneck is installed,
-  see `here <https://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0210-api-breaking-bottleneck>`__
+  see `here <https://pandas.pydata.org/pandas-docs/version/0.21/whatsnew.html#whatsnew-0210-api-breaking-bottleneck>`__
 
-* Compatibility fixes for pypy, see `here <https://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0210-pypy>`__
+* Compatibility fixes for pypy, see `here <https://pandas.pydata.org/pandas-docs/version/0.21/whatsnew.html#whatsnew-0210-pypy>`__
 
-Check the API Changes `whatsnew <https://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0210-api-breaking>`__ and `deprecations <https://pandas.pydata.org/pandas-docs/stable/whatsnew.html#whatsnew-0210-deprecations>`__ before updating.
+Check the API Changes `whatsnew <https://pandas.pydata.org/pandas-docs/version/0.21/whatsnew.html#whatsnew-0210-api-breaking>`__ and `deprecations <https://pandas.pydata.org/pandas-docs/version/0.21/whatsnew.html#whatsnew-0210-deprecations>`__ before updating.
 
