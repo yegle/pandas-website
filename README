@@ -1,3 +1,23 @@
 # pandas-website
 
 Sources for the main pandas website (pandas.pydata.org)
+
+## Version Policy
+
+Body of the main page shows
+
+1. The latest release
+2. The previous stable release
+
+Sidebar shows
+
+1. The active release candidate (if any)
+2. The latest release
+3. Development
+4. The final point release of all prior releases
+
+## Links
+
+- The canonical link for any document is `/pandas-docs/version/0.xx.y/page`
+- We symlink the "major" version to the latest patch version. `/pandas-docs/version/0.xx/page` -> `/pandas-docs/version/0.xx.y/page`
+- We symlink `stable` to the latest version `/pandas-docs/stable/page` -> `/pandas-docs/version/0.xx.y/page`
