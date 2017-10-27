@@ -8,6 +8,7 @@
 ./_images/logoUPSayPlusCDS_990.png
 ./_images/twosigma-logo.png
 ./_sources/about.rst.txt
+./_sources/blog/release-v0.20.0.rst.txt
 ./_sources/community.rst.txt
 ./_sources/donate.rst.txt
 ./_sources/getpandas.rst.txt
@@ -57,6 +58,7 @@
 ./_static/up.png
 ./_static/websupport.js
 ./about.html
+./blog/release-v0.20.0.html
 ./community.html
 ./developers.html
 ./donate.html
