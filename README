@@ -20,4 +20,4 @@ Sidebar shows
 
 - The canonical link for any document is `/pandas-docs/version/0.xx.y/page`
 - We symlink the "major" version to the latest patch version. `/pandas-docs/version/0.xx/page` -> `/pandas-docs/version/0.xx.y/page`
-- We symlink `stable` to the latest version `/pandas-docs/stable/page` _. `/pandas-docs/version/0.xx.y/page`
+- We symlink `stable` to the latest version `/pandas-docs/stable/page` -> `/pandas-docs/version/0.xx.y/page`
