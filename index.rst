@@ -5,13 +5,13 @@ Python Data Analysis Library
 
 *pandas* is an open source, BSD-licensed library providing high-performance,
 easy-to-use data structures and data analysis tools for the `Python
-<http://www.python.org/>`__ programming language.
+<https://www.python.org/>`__ programming language.
 
-*pandas* is a `NUMFocus <http://www.numfocus.org/open-source-projects.html>`__ sponsored project. This will help ensure the success of development of *pandas* as a world-class open-source project, and makes it possible to :doc:`donate <donate>` to the project.
+*pandas* is a `NUMFocus <https://www.numfocus.org/open-source-projects.html>`__ sponsored project. This will help ensure the success of development of *pandas* as a world-class open-source project, and makes it possible to :doc:`donate <donate>` to the project.
 
 .. image:: /_static/SponsoredProjectStamp_300px.png
 	:alt: NUMFocus Logo
-	:target: http://www.numfocus.org/open-source-projects.html
+	:target: https://www.numfocus.org/open-source-projects.html
 
 .. include:: latest.rst
 
@@ -40,11 +40,11 @@ Quick vignette
 
 .. raw:: html
 
-    <iframe src="http://player.vimeo.com/video/59324550" width="500"
+    <iframe src="https://player.vimeo.com/video/59324550" width="500"
     height="309" frameborder="0" webkitAllowFullScreen mozallowfullscreen
-    allowFullScreen></iframe> <p><a href="http://vimeo.com/59324550">10-minute
-    tour of pandas</a> from <a href="http://vimeo.com/user10077863">Wes
-    McKinney</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+    allowFullScreen></iframe> <p><a href="https://vimeo.com/59324550">10-minute
+    tour of pandas</a> from <a href="https://vimeo.com/user10077863">Wes
+    McKinney</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 What problem does *pandas* solve?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -54,7 +54,7 @@ data analysis and modeling. *pandas* helps fill this gap, enabling you to
 carry out your entire data analysis workflow in Python without having to
 switch to a more domain specific language like R.
 
-Combined with the excellent `IPython <http://ipython.org/>`__ toolkit and
+Combined with the excellent `IPython <https://ipython.org/>`__ toolkit and
 other libraries, the environment for doing data analysis in Python excels in
 performance, productivity, and the ability to collaborate.
 
@@ -71,11 +71,11 @@ What do our users have to say?
 	.. image:: /_static/aqr_capital_management_logo.png
 		:alt: AQR Capital Management Logo
 		:align: right
-		:target: http://www.aqr.com/
+		:target: https://www.aqr.com/
 
 | **Roni Israelov, PhD**
 | Portfolio Manager
-| `AQR Capital Management <http://www.aqr.com/>`__
+| `AQR Capital Management <https://www.aqr.com/>`__
 
 	"*pandas* allows us to focus more on research and less on programming. We
 	have found *pandas* easy to learn, easy to use, and easy to maintain.
@@ -84,11 +84,11 @@ What do our users have to say?
 	.. image:: /_static/appnexus_logo.png
 		:alt: AppNexus Logo
 		:align: right
-		:target: http://www.appnexus.com/
+		:target: https://www.appnexus.com/
 
 | **David Himrod**
 | Director of Optimization & Analytics
-| `AppNexus <http://www.appnexus.com/>`__
+| `AppNexus <https://www.appnexus.com/>`__
 
 	"*pandas* is the perfect tool for bridging the gap between rapid
 	iterations of ad-hoc analysis and production quality code. If you
@@ -98,11 +98,11 @@ What do our users have to say?
 	.. image:: /_static/datadog_logo.png
 		:alt: Datadog Logo
 		:align: right
-		:target: http://www.datadoghq.com/
+		:target: https://www.datadoghq.com/
 
 | **Olivier Pomel**
 | CEO
-| `Datadog <http://www.datadoghq.com/>`__
+| `Datadog <https://www.datadoghq.com/>`__
 
 	"We use *pandas* to process time series data on our production servers.
 	The simplicity and elegance of its API, and its high level
