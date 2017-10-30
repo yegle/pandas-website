@@ -45,7 +45,7 @@
 
 	<div class="tile">
 				<h4>Release</h4>
-				{{ releases[0].version }} - {{ releases[0].date}} <br/>
+				{{ releases[1].version }} - {{ releases[1].date}} <br/>
 				<a href="https://pypi.org/project/pandas/#files">download</a>          //
 				<a href="http://pandas.pydata.org/pandas-docs/stable/">docs</a> //
 				<a href="http://pandas.pydata.org/pandas-docs/stable/pandas.pdf">pdf</a>
@@ -53,14 +53,14 @@
 
 	<div class="tile">
 		<h4>Development</h4>
-        0.21.0 - 2017<br/>
+        {{ releases[0].version }} - {{ releases[0].date }}<br/>
         <a href="https://github.com/pydata/pandas">github</a> //
         <a href="http://pandas-docs.github.io/pandas-docs-travis/">docs</a>
     </div>
 
     <div class="tile">
       <h4>Previous Releases</h4>
-      {% for release in releases[1:] %}
+      {% for release in releases[2:] %}
           <div>
               {{ release.version }} -
               <a href="https://pypi.org/project/pandas/{{ release.version }}/#files">download</a>          //
